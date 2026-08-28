@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Tests: 183 offline](https://img.shields.io/badge/tests-183%20offline-brightgreen.svg)]()
-[![Agents Hub: 215 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-215%20Complete%20Agents-brightgreen.svg)]()
+[![Agents Hub: 315 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-315%20Complete%20Agents-brightgreen.svg)]()
 [![Zero-Key Runtime](https://img.shields.io/badge/runtime-zero%20API%20keys-success.svg)]()
 [![MCP](https://img.shields.io/badge/protocol-MCP%20%2B%20A2A-blueviolet.svg)]()
 
@@ -154,9 +154,9 @@ Traditional models suffer from **Premature Closure** and **Pattern Gravity**. Th
 
 ---
 
-## 🏭 Agents Factory: 215 Complete Sub-Agents (15 Founding + 50 Demand Suite + 150 Power Expansion)
+## 🏭 Agents Factory: 315 Complete Sub-Agents (15 Founding + 50 Demand Suite + 150 Power Expansion + 100 Computer Use)
 
-Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **215 total = 15 founding + 50 demand suite + 150 power expansion.**
+Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **315 total = 15 founding + 50 demand suite + 150 power expansion + 100 computer/browser/terminal/server.**
 
 | # | Agent | Domain |
 |---|-------|--------|
@@ -237,7 +237,7 @@ core/
 ├── orchestrator.py         # hierarchical / pipeline / mesh / blackboard
 ├── tool_registry.py        # schemas, validation pipeline, hooks, annotations
 ├── depth_cognitive_engine.py · steve_jobs_lens.py · engine.py · registry.py
-agents/                     # 215 complete sub-agents (SKILL.md + core + cli)
+agents/                     # 315 complete sub-agents (SKILL.md + core + cli)
 factory/                    # skill builder, prompt synthesizer
 evals/                      # versioned rubrics + golden datasets
 examples/                   # end-to-end walkthroughs
@@ -494,6 +494,137 @@ Full catalog with per-agent tables: [`agents/AGENTS.md`](agents/AGENTS.md). Ever
 python agents/api-architect-agent/cli/api_architect.py --text "Design a rate-limited REST API for billing"
 python agents/x-growth-hacker-agent/cli/x_growth_hacker.py --text "Draft a viral thread about our launch"
 python agents/threat-model-agent/cli/threat_model.py --text "STRIDE for a multi-tenant agent gateway"
+```
+
+
+## 🖥️ 100 Computer Use Series — Browser / Terminal / OS / Server Automation (Linux · macOS · Windows)
+
+*100 deterministic control & automation agents — the missing computer-use layer. Covers desktop GUI + accessibility, headless/browser CDP, terminal/PTY/shell, and cross-platform server engineering (systemd, launchd, services.msc, k8s, containers, DB, queues, TLS, GitOps). Every agent: offline, OS-aware heuristics, CLI from any cwd.*
+
+Full catalog: [`agents/AGENTS.md`](agents/AGENTS.md). Discoverable via `AgentRegistry.discover_agents()`.
+
+### Computer Use (22)
+| Agent | What it does |
+|---|---|
+| `computer-vision-agent` | GUI element detection, screenshot grounding, coordinate resolution, and vision-to-action translation |
+| `desktop-automation-agent` | Cross-app desktop workflows, window management, dock/taskbar control, and macro recording |
+| `screen-recorder-agent` | Session capture, action trace diffing, deterministic replay, and flake diagnosis |
+| `accessibility-pilot-agent` | AX tree traversal, VoiceOver/Narrator/Orca mapping, label-role audits, and a11y-driven control |
+| `keyboard-maestro-agent` | Hotkey choreography, chord sequencing, input method switching, and shortcut conflict resolution |
+| `mouse-precision-agent` | DPI-aware moves, drag semantics, hover intent, and pixel-perfect assertion |
+| `clipboard-ops-agent` | Multi-format clipboard (text/image/files), history vault, and cross-app paste validation |
+| `file-explorer-agent` | Finder/Explorer/Nautilus navigation, batch rename, quick-look preview, and breadcrumb forensics |
+| `notification-center-agent` | Banner/toast interception, permission routing, Do-Not-Disturb orchestration, and alert triage |
+| `system-prefs-agent` | Settings search, plist/registry diffing, profile provisioning, and drift enforcement |
+| `spotlight-search-agent` | Indexed search, intent disambiguation, quick-open ranking, and recent-items forensics |
+| `window-tiling-agent` | Tiling layout synthesis, focus follows mouse, workspace assignment, and multi-monitor mapping |
+| `menubar-tray-agent` | Status item orchestration, menu introspection, tray icon health checks |
+| `screenshot-assert-agent` | Visual diff, perceptual hash, region masking, and golden screenshot gates |
+| `drag-drop-orchestrator-agent` | Cross-app drag semantics, payload validation, drop-zone mapping, and undo safety |
+| `touch-gesture-agent` | Trackpad/phone gestures, palm rejection, pressure curves, and haptic feedback mapping |
+| `ocr-reader-agent` | On-screen text extraction, table de-warping, language detection, and redaction |
+| `audio-router-agent` | Input/output device switching, volume ducking, mic gate, and audio capture routing |
+| `camera-mic-governor-agent` | Permission gates, virtual camera/mic injection, and recording indicator enforcement |
+| `power-battery-agent` | Sleep/wake orchestration, battery health, thermal throttling, and charge-limit policies |
+| `display-color-agent` | Resolution/refresh switching, HDR/color profile validation, and night-shift scheduling |
+| `input-device-agent` | Keyboard/mouse/gamepad pairing, driver health, DPI/remap sync, and latency checks |
+
+### Browser Use (22)
+| Agent | What it does |
+|---|---|
+| `browser-pilot-agent` | Tab orchestration, navigation guards, history/cookie/session control, and profile isolation |
+| `cdp-bridge-agent` | Chrome DevTools Protocol — DOM, debugger, network, emulation, and trace capture |
+| `playwright-orchestrator-agent` | Cross-browser (Chromium/Firefox/WebKit) test generation, auto-wait, trace viewer |
+| `puppeteer-forge-agent` | Headless Chromium control, PDF/screenshot pipelines, and request interception |
+| `selenium-grid-agent` | Hub/node scaling, capability matching, grid health, and flaky quarantine |
+| `browser-extension-agent` | Manifest v3, content/background/service worker, storage sync, and store review prep |
+| `dom-forensics-agent` | Selector resilience scoring, shadow-DOM piercing, hydration mismatch detection |
+| `web-scraper-agent` | Polite crawling, robots.txt respect, anti-bot evasion planning, and dataset diffing |
+| `form-autofill-agent` | Field inference, constraint validation, CAPTCHA/Turnstile routing, and submit guards |
+| `cookie-consent-agent` | CMP banner classification, preference persistence, and consent-string validation |
+| `storage-inspector-agent` | LocalStorage/SessionStorage/IndexedDB/cookies audit, quota sizing, and eviction forensics |
+| `network-har-agent` | HAR capture, waterfall analysis, cache-hit verification, and payload PII scrubbing |
+| `performance-audit-agent` | Lighthouse/Web Vitals, CLS/LCP/INP budgets, bundle waterfall, and perf regression gates |
+| `accessibility-web-agent` | axe-core style audits, keyboard trap detection, color contrast, and screen-reader order |
+| `visual-regression-agent` | Cross-viewport screenshot diff, layout shift masking, anti-alias tolerance |
+| `auth-session-agent` | Login flows, OAuth/PKCE, MFA/TOTP, session refresh, and token theft guards |
+| `download-manager-agent` | Download orchestration, virus-scan hooks, checksum verification, and resume safety |
+| `pdf-renderer-agent` | HTML→PDF fidelity, print media CSS, pagination orphans, and PDF/A validation |
+| `webrtc-media-agent` | Peer connection forensics, ICE candidate mapping, bandwidth/echo diagnostics |
+| `service-worker-agent` | Cache strategy, offline fallback, update lifecycle, and push subscription forensics |
+| `web-security-agent` | CSP/HSTS/XFO audit, mixed-content detection, and SRI/subresource integrity checks |
+| `browser-profile-agent` | Profile cloning, fingerprint hygiene, proxy rotation, and container isolation |
+
+### Terminal Use (18)
+| Agent | What it does |
+|---|---|
+| `shell-pilot-agent` | POSIX shell orchestration (bash/zsh/fish), prompt detection, and exit-code triage |
+| `pty-bridge-agent` | Pseudo-terminal allocation, raw mode, echo suppression, and resize propagation |
+| `tmux-orchestrator-agent` | Session/window/pane topology, layout persistence, and copy-mode automation |
+| `terminal-renderer-agent` | ANSI/VT100 parsing, 24-bit color, ligature handling, and damage-region rendering |
+| `cli-scaffold-agent` | Argparse/cobra/clap scaffolding, help/usage consistency, and shell completion generation |
+| `prompt-engineer-agent` | Terminal prompt theme (starship/oh-my-zsh), git status embedding, and latency budgets |
+| `history-forensics-agent` | Shell history forensics, deduplication, secret scrubbing, and recall ranking |
+| `autocomplete-intel-agent` | Tab completion synthesis, fuzzy ranking, man-page harvesting, and contextual suggestion |
+| `env-shell-agent` | Dotfile management, profile layering (.zshrc/.bashrc), env diffing, and idempotent bootstrap |
+| `ssh-remote-agent` | Jump hosts, multiplexing, keepalives, agent forwarding, and host-key pinning |
+| `terminal-recorder-agent` | Asciinema-style capture, timing file synthesis, and deterministic replay gates |
+| `log-tail-agent` | Follow-mode, ANSI stripping, pattern alerting, and backpressure handling |
+| `job-control-agent` | Foreground/background, disown/nohup, signal routing, and exit trap cleanup |
+| `keybinding-doctor-agent` | Readline/editing mode, keymap conflict resolution, and latency-to-action tracing |
+| `terminal-security-agent` | Shell injection forensics, quoted-arg validation, and paste-jacking guards |
+| `repl-bridge-agent` | Python/Node/Ruby REPL orchestration, cell execution guards, and output capture |
+| `man-help-agent` | Man page summarization, flag inference, example harvesting, and TL;DR generation |
+| `shell-benchmark-agent` | Startup time (zsh --startup), plugin cost, and prompt latency profiling |
+
+### Server Mgmt (Linux/Mac/Win) (38)
+| Agent | What it does |
+|---|---|
+| `linux-admin-agent` | User/group/sudo, service (systemd), cron/at, and filesystem (ext4/xfs/btrfs) operations |
+| `systemd-surgeon-agent` | Unit authoring, dependency ordering, socket activation, and journald forensics |
+| `package-manager-agent` | apt/dnf/pacman/apk/zypper — repo pinning, hold/unhold, and atomic rollback |
+| `kernel-tuner-agent` | sysctl, cgroups v2, io-queue, hugepages, and perf/eBPF perf analysis |
+| `network-ops-agent` | iptables/nftables, ip route, DNS (systemd-resolved/Unbound), and mtr forensics |
+| `storage-raid-agent` | RAID/LVM/ZFS/btrfs, fstab, mount guards, and SMART failure prediction |
+| `log-rotation-agent` | logrotate/journal vacuuming, retention budgets, and centralized shipper wiring |
+| `backup-restore-agent` | rsync/restic/borg, push vs pull, encryption, and restore drill verification |
+| `sec-hardening-agent` | CIS benchmarks, Lynis scoring, fail2ban, AppArmor/SELinux, and auditd |
+| `container-ops-agent` | Docker/Podman, cgroups, overlayfs, rootless, and image provenance (cosign) |
+| `k8s-pilot-agent` | kubectl, helm, Kustomize, CNI/CSI forensics, and etcd backup/restore |
+| `nginx-ops-agent` | vhosts, upstreams, mTLS, rate-limit, and config test/ reload choreography |
+| `macos-admin-agent` | launchd, defaults, profiles, MDM, SIP/TCC, and `systemextensionsctl` |
+| `brew-ops-agent` | Formula/cask lifecycle, pin, bottle vs source, and cleanup/doctor diagnostics |
+| `xcode-ops-agent` | xcodebuild, simulators, provisioning, notarization, and SPM resolution |
+| `macos-security-agent` | Gatekeeper, XProtect, TCC db, keychain, and Endpoint Security framework |
+| `windows-admin-agent` | Registry, services (sc.exe), Task Scheduler, and NTFS/ACL forensics |
+| `powershell-forge-agent` | Module authoring, DSC, remoting (WinRM), and execution policy forensics |
+| `winget-choco-agent` | Package resolution, silent install flags, and winget source pinning |
+| `windows-security-agent` | Defender, AppLocker/WDAC, Credential Guard, and event log forensics |
+| `ad-identity-agent` | Active Directory/GPO, Entra ID sync, LDAP, and Kerberos ticket forensics |
+| `ci-cd-orchestrator-agent` | GitHub Actions/GitLab CI/CircleCI, cache-hit optimization, and runner fleet sizing |
+| `observability-stack-agent` | Prometheus/Grafana/OTel/Loki, SLO burn, and cardinality explosion guards |
+| `infra-provisioner-agent` | Terraform/OpenTofu, state locking, drift detection, and provider pinning |
+| `ansible-pilot-agent` | Playbook linting, idempotency verification, vault, and inventory forensics |
+| `tls-cert-agent` | ACME/Let's Encrypt, chain validation, OCSP, and cert-rotation without downtime |
+| `db-ops-agent` | Postgres/MySQL/Redis — vacuum/replication/latency, slow-query forensics, backup PITR |
+| `queue-ops-agent` | Kafka/RabbitMQ/SQS — partition lag, dead-letter triage, and exactly-once forensics |
+| `cdn-edge-agent` | Cache keys, purge, stale-while-revalidate, and edge function forensics |
+| `incident-ops-agent` | On-call handoff, status page, postmortem, and runbook-as-code |
+| `cost-ops-agent` | Tagging hygiene, idle/oversized detection, reservation modeling, and showback |
+| `compliance-ops-agent` | SOC2/HIPAA evidence, CIS drift, and continuous audit trails |
+| `secrets-ops-agent` | Vault/1Password/AWS Secrets Manager rotation, lease scoping, and break-glass drills |
+| `gitops-pilot-agent` | ArgoCD/Flux, drift vs desired, sync waves, and progressive delivery analysis |
+| `edge-iot-agent` | Fleet OTA, MQTT, secure boot attestation, and offline-queue draining |
+| `perf-lab-agent` | CPU flame graphs, heap profiles, io_uring, and p95 regression gates |
+| `disaster-recovery-agent` | RTO/RPO math, pilot-light vs warm-standby, and chaos-day runbooks |
+| `migration-ops-agent` | Lift-and-shift vs replatform, data gravity, cutover windows, and rollback rehearsals |
+
+```bash
+# try any of the 100:
+python agents/browser-pilot-agent/cli/browser_pilot.py --text "automate checkout flow with profile isolation"
+python agents/shell-pilot-agent/cli/shell_pilot.py --text "debug bash zsh prompt on linux"
+python agents/linux-admin-agent/cli/linux_admin.py --text "systemd unit for ubuntu with journalctl" --os linux
+python agents/windows-admin-agent/cli/windows_admin.py --text "powershell remoting with registry on windows" --os windows
 ```
 
 ## 🧪 Testing & CI

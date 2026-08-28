@@ -5,7 +5,7 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 
 ---
 
-## 🌟 Complete Sub-Agent Catalog (215 Specialized Sub-Agents)
+## 🌟 Complete Sub-Agent Catalog (315 Specialized Sub-Agents)
 
 ### 🧠 Cognitive Architecture & Metacognition (Depth-Skills Powered)
 | Sub-Agent | Category | Description | Primary CLI | Location |
@@ -353,6 +353,131 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 | `paid-growth-ops-agent` | Channel mix modeling, CAC payback math, creative fatigue rotation, incrementality testing | `python cli/paid_growth_ops.py` |
 
 All 150: `python agents/<slug>/cli/<module>.py --help` from any cwd — same contract as the Top-50 (`tests/test_top50_agents.py` pattern), plus `tests/test_power150_agents.py` for this suite.
+
+
+---
+
+## 🖥️ 100 Computer Use Series — Browser / Terminal / OS / Server (Linux · macOS · Windows)
+
+*100 control & automation agents — OS-aware, deterministic, offline. Same contract: SKILL.md + core engine + CLI + smoke tests.*
+
+### Computer Use (22)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `computer-vision-agent` | GUI element detection, screenshot grounding, coordinate resolution, and vision-to-action translation | `python cli/computer_vision.py` |
+| `desktop-automation-agent` | Cross-app desktop workflows, window management, dock/taskbar control, and macro recording | `python cli/desktop_automation.py` |
+| `screen-recorder-agent` | Session capture, action trace diffing, deterministic replay, and flake diagnosis | `python cli/screen_recorder.py` |
+| `accessibility-pilot-agent` | AX tree traversal, VoiceOver/Narrator/Orca mapping, label-role audits, and a11y-driven control | `python cli/accessibility_pilot.py` |
+| `keyboard-maestro-agent` | Hotkey choreography, chord sequencing, input method switching, and shortcut conflict resolution | `python cli/keyboard_maestro.py` |
+| `mouse-precision-agent` | DPI-aware moves, drag semantics, hover intent, and pixel-perfect assertion | `python cli/mouse_precision.py` |
+| `clipboard-ops-agent` | Multi-format clipboard (text/image/files), history vault, and cross-app paste validation | `python cli/clipboard_ops.py` |
+| `file-explorer-agent` | Finder/Explorer/Nautilus navigation, batch rename, quick-look preview, and breadcrumb forensics | `python cli/file_explorer.py` |
+| `notification-center-agent` | Banner/toast interception, permission routing, Do-Not-Disturb orchestration, and alert triage | `python cli/notification_center.py` |
+| `system-prefs-agent` | Settings search, plist/registry diffing, profile provisioning, and drift enforcement | `python cli/system_prefs.py` |
+| `spotlight-search-agent` | Indexed search, intent disambiguation, quick-open ranking, and recent-items forensics | `python cli/spotlight_search.py` |
+| `window-tiling-agent` | Tiling layout synthesis, focus follows mouse, workspace assignment, and multi-monitor mapping | `python cli/window_tiling.py` |
+| `menubar-tray-agent` | Status item orchestration, menu introspection, tray icon health checks | `python cli/menubar_tray.py` |
+| `screenshot-assert-agent` | Visual diff, perceptual hash, region masking, and golden screenshot gates | `python cli/screenshot_assert.py` |
+| `drag-drop-orchestrator-agent` | Cross-app drag semantics, payload validation, drop-zone mapping, and undo safety | `python cli/drag_drop_orchestrator.py` |
+| `touch-gesture-agent` | Trackpad/phone gestures, palm rejection, pressure curves, and haptic feedback mapping | `python cli/touch_gesture.py` |
+| `ocr-reader-agent` | On-screen text extraction, table de-warping, language detection, and redaction | `python cli/ocr_reader.py` |
+| `audio-router-agent` | Input/output device switching, volume ducking, mic gate, and audio capture routing | `python cli/audio_router.py` |
+| `camera-mic-governor-agent` | Permission gates, virtual camera/mic injection, and recording indicator enforcement | `python cli/camera_mic_governor.py` |
+| `power-battery-agent` | Sleep/wake orchestration, battery health, thermal throttling, and charge-limit policies | `python cli/power_battery.py` |
+| `display-color-agent` | Resolution/refresh switching, HDR/color profile validation, and night-shift scheduling | `python cli/display_color.py` |
+| `input-device-agent` | Keyboard/mouse/gamepad pairing, driver health, DPI/remap sync, and latency checks | `python cli/input_device.py` |
+
+### Browser Use (22)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `browser-pilot-agent` | Tab orchestration, navigation guards, history/cookie/session control, and profile isolation | `python cli/browser_pilot.py` |
+| `cdp-bridge-agent` | Chrome DevTools Protocol — DOM, debugger, network, emulation, and trace capture | `python cli/cdp_bridge.py` |
+| `playwright-orchestrator-agent` | Cross-browser (Chromium/Firefox/WebKit) test generation, auto-wait, trace viewer | `python cli/playwright_orchestrator.py` |
+| `puppeteer-forge-agent` | Headless Chromium control, PDF/screenshot pipelines, and request interception | `python cli/puppeteer_forge.py` |
+| `selenium-grid-agent` | Hub/node scaling, capability matching, grid health, and flaky quarantine | `python cli/selenium_grid.py` |
+| `browser-extension-agent` | Manifest v3, content/background/service worker, storage sync, and store review prep | `python cli/browser_extension.py` |
+| `dom-forensics-agent` | Selector resilience scoring, shadow-DOM piercing, hydration mismatch detection | `python cli/dom_forensics.py` |
+| `web-scraper-agent` | Polite crawling, robots.txt respect, anti-bot evasion planning, and dataset diffing | `python cli/web_scraper.py` |
+| `form-autofill-agent` | Field inference, constraint validation, CAPTCHA/Turnstile routing, and submit guards | `python cli/form_autofill.py` |
+| `cookie-consent-agent` | CMP banner classification, preference persistence, and consent-string validation | `python cli/cookie_consent.py` |
+| `storage-inspector-agent` | LocalStorage/SessionStorage/IndexedDB/cookies audit, quota sizing, and eviction forensics | `python cli/storage_inspector.py` |
+| `network-har-agent` | HAR capture, waterfall analysis, cache-hit verification, and payload PII scrubbing | `python cli/network_har.py` |
+| `performance-audit-agent` | Lighthouse/Web Vitals, CLS/LCP/INP budgets, bundle waterfall, and perf regression gates | `python cli/performance_audit.py` |
+| `accessibility-web-agent` | axe-core style audits, keyboard trap detection, color contrast, and screen-reader order | `python cli/accessibility_web.py` |
+| `visual-regression-agent` | Cross-viewport screenshot diff, layout shift masking, anti-alias tolerance | `python cli/visual_regression.py` |
+| `auth-session-agent` | Login flows, OAuth/PKCE, MFA/TOTP, session refresh, and token theft guards | `python cli/auth_session.py` |
+| `download-manager-agent` | Download orchestration, virus-scan hooks, checksum verification, and resume safety | `python cli/download_manager.py` |
+| `pdf-renderer-agent` | HTML→PDF fidelity, print media CSS, pagination orphans, and PDF/A validation | `python cli/pdf_renderer.py` |
+| `webrtc-media-agent` | Peer connection forensics, ICE candidate mapping, bandwidth/echo diagnostics | `python cli/webrtc_media.py` |
+| `service-worker-agent` | Cache strategy, offline fallback, update lifecycle, and push subscription forensics | `python cli/service_worker.py` |
+| `web-security-agent` | CSP/HSTS/XFO audit, mixed-content detection, and SRI/subresource integrity checks | `python cli/web_security.py` |
+| `browser-profile-agent` | Profile cloning, fingerprint hygiene, proxy rotation, and container isolation | `python cli/browser_profile.py` |
+
+### Terminal Use (18)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `shell-pilot-agent` | POSIX shell orchestration (bash/zsh/fish), prompt detection, and exit-code triage | `python cli/shell_pilot.py` |
+| `pty-bridge-agent` | Pseudo-terminal allocation, raw mode, echo suppression, and resize propagation | `python cli/pty_bridge.py` |
+| `tmux-orchestrator-agent` | Session/window/pane topology, layout persistence, and copy-mode automation | `python cli/tmux_orchestrator.py` |
+| `terminal-renderer-agent` | ANSI/VT100 parsing, 24-bit color, ligature handling, and damage-region rendering | `python cli/terminal_renderer.py` |
+| `cli-scaffold-agent` | Argparse/cobra/clap scaffolding, help/usage consistency, and shell completion generation | `python cli/cli_scaffold.py` |
+| `prompt-engineer-agent` | Terminal prompt theme (starship/oh-my-zsh), git status embedding, and latency budgets | `python cli/prompt_engineer.py` |
+| `history-forensics-agent` | Shell history forensics, deduplication, secret scrubbing, and recall ranking | `python cli/history_forensics.py` |
+| `autocomplete-intel-agent` | Tab completion synthesis, fuzzy ranking, man-page harvesting, and contextual suggestion | `python cli/autocomplete_intel.py` |
+| `env-shell-agent` | Dotfile management, profile layering (.zshrc/.bashrc), env diffing, and idempotent bootstrap | `python cli/env_shell.py` |
+| `ssh-remote-agent` | Jump hosts, multiplexing, keepalives, agent forwarding, and host-key pinning | `python cli/ssh_remote.py` |
+| `terminal-recorder-agent` | Asciinema-style capture, timing file synthesis, and deterministic replay gates | `python cli/terminal_recorder.py` |
+| `log-tail-agent` | Follow-mode, ANSI stripping, pattern alerting, and backpressure handling | `python cli/log_tail.py` |
+| `job-control-agent` | Foreground/background, disown/nohup, signal routing, and exit trap cleanup | `python cli/job_control.py` |
+| `keybinding-doctor-agent` | Readline/editing mode, keymap conflict resolution, and latency-to-action tracing | `python cli/keybinding_doctor.py` |
+| `terminal-security-agent` | Shell injection forensics, quoted-arg validation, and paste-jacking guards | `python cli/terminal_security.py` |
+| `repl-bridge-agent` | Python/Node/Ruby REPL orchestration, cell execution guards, and output capture | `python cli/repl_bridge.py` |
+| `man-help-agent` | Man page summarization, flag inference, example harvesting, and TL;DR generation | `python cli/man_help.py` |
+| `shell-benchmark-agent` | Startup time (zsh --startup), plugin cost, and prompt latency profiling | `python cli/shell_benchmark.py` |
+
+### Server Mgmt (Linux/Mac/Win) (38)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `linux-admin-agent` | User/group/sudo, service (systemd), cron/at, and filesystem (ext4/xfs/btrfs) operations | `python cli/linux_admin.py` |
+| `systemd-surgeon-agent` | Unit authoring, dependency ordering, socket activation, and journald forensics | `python cli/systemd_surgeon.py` |
+| `package-manager-agent` | apt/dnf/pacman/apk/zypper — repo pinning, hold/unhold, and atomic rollback | `python cli/package_manager.py` |
+| `kernel-tuner-agent` | sysctl, cgroups v2, io-queue, hugepages, and perf/eBPF perf analysis | `python cli/kernel_tuner.py` |
+| `network-ops-agent` | iptables/nftables, ip route, DNS (systemd-resolved/Unbound), and mtr forensics | `python cli/network_ops.py` |
+| `storage-raid-agent` | RAID/LVM/ZFS/btrfs, fstab, mount guards, and SMART failure prediction | `python cli/storage_raid.py` |
+| `log-rotation-agent` | logrotate/journal vacuuming, retention budgets, and centralized shipper wiring | `python cli/log_rotation.py` |
+| `backup-restore-agent` | rsync/restic/borg, push vs pull, encryption, and restore drill verification | `python cli/backup_restore.py` |
+| `sec-hardening-agent` | CIS benchmarks, Lynis scoring, fail2ban, AppArmor/SELinux, and auditd | `python cli/sec_hardening.py` |
+| `container-ops-agent` | Docker/Podman, cgroups, overlayfs, rootless, and image provenance (cosign) | `python cli/container_ops.py` |
+| `k8s-pilot-agent` | kubectl, helm, Kustomize, CNI/CSI forensics, and etcd backup/restore | `python cli/k8s_pilot.py` |
+| `nginx-ops-agent` | vhosts, upstreams, mTLS, rate-limit, and config test/ reload choreography | `python cli/nginx_ops.py` |
+| `macos-admin-agent` | launchd, defaults, profiles, MDM, SIP/TCC, and `systemextensionsctl` | `python cli/macos_admin.py` |
+| `brew-ops-agent` | Formula/cask lifecycle, pin, bottle vs source, and cleanup/doctor diagnostics | `python cli/brew_ops.py` |
+| `xcode-ops-agent` | xcodebuild, simulators, provisioning, notarization, and SPM resolution | `python cli/xcode_ops.py` |
+| `macos-security-agent` | Gatekeeper, XProtect, TCC db, keychain, and Endpoint Security framework | `python cli/macos_security.py` |
+| `windows-admin-agent` | Registry, services (sc.exe), Task Scheduler, and NTFS/ACL forensics | `python cli/windows_admin.py` |
+| `powershell-forge-agent` | Module authoring, DSC, remoting (WinRM), and execution policy forensics | `python cli/powershell_forge.py` |
+| `winget-choco-agent` | Package resolution, silent install flags, and winget source pinning | `python cli/winget_choco.py` |
+| `windows-security-agent` | Defender, AppLocker/WDAC, Credential Guard, and event log forensics | `python cli/windows_security.py` |
+| `ad-identity-agent` | Active Directory/GPO, Entra ID sync, LDAP, and Kerberos ticket forensics | `python cli/ad_identity.py` |
+| `ci-cd-orchestrator-agent` | GitHub Actions/GitLab CI/CircleCI, cache-hit optimization, and runner fleet sizing | `python cli/ci_cd_orchestrator.py` |
+| `observability-stack-agent` | Prometheus/Grafana/OTel/Loki, SLO burn, and cardinality explosion guards | `python cli/observability_stack.py` |
+| `infra-provisioner-agent` | Terraform/OpenTofu, state locking, drift detection, and provider pinning | `python cli/infra_provisioner.py` |
+| `ansible-pilot-agent` | Playbook linting, idempotency verification, vault, and inventory forensics | `python cli/ansible_pilot.py` |
+| `tls-cert-agent` | ACME/Let's Encrypt, chain validation, OCSP, and cert-rotation without downtime | `python cli/tls_cert.py` |
+| `db-ops-agent` | Postgres/MySQL/Redis — vacuum/replication/latency, slow-query forensics, backup PITR | `python cli/db_ops.py` |
+| `queue-ops-agent` | Kafka/RabbitMQ/SQS — partition lag, dead-letter triage, and exactly-once forensics | `python cli/queue_ops.py` |
+| `cdn-edge-agent` | Cache keys, purge, stale-while-revalidate, and edge function forensics | `python cli/cdn_edge.py` |
+| `incident-ops-agent` | On-call handoff, status page, postmortem, and runbook-as-code | `python cli/incident_ops.py` |
+| `cost-ops-agent` | Tagging hygiene, idle/oversized detection, reservation modeling, and showback | `python cli/cost_ops.py` |
+| `compliance-ops-agent` | SOC2/HIPAA evidence, CIS drift, and continuous audit trails | `python cli/compliance_ops.py` |
+| `secrets-ops-agent` | Vault/1Password/AWS Secrets Manager rotation, lease scoping, and break-glass drills | `python cli/secrets_ops.py` |
+| `gitops-pilot-agent` | ArgoCD/Flux, drift vs desired, sync waves, and progressive delivery analysis | `python cli/gitops_pilot.py` |
+| `edge-iot-agent` | Fleet OTA, MQTT, secure boot attestation, and offline-queue draining | `python cli/edge_iot.py` |
+| `perf-lab-agent` | CPU flame graphs, heap profiles, io_uring, and p95 regression gates | `python cli/perf_lab.py` |
+| `disaster-recovery-agent` | RTO/RPO math, pilot-light vs warm-standby, and chaos-day runbooks | `python cli/disaster_recovery.py` |
+| `migration-ops-agent` | Lift-and-shift vs replatform, data gravity, cutover windows, and rollback rehearsals | `python cli/migration_ops.py` |
+
+All 100: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines expose `analyze(text, os_hint)` + `format_report`; `tests/test_computer100_agents.py` (6 tests).
 
 ## ⚡ CLI Hub Discovery
 

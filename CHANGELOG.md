@@ -1,5 +1,26 @@
 # Changelog
 
+## [2.2.0] - 2026-08-28 — 100 Computer Use Series (315 Total)
+
+### Added — 100 computer/browser/terminal/server control agents
+- **Computer Use (22):** computer-vision, desktop-automation, screen-recorder, accessibility-pilot, keyboard-maestro, mouse-precision, clipboard-ops, file-explorer, notification-center, system-prefs, spotlight-search, window-tiling, menubar-tray, screenshot-assert, drag-drop-orchestrator, touch-gesture, ocr-reader, audio-router, camera-mic-governor, power-battery, display-color, input-device
+- **Browser Use (22):** browser-pilot, cdp-bridge, playwright-orchestrator, puppeteer-forge, selenium-grid, browser-extension, dom-forensics, web-scraper, form-autofill, cookie-consent, storage-inspector, network-har, performance-audit, accessibility-web, visual-regression, auth-session, download-manager, pdf-renderer, webrtc-media, service-worker, web-security, browser-profile
+- **Terminal Use (18):** shell-pilot, pty-bridge, tmux-orchestrator, terminal-renderer, cli-scaffold, prompt-engineer, history-forensics, autocomplete-intel, env-shell, ssh-remote, terminal-recorder, log-tail, job-control, keybinding-doctor, terminal-security, repl-bridge, man-help, shell-benchmark
+- **Server Mgmt Linux/macOS/Windows (38):** linux-admin, systemd-surgeon, package-manager, kernel-tuner, network-ops, storage-raid, log-rotation, backup-restore, sec-hardening, container-ops, k8s-pilot, nginx-ops, macos-admin, brew-ops, xcode-ops, macos-security, windows-admin, powershell-forge, winget-choco, windows-security, ad-identity, ci-cd-orchestrator, observability-stack, infra-provisioner, ansible-pilot, tls-cert, db-ops, queue-ops, cdn-edge, incident-ops, cost-ops, compliance-ops, secrets-ops, gitops-pilot, edge-iot, perf-lab, disaster-recovery, migration-ops
+- Each: SKILL.md + OS-aware core engine (Linux/macOS/Windows detection, heuristics per domain) + CLI (`--text/--file/--os/--json`, any cwd), `AgentRegistry.discover_agents()` auto-discovers all 315
+- Tests: `tests/test_computer100_agents.py` (6 tests), EXPECTED_AGENTS 215→315
+- Example: `examples/computer_use_demo.py`
+
+### Changed
+- README: badge 215→315, factory 215→315, added “100 Computer Use Series” grouped tables + try-commands, layout 215→315
+- agents/AGENTS.md: header 215→315, added 100 series tables
+- pyproject description 215→315
+
+### Quality Gates
+- All 315 CLIs pass `--help` from neutral cwd; all 315 engines pass `analyze`+`format_report` smoke
+
+---
+
 ## [2.1.0] — 2026-08-28
 
 ### Added — Top-50 Demand-Driven Agent Suite
@@ -31,6 +52,27 @@
 
 All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [2.2.0] - 2026-08-28 — 100 Computer Use Series (315 Total)
+
+### Added — 100 computer/browser/terminal/server control agents
+- **Computer Use (22):** computer-vision, desktop-automation, screen-recorder, accessibility-pilot, keyboard-maestro, mouse-precision, clipboard-ops, file-explorer, notification-center, system-prefs, spotlight-search, window-tiling, menubar-tray, screenshot-assert, drag-drop-orchestrator, touch-gesture, ocr-reader, audio-router, camera-mic-governor, power-battery, display-color, input-device
+- **Browser Use (22):** browser-pilot, cdp-bridge, playwright-orchestrator, puppeteer-forge, selenium-grid, browser-extension, dom-forensics, web-scraper, form-autofill, cookie-consent, storage-inspector, network-har, performance-audit, accessibility-web, visual-regression, auth-session, download-manager, pdf-renderer, webrtc-media, service-worker, web-security, browser-profile
+- **Terminal Use (18):** shell-pilot, pty-bridge, tmux-orchestrator, terminal-renderer, cli-scaffold, prompt-engineer, history-forensics, autocomplete-intel, env-shell, ssh-remote, terminal-recorder, log-tail, job-control, keybinding-doctor, terminal-security, repl-bridge, man-help, shell-benchmark
+- **Server Mgmt Linux/macOS/Windows (38):** linux-admin, systemd-surgeon, package-manager, kernel-tuner, network-ops, storage-raid, log-rotation, backup-restore, sec-hardening, container-ops, k8s-pilot, nginx-ops, macos-admin, brew-ops, xcode-ops, macos-security, windows-admin, powershell-forge, winget-choco, windows-security, ad-identity, ci-cd-orchestrator, observability-stack, infra-provisioner, ansible-pilot, tls-cert, db-ops, queue-ops, cdn-edge, incident-ops, cost-ops, compliance-ops, secrets-ops, gitops-pilot, edge-iot, perf-lab, disaster-recovery, migration-ops
+- Each: SKILL.md + OS-aware core engine (Linux/macOS/Windows detection, heuristics per domain) + CLI (`--text/--file/--os/--json`, any cwd), `AgentRegistry.discover_agents()` auto-discovers all 315
+- Tests: `tests/test_computer100_agents.py` (6 tests), EXPECTED_AGENTS 215→315
+- Example: `examples/computer_use_demo.py`
+
+### Changed
+- README: badge 215→315, factory 215→315, added “100 Computer Use Series” grouped tables + try-commands, layout 215→315
+- agents/AGENTS.md: header 215→315, added 100 series tables
+- pyproject description 215→315
+
+### Quality Gates
+- All 315 CLIs pass `--help` from neutral cwd; all 315 engines pass `analyze`+`format_report` smoke
+
+---
 
 ## [2.1.0] - 2026-08-28 — 150 Power Expansion (215 Total)
 
