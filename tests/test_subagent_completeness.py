@@ -115,7 +115,7 @@ EXPECTED_AGENTS = [
     "brand-system-agent", "landing-page-designer-agent", "design-handoff-agent", "visual-qa-agent", "design-performance-auditor-agent", 
     "frontend-scaffold-agent", "backend-api-builder-agent", "fullstack-integrator-agent", "jamstack-deployer-agent", "ssr-optimizer-agent", 
     "web-perf-auditor-agent", "web-security-hardener-agent", "cms-orchestrator-agent", "ecommerce-stack-agent", "realtime-collab-agent", 
-    "colab-t4-gpu-agent",
+    "colab-t4-gpu-agent", "last30days-research-agent",
 ]
 
 

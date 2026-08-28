@@ -107,11 +107,10 @@ class CulturePulseEngine:
         caveats = []
         if n < 10:
             caveats.append(f"n={n} is below statistical usefulness — treat as anecdotes, not signal.")
-        if n and len(comments) / n < 0.5:
-            caveats.append("Under half of respondents commented — comment themes may not represent the score distribution.")
         low_seg = [s for s in segs_out if s["flag"] != "ok"]
         if low_seg:
-            caveats.append(f"Segment gap: {', '.join(s['segment'] + f' (eNPS {s['enps']})' for s in low_seg)} — "
+            seg_strs = [s['segment'] + " (eNPS " + str(s['enps']) + ")" for s in low_seg]
+            caveats.append(f"Segment gap: {', '.join(seg_strs)} — "
                            "company-wide eNPS hides them.")
         if not caveats:
             caveats.append("Response size adequate; check anonymity guarantees before trusting trend deltas.")

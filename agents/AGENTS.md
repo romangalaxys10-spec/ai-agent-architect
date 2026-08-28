@@ -5,11 +5,12 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 
 ---
 
-## 🌟 Complete Sub-Agent Catalog (526 Specialized Sub-Agents)
+## 🌟 Complete Sub-Agent Catalog (527 Specialized Sub-Agents)
 
-### 🧠 Cognitive Architecture & Metacognition (Depth-Skills Powered)
+### 🧠 Cognitive Architecture, Depth & Real-Time Recency
 | Sub-Agent | Category | Description | Primary CLI | Location |
 |---|---|---|---|---|
+| 🛰️ **`last30days-research-agent`** | Real-Time Intel | Trailing 30-day community intelligence and recency grounding. Triangulates signals across GitHub, Hacker News, Reddit, and X. | `python cli/last30days.py` | [`agents/last30days-research-agent/`](./last30days-research-agent) |
 | 🧠 **`depth-conductor-agent`** | Cognitive Depth | Powered by `depth-skills`. Prevents premature closure, excavates hidden assumptions, generates contrarian paths, and stress-tests architectures. | `python cli/conductor.py` | [`agents/depth-conductor-agent/`](./depth-conductor-agent) |
 | 🏛️ **`senior-architect-agent`** | Systems Architecture | Cognitive DAG state-machine design, modular decomposition, and zero-trust verification. | `agent-architect` | [`agents/senior-architect-agent/`](./senior-architect-agent) |
 | 🍏 **`steve-jobs-agent`** | Product Taste | Enforces *Focus (Saying NO to 1,000 things)*, *The Whole Widget*, and binary quality verdicts (`INSANELY_GREAT` vs `TOTAL_BULLSHIT`). | `agent-architect review` | [`agents/steve-jobs-agent/`](./steve-jobs-agent) |

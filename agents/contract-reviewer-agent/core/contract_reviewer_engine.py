@@ -180,7 +180,8 @@ class ContractReviewerEngine:
         for pat, sev, desc in RISK_TERMS:
             m = re.search(pat, low)
             if m:
-                risky.append(f"[{sev}] {desc} — near \"{re.sub(r'\\s+', ' ', text[max(0, m.start()-30):m.end()+40])[:90]}\"")
+                snippet = re.sub(r'\s+', ' ', text[max(0, m.start()-30):m.end()+40])[:90]
+                risky.append(f"[{sev}] {desc} — near \"{snippet}\"")
 
         missing = [c.clause for c in clauses if c.grade == "absent"]
 

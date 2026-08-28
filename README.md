@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Tests: 183 offline](https://img.shields.io/badge/tests-183%20offline-brightgreen.svg)]()
-[![Agents Hub: 525 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-525%20Complete%20Agents-brightgreen.svg)]()
+[![Agents Hub: 527 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-527%20Complete%20Agents-brightgreen.svg)]()
 [![Zero-Key Runtime](https://img.shields.io/badge/runtime-zero%20API%20keys-success.svg)]()
 [![MCP](https://img.shields.io/badge/protocol-MCP%20%2B%20A2A-blueviolet.svg)]()
 
@@ -154,9 +154,9 @@ Traditional models suffer from **Premature Closure** and **Pattern Gravity**. Th
 
 ---
 
-## 🏭 Agents Factory: 526 Complete Sub-Agents (15 Founding + 50 Demand + 150 Power + 100 Computer Use + 50 HR/HRBP/L&D + 70 Social/Video + 90 SysAdmin + 1 Colab T4)
+## 🏭 Agents Factory: 527 Complete Sub-Agents (15 Founding + 50 Demand + 150 Power + 100 Computer Use + 50 HR/HRBP/L&D + 70 Social/Video + 90 SysAdmin + 1 Colab T4)
 
-Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **526 total = 15 founding + 50 demand suite + 150 power expansion + 100 computer use + 50 HR/HRBP/L&D + 70 social/video + 90 sys-admin + 1 Colab T4 (Solana/blockchain/Linux/server/security/debug/local LLM/web design/web dev).**
+Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **527 total = 15 founding + 50 demand suite + 150 power expansion + 100 computer use + 50 HR/HRBP/L&D + 70 social/video + 90 sys-admin + 1 Colab T4 + 1 last30days (Solana/blockchain/Linux/server/security/debug/local LLM/web design/web dev).**
 
 | # | Agent | Domain |
 |---|-------|--------|
@@ -237,7 +237,7 @@ core/
 ├── orchestrator.py         # hierarchical / pipeline / mesh / blackboard
 ├── tool_registry.py        # schemas, validation pipeline, hooks, annotations
 ├── depth_cognitive_engine.py · steve_jobs_lens.py · engine.py · registry.py
-agents/                     # 526 complete sub-agents (SKILL.md + core + cli)
+agents/                     # 527 complete sub-agents (SKILL.md + core + cli)
 factory/                    # skill builder, prompt synthesizer
 evals/                      # versioned rubrics + golden datasets
 examples/                   # end-to-end walkthroughs
