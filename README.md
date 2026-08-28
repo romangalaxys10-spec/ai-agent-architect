@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Tests: 183 offline](https://img.shields.io/badge/tests-183%20offline-brightgreen.svg)]()
-[![Agents Hub: 435 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-435%20Complete%20Agents-brightgreen.svg)]()
+[![Agents Hub: 525 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-525%20Complete%20Agents-brightgreen.svg)]()
 [![Zero-Key Runtime](https://img.shields.io/badge/runtime-zero%20API%20keys-success.svg)]()
 [![MCP](https://img.shields.io/badge/protocol-MCP%20%2B%20A2A-blueviolet.svg)]()
 
@@ -154,9 +154,9 @@ Traditional models suffer from **Premature Closure** and **Pattern Gravity**. Th
 
 ---
 
-## 🏭 Agents Factory: 435 Complete Sub-Agents (15 Founding + 50 Demand + 150 Power + 100 Computer Use + 50 HR/HRBP/L&D + 70 Social/Video)
+## 🏭 Agents Factory: 525 Complete Sub-Agents (15 Founding + 50 Demand + 150 Power + 100 Computer Use + 50 HR/HRBP/L&D + 70 Social/Video + 90 SysAdmin)
 
-Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **435 total = 15 founding + 50 demand suite + 150 power expansion + 100 computer use + 50 HR/HRBP/L&D + 70 social/video (LinkedIn, Instagram, X, YouTube, TikTok, freebie+Gemini).**
+Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **525 total = 15 founding + 50 demand suite + 150 power expansion + 100 computer use + 50 HR/HRBP/L&D + 70 social/video + 90 sys-admin (Solana/blockchain/Linux/server/security/debug/local LLM/web design/web dev).**
 
 | # | Agent | Domain |
 |---|-------|--------|
@@ -237,7 +237,7 @@ core/
 ├── orchestrator.py         # hierarchical / pipeline / mesh / blackboard
 ├── tool_registry.py        # schemas, validation pipeline, hooks, annotations
 ├── depth_cognitive_engine.py · steve_jobs_lens.py · engine.py · registry.py
-agents/                     # 435 complete sub-agents (SKILL.md + core + cli)
+agents/                     # 525 complete sub-agents (SKILL.md + core + cli)
 factory/                    # skill builder, prompt synthesizer
 evals/                      # versioned rubrics + golden datasets
 examples/                   # end-to-end walkthroughs
@@ -826,6 +826,147 @@ python agents/linkedin-scheduler-agent/cli/linkedin_scheduler.py --text "queue L
 python agents/insta-reels-virality-agent/cli/insta_reels_virality.py --text "Reels hook-window with sound sync and loop-rate" 
 python agents/gemini-video-producer-agent/cli/gemini_video_producer.py --text "Gemini Veo storyboard from Pexels free stock with hook and CTA: subscribe"
 python agents/free-stock-scout-agent/cli/free_stock_scout.py --text "free stock from Pexels Pixabay with license attribution"
+```
+
+
+## 🛠️ 90 SysAdmin Series — Solana / Blockchain / Linux / Server / Security & Optimization / Debugging / Local LLM / Web Design & Web Dev
+
+*90 sys-admin control-plane agents: Solana validator/RPC/program/indexer/token/staking/MEV/payments, EVM nodes & smart-contract audit, Linux boot/fs/net/perf/SELinux, bare-metal/K8s/monitoring/DR, vuln/threat/SIEM/CSPM/zero-trust, deep debugging & PR risk, plus local LLM max-perf (Ollama/vLLM/GPTQ/GGUF/GPU/VRAM/KV-cache) and web design/dev (Figma→code, tokens, a11y, perf, Jamstack/SSR/CMS). Every agent: offline deterministic, secret/urgency guardrails, CLI from any cwd.*
+
+Full catalog: [`agents/AGENTS.md`](agents/AGENTS.md). `AgentRegistry.discover_agents()`.
+
+### Solana (10)
+| Agent | What it does |
+|---|---|
+| `solana-validator-ops-agent` | Validator setup, vote accounts, snapshot sync, and delinquency triage |
+| `solana-rpc-surgeon-agent` | RPC latency, rate-limits, Geyser/Yellowstone feeds, and failover routing |
+| `solana-program-deployer-agent` | Anchor/Pinocchio build, PDAs, IDL, and verified deploys |
+| `solana-indexer-architect-agent` | Indexer design, account filters, Carbon/Vixen decoding, and backfill |
+| `solana-token-ops-agent` | SPL / Token-2022, mints, metadata, and treasury ops |
+| `solana-staking-governance-agent` | Stake pools, delegation, and Realms/Squads governance flows |
+| `solana-mev-shield-agent` | Jito bundles, MEV forensics, and protection routing |
+| `solana-ledger-forensics-agent` | Ledger replay, slot forensics, and anomaly diagnosis |
+| `solana-payments-pilot-agent` | PayFi, fee sponsorship, and payment rail ops |
+| `solana-nft-ops-agent` | cNFT / Core, collection ops, and marketplace indexing |
+
+### Blockchain / EVM (10)
+| Agent | What it does |
+|---|---|
+| `evm-node-ops-agent` | Geth/Reth/Erigon sync, peering, and pruning for EVM chains |
+| `smart-contract-auditor-agent` | Slither/Mythril-style checks, access control, and reentrancy triage |
+| `chain-indexer-general-agent` | Cross-chain indexer, RPC pooling, and reorg handling |
+| `cross-chain-bridge-agent` | Bridge relayer, proof verification, and pause/guardian |
+| `wallet-ops-agent` | Custody, multisig (Squads/MPC), and key ceremony ops |
+| `gas-optimizer-agent` | Gas profiling, calldata packing, and batch strategy |
+| `dao-governance-agent` | Proposals, voting, and execution queue ops |
+| `oracle-keeper-agent` | Price feeds, staleness, and circuit breaker |
+| `block-explorer-agent` | Explorer API, tracing, and label curation |
+| `crypto-compliance-keeper-agent` | KYT/AML, travel rule, and audit trail for chain ops |
+
+### Linux (10)
+| Agent | What it does |
+|---|---|
+| `linux-boot-rescue-agent` | GRUB/systemd-boot, initramfs, and rescue mode forensics |
+| `linux-filesystem-surgeon-agent` | fsck, LVM thin, XFS repair, and mount forensics |
+| `linux-net-debug-agent` | tcpdump/Wireshark, conntrack, and `ss`/`ip` forensics |
+| `linux-perf-flame-agent` | perf, flame graphs, and pressure stall (PSI) diagnosis |
+| `linux-selinux-guardian-agent` | SELinux/AppArmor audit, denials, and policy authoring |
+| `linux-package-resolver-agent` | Dependency hell, holds/pins, and atomic rollback |
+| `linux-log-forensics-agent` | journalctl, logrotate, and centralized shipping |
+| `linux-cron-orchestrator-agent` | cron/systemd-timers, idempotency, and missed-job forensics |
+| `linux-user-governance-agent` | PAM, sudoers, and orphaned account hunting |
+| `linux-dist-upgrade-agent` | In-place upgrades, phased rollouts, and rollback rehearsals |
+
+### Server Management (10)
+| Agent | What it does |
+|---|---|
+| `bare-metal-provisioner-agent` | PXE/iPXE, Redfish, and firmware attestation |
+| `server-monitoring-stack-agent` | Prometheus/Grafana/Alertmanager with SLO burn and cardinality guards |
+| `server-backup-dr-agent` | Bare-metal backup, pilot-light DR, and restore drills |
+| `server-capacity-planner-agent` | CPU/mem/disk headroom, bin-packing, and auto-scale triggers |
+| `server-incident-commander-agent` | Incident runbooks, war-room, and blameless postmortem |
+| `server-config-drift-agent` | Drift detection via Chef/Puppet/Ansible and remediation |
+| `server-patching-orchestrator-agent` | Patch windows, canary rings, and live kernel patching |
+| `server-loadbalancer-tuner-agent` | HAProxy/Nginx/Envoy tuning, health checks, and drains |
+| `server-dns-ops-agent` | 权威 DNS, split-horizon, and DNSSEC forensics |
+| `server-virtualization-agent` | KVM/QEMU/libvirt, live migration, and snapshot hygiene |
+
+### Security / Optimization (10)
+| Agent | What it does |
+|---|---|
+| `vuln-triage-agent` | CVE intake, EPSS, and patch priority with SLAs |
+| `threat-hunter-agent` | Hypothesis-driven hunting, Sigma rules, and lateral movement mapping |
+| `siem-ops-agent` | Log pipeline, detection-as-code, and false-positive tuning |
+| `cspm-governance-agent` | Cloud posture (CIS/AWS Foundational), drift, and auto-remediate |
+| `zero-trust-architect-agent` | Identity-aware proxy, mTLS, and device trust for zero trust |
+| `perf-bottleneck-agent` | Latency budgets, flame graphs, and regression gates |
+| `memory-leak-hunter-agent` | Heap dumps, ASAN/Valgrind, and leak triage |
+| `cpu-profiler-agent` | pprof, perf, and hot-spot refactors |
+| `io-tuner-agent` | iostat, io_uring, and queue-depth tuning |
+| `cdn-optimizer-global-agent` | Edge cache keys, tiered caching, and purge hygiene |
+
+### Debugging / Code Reviewers (10)
+| Agent | What it does |
+|---|---|
+| `deep-debugger-agent` | Repro-first debugging with bisect, time-travel, and trace stitching |
+| `log-trace-correlator-agent` | Correlates logs↔traces↔metrics via trace IDs and baggage |
+| `flaky-test-hunter-agent` | Flake detection, quarantine, and determinism fixes |
+| `static-analysis-orchestrator-agent` | Lints, SAST, type-check orchestration with SARIF rollup |
+| `code-review-verdict-agent` | Risk-ranked findings, CWE mapping, and merge gate |
+| `pr-risk-scorer-agent` | PR blast radius, churn, and reviewer assignment |
+| `regression-bisector-agent` | git bisect, bisection forensics, and fix verification |
+| `heap-dump-analyzer-agent` | Heap histogram, dominator tree, and leak suspects |
+| `race-condition-hunter-agent` | Data-race detection, happens-before, and lock ordering |
+| `api-contract-tester-agent` | Pact/OpenAPI contract tests and breaking-change detection |
+
+### Local LLM — Max Speed/Perf (10)
+| Agent | What it does |
+|---|---|
+| `llm-local-deployer-agent` | Ollama/vLLM/llama.cpp local deploy with model registry |
+| `model-quantizer-agent` | AWQ/GPTQ/GGUF/EXL2 with size vs perplexity tradeoffs |
+| `vllm-optimizer-agent` | PagedAttention, continuous batching, and tensor parallel tuning |
+| `ollama-fleet-agent` | Ollama fleet, model pulls, and Modelfile governance |
+| `gpu-scheduler-agent` | CUDA/MPS, VRAM bin-packing, and preemption for LLM |
+| `inference-benchmark-agent` | TTFT/TPS, p95, and cost-per-1k for local LLM |
+| `kv-cache-tuner-agent` | KV quantization, prefix cache, and eviction policy |
+| `model-router-perf-agent` | Small→large routing by latency/cost SLA and fallbacks |
+| `gguf-converter-agent` | HF → GGUF, vocab, and Metal/CUDA kernel mapping |
+| `llm-eval-perf-agent` | Helm/eval harness for quality vs speed Pareto |
+
+### Web Design (10)
+| Agent | What it does |
+|---|---|
+| `figma-to-code-agent` | Figma autolayout → Tailwind/React with token fidelity |
+| `ux-wireframer-agent` | IA, user flows, and low→high fidelity wireframes |
+| `design-token-manager-agent` | Tokens, theming, and Figma Variables sync |
+| `accessibility-design-auditor-agent` | WCAG 2.2, contrast, and screen-reader order for design |
+| `motion-design-agent` | Micro-interactions, Framer Motion specs, and reduced-motion guards |
+| `brand-system-agent` | Brand tokens, typography, and component API harmony |
+| `landing-page-designer-agent` | Hero, social proof, and CTA hierarchy for high conversion |
+| `design-handoff-agent` | Specs, redlines, and asset slice for dev handoff |
+| `visual-qa-agent` | Pixel diff, perceptual hash, and responsive breakpoints QA |
+| `design-performance-auditor-agent` | Bundle/image/font budgets from design decisions |
+
+### Web Dev (10)
+| Agent | What it does |
+|---|---|
+| `frontend-scaffold-agent` | Vite/Next/Nuxt scaffold with TS, lint, and a11y baseline |
+| `backend-api-builder-agent` | REST/GraphQL/gRPC API with auth, pagination, and idempotency |
+| `fullstack-integrator-agent` | Frontend↔API↔DB wiring, env parity, and deploy gates |
+| `jamstack-deployer-agent` | Static + edge functions, ISR, and cache revalidation |
+| `ssr-optimizer-agent` | SSR/SSG/CSR tradeoffs, hydration, and streaming |
+| `web-perf-auditor-agent` | Lighthouse/Web Vitals, image/CDN, and critical path |
+| `web-security-hardener-agent` | CSP/HSTS, XSS/CSRF, and SRI for web apps |
+| `cms-orchestrator-agent` | Headless CMS (Sanity/Contentful), preview, and webhook |
+| `ecommerce-stack-agent` | Shopify/Medusa cart, checkout, and webhooks for commerce |
+| `realtime-collab-agent` | WebSocket/Yjs/CRDT for realtime collaboration |
+
+```bash
+# try any of the 90:
+python agents/solana-validator-ops-agent/cli/solana_validator_ops.py --text "solana validator vote account snapshot" 
+python agents/linux-boot-rescue-agent/cli/linux_boot_rescue.py --text "linux boot grub initramfs rescue" 
+python agents/llm-local-deployer-agent/cli/llm_local_deployer.py --text "deploy Ollama vLLM with GGUF and KV cache tuner for max TPS"
+python agents/figma-to-code-agent/cli/figma_to_code.py --text "Figma autolayout to Tailwind with design tokens"
 ```
 
 ## 🧪 Testing & CI

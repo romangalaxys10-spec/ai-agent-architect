@@ -1,5 +1,31 @@
 # Changelog
 
+## [2.5.0] - 2026-08-28 — 90 SysAdmin Series (525 Total)
+
+### Added — 90 sys-admin agents (Solana/blockchain/Linux/server/security & optimization/debugging & code reviewers/local LLM max perf/web design & web dev)
+- **Solana (10):** solana-validator-ops, solana-rpc-surgeon, solana-program-deployer, solana-indexer-architect, solana-token-ops, solana-staking-governance, solana-mev-shield, solana-ledger-forensics, solana-payments-pilot, solana-nft-ops
+- **Blockchain/EVM (10):** evm-node-ops, smart-contract-auditor, chain-indexer-general, cross-chain-bridge, wallet-ops, gas-optimizer, dao-governance, oracle-keeper, block-explorer, crypto-compliance-keeper
+- **Linux (10):** linux-boot-rescue, linux-filesystem-surgeon, linux-net-debug, linux-perf-flame, linux-selinux-guardian, linux-package-resolver, linux-log-forensics, linux-cron-orchestrator, linux-user-governance, linux-dist-upgrade
+- **Server Mgmt (10):** bare-metal-provisioner, server-monitoring-stack, server-backup-dr, server-capacity-planner, server-incident-commander, server-config-drift, server-patching-orchestrator, server-loadbalancer-tuner, server-dns-ops, server-virtualization
+- **Security/Optimization (10):** vuln-triage, threat-hunter, siem-ops, cspm-governance, zero-trust-architect, perf-bottleneck, memory-leak-hunter, cpu-profiler, io-tuner, cdn-optimizer-global
+- **Debugging/Code Reviewers (10):** deep-debugger, log-trace-correlator, flaky-test-hunter, static-analysis-orchestrator, code-review-verdict, pr-risk-scorer, regression-bisector, heap-dump-analyzer, race-condition-hunter, api-contract-tester
+- **Local LLM Max Speed/Perf (10):** llm-local-deployer, model-quantizer, vllm-optimizer, ollama-fleet, gpu-scheduler, inference-benchmark, kv-cache-tuner, model-router-perf, gguf-converter, llm-eval-perf
+- **Web Design (10):** figma-to-code, ux-wireframer, design-token-manager, accessibility-design-auditor, motion-design, brand-system, landing-page-designer, design-handoff, visual-qa, design-performance-auditor
+- **Web Dev (10):** frontend-scaffold, backend-api-builder, fullstack-integrator, jamstack-deployer, ssr-optimizer, web-perf-auditor, web-security-hardener, cms-orchestrator, ecommerce-stack, realtime-collab
+- Each: SKILL.md + sysadmin-grade core engine (sys_signals detection, secret exposure → critical, domain-specific hygiene) + CLI (--text/--file/--json, any cwd) — 525 total = 15 + 50 + 150 + 100 + 50 + 70 + 90
+- Tests: `tests/test_sys90_agents.py` (6 tests), EXPECTED_AGENTS 435→525
+- Example: `examples/sysadmin_demo.py`
+
+### Changed
+- README: badge 435→525, factory 435→525, added 90 SysAdmin tables + try-commands, layout 435→525
+- agents/AGENTS.md: header 435→525, added 90 SysAdmin tables
+- pyproject description 435→525
+
+### Quality Gates
+- All 525 CLIs pass --help from neutral cwd; all 525 engines pass analyze+format_report smoke
+
+---
+
 ## [2.4.0] - 2026-08-28 — 70 Social & Video Generation (435 Total)
 
 ### Added — 70 social/video control, automation & growth agents (LinkedIn, Instagram, X, YouTube, TikTok + freebie+Gemini)
@@ -100,6 +126,32 @@
 
 All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [2.5.0] - 2026-08-28 — 90 SysAdmin Series (525 Total)
+
+### Added — 90 sys-admin agents (Solana/blockchain/Linux/server/security & optimization/debugging & code reviewers/local LLM max perf/web design & web dev)
+- **Solana (10):** solana-validator-ops, solana-rpc-surgeon, solana-program-deployer, solana-indexer-architect, solana-token-ops, solana-staking-governance, solana-mev-shield, solana-ledger-forensics, solana-payments-pilot, solana-nft-ops
+- **Blockchain/EVM (10):** evm-node-ops, smart-contract-auditor, chain-indexer-general, cross-chain-bridge, wallet-ops, gas-optimizer, dao-governance, oracle-keeper, block-explorer, crypto-compliance-keeper
+- **Linux (10):** linux-boot-rescue, linux-filesystem-surgeon, linux-net-debug, linux-perf-flame, linux-selinux-guardian, linux-package-resolver, linux-log-forensics, linux-cron-orchestrator, linux-user-governance, linux-dist-upgrade
+- **Server Mgmt (10):** bare-metal-provisioner, server-monitoring-stack, server-backup-dr, server-capacity-planner, server-incident-commander, server-config-drift, server-patching-orchestrator, server-loadbalancer-tuner, server-dns-ops, server-virtualization
+- **Security/Optimization (10):** vuln-triage, threat-hunter, siem-ops, cspm-governance, zero-trust-architect, perf-bottleneck, memory-leak-hunter, cpu-profiler, io-tuner, cdn-optimizer-global
+- **Debugging/Code Reviewers (10):** deep-debugger, log-trace-correlator, flaky-test-hunter, static-analysis-orchestrator, code-review-verdict, pr-risk-scorer, regression-bisector, heap-dump-analyzer, race-condition-hunter, api-contract-tester
+- **Local LLM Max Speed/Perf (10):** llm-local-deployer, model-quantizer, vllm-optimizer, ollama-fleet, gpu-scheduler, inference-benchmark, kv-cache-tuner, model-router-perf, gguf-converter, llm-eval-perf
+- **Web Design (10):** figma-to-code, ux-wireframer, design-token-manager, accessibility-design-auditor, motion-design, brand-system, landing-page-designer, design-handoff, visual-qa, design-performance-auditor
+- **Web Dev (10):** frontend-scaffold, backend-api-builder, fullstack-integrator, jamstack-deployer, ssr-optimizer, web-perf-auditor, web-security-hardener, cms-orchestrator, ecommerce-stack, realtime-collab
+- Each: SKILL.md + sysadmin-grade core engine (sys_signals detection, secret exposure → critical, domain-specific hygiene) + CLI (--text/--file/--json, any cwd) — 525 total = 15 + 50 + 150 + 100 + 50 + 70 + 90
+- Tests: `tests/test_sys90_agents.py` (6 tests), EXPECTED_AGENTS 435→525
+- Example: `examples/sysadmin_demo.py`
+
+### Changed
+- README: badge 435→525, factory 435→525, added 90 SysAdmin tables + try-commands, layout 435→525
+- agents/AGENTS.md: header 435→525, added 90 SysAdmin tables
+- pyproject description 435→525
+
+### Quality Gates
+- All 525 CLIs pass --help from neutral cwd; all 525 engines pass analyze+format_report smoke
+
+---
 
 ## [2.4.0] - 2026-08-28 — 70 Social & Video Generation (435 Total)
 

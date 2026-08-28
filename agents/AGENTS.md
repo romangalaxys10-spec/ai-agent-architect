@@ -5,7 +5,7 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 
 ---
 
-## 🌟 Complete Sub-Agent Catalog (435 Specialized Sub-Agents)
+## 🌟 Complete Sub-Agent Catalog (525 Specialized Sub-Agents)
 
 ### 🧠 Cognitive Architecture & Metacognition (Depth-Skills Powered)
 | Sub-Agent | Category | Description | Primary CLI | Location |
@@ -668,6 +668,141 @@ All 50: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines `ana
 | `gemini-thumbnail-gen-agent` | Gemini/Imagen thumbnail prompts, text sparsity, and CTR hypothesis | `python cli/gemini_thumbnail_gen.py` |
 
 All 70: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines `analyze(text)` + `format_report`; `tests/test_social70_agents.py` (6 tests).
+
+
+---
+
+## 🛠️ 90 SysAdmin Series — Solana / Blockchain / Linux / Server / Security / Debug / Local LLM / Web Design & Web Dev
+
+*90 sys-admin agents — Solana/blockchain, Linux/server, security/perf, debugging/code review, local LLM max-perf, web design/dev. Same contract: SKILL.md + core engine + CLI + smoke tests.*
+
+### Solana (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `solana-validator-ops-agent` | Validator setup, vote accounts, snapshot sync, and delinquency triage | `python cli/solana_validator_ops.py` |
+| `solana-rpc-surgeon-agent` | RPC latency, rate-limits, Geyser/Yellowstone feeds, and failover routing | `python cli/solana_rpc_surgeon.py` |
+| `solana-program-deployer-agent` | Anchor/Pinocchio build, PDAs, IDL, and verified deploys | `python cli/solana_program_deployer.py` |
+| `solana-indexer-architect-agent` | Indexer design, account filters, Carbon/Vixen decoding, and backfill | `python cli/solana_indexer_architect.py` |
+| `solana-token-ops-agent` | SPL / Token-2022, mints, metadata, and treasury ops | `python cli/solana_token_ops.py` |
+| `solana-staking-governance-agent` | Stake pools, delegation, and Realms/Squads governance flows | `python cli/solana_staking_governance.py` |
+| `solana-mev-shield-agent` | Jito bundles, MEV forensics, and protection routing | `python cli/solana_mev_shield.py` |
+| `solana-ledger-forensics-agent` | Ledger replay, slot forensics, and anomaly diagnosis | `python cli/solana_ledger_forensics.py` |
+| `solana-payments-pilot-agent` | PayFi, fee sponsorship, and payment rail ops | `python cli/solana_payments_pilot.py` |
+| `solana-nft-ops-agent` | cNFT / Core, collection ops, and marketplace indexing | `python cli/solana_nft_ops.py` |
+
+### Blockchain / EVM (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `evm-node-ops-agent` | Geth/Reth/Erigon sync, peering, and pruning for EVM chains | `python cli/evm_node_ops.py` |
+| `smart-contract-auditor-agent` | Slither/Mythril-style checks, access control, and reentrancy triage | `python cli/smart_contract_auditor.py` |
+| `chain-indexer-general-agent` | Cross-chain indexer, RPC pooling, and reorg handling | `python cli/chain_indexer_general.py` |
+| `cross-chain-bridge-agent` | Bridge relayer, proof verification, and pause/guardian | `python cli/cross_chain_bridge.py` |
+| `wallet-ops-agent` | Custody, multisig (Squads/MPC), and key ceremony ops | `python cli/wallet_ops.py` |
+| `gas-optimizer-agent` | Gas profiling, calldata packing, and batch strategy | `python cli/gas_optimizer.py` |
+| `dao-governance-agent` | Proposals, voting, and execution queue ops | `python cli/dao_governance.py` |
+| `oracle-keeper-agent` | Price feeds, staleness, and circuit breaker | `python cli/oracle_keeper.py` |
+| `block-explorer-agent` | Explorer API, tracing, and label curation | `python cli/block_explorer.py` |
+| `crypto-compliance-keeper-agent` | KYT/AML, travel rule, and audit trail for chain ops | `python cli/crypto_compliance_keeper.py` |
+
+### Linux (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `linux-boot-rescue-agent` | GRUB/systemd-boot, initramfs, and rescue mode forensics | `python cli/linux_boot_rescue.py` |
+| `linux-filesystem-surgeon-agent` | fsck, LVM thin, XFS repair, and mount forensics | `python cli/linux_filesystem_surgeon.py` |
+| `linux-net-debug-agent` | tcpdump/Wireshark, conntrack, and `ss`/`ip` forensics | `python cli/linux_net_debug.py` |
+| `linux-perf-flame-agent` | perf, flame graphs, and pressure stall (PSI) diagnosis | `python cli/linux_perf_flame.py` |
+| `linux-selinux-guardian-agent` | SELinux/AppArmor audit, denials, and policy authoring | `python cli/linux_selinux_guardian.py` |
+| `linux-package-resolver-agent` | Dependency hell, holds/pins, and atomic rollback | `python cli/linux_package_resolver.py` |
+| `linux-log-forensics-agent` | journalctl, logrotate, and centralized shipping | `python cli/linux_log_forensics.py` |
+| `linux-cron-orchestrator-agent` | cron/systemd-timers, idempotency, and missed-job forensics | `python cli/linux_cron_orchestrator.py` |
+| `linux-user-governance-agent` | PAM, sudoers, and orphaned account hunting | `python cli/linux_user_governance.py` |
+| `linux-dist-upgrade-agent` | In-place upgrades, phased rollouts, and rollback rehearsals | `python cli/linux_dist_upgrade.py` |
+
+### Server Management (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `bare-metal-provisioner-agent` | PXE/iPXE, Redfish, and firmware attestation | `python cli/bare_metal_provisioner.py` |
+| `server-monitoring-stack-agent` | Prometheus/Grafana/Alertmanager with SLO burn and cardinality guards | `python cli/server_monitoring_stack.py` |
+| `server-backup-dr-agent` | Bare-metal backup, pilot-light DR, and restore drills | `python cli/server_backup_dr.py` |
+| `server-capacity-planner-agent` | CPU/mem/disk headroom, bin-packing, and auto-scale triggers | `python cli/server_capacity_planner.py` |
+| `server-incident-commander-agent` | Incident runbooks, war-room, and blameless postmortem | `python cli/server_incident_commander.py` |
+| `server-config-drift-agent` | Drift detection via Chef/Puppet/Ansible and remediation | `python cli/server_config_drift.py` |
+| `server-patching-orchestrator-agent` | Patch windows, canary rings, and live kernel patching | `python cli/server_patching_orchestrator.py` |
+| `server-loadbalancer-tuner-agent` | HAProxy/Nginx/Envoy tuning, health checks, and drains | `python cli/server_loadbalancer_tuner.py` |
+| `server-dns-ops-agent` | 权威 DNS, split-horizon, and DNSSEC forensics | `python cli/server_dns_ops.py` |
+| `server-virtualization-agent` | KVM/QEMU/libvirt, live migration, and snapshot hygiene | `python cli/server_virtualization.py` |
+
+### Security / Optimization (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `vuln-triage-agent` | CVE intake, EPSS, and patch priority with SLAs | `python cli/vuln_triage.py` |
+| `threat-hunter-agent` | Hypothesis-driven hunting, Sigma rules, and lateral movement mapping | `python cli/threat_hunter.py` |
+| `siem-ops-agent` | Log pipeline, detection-as-code, and false-positive tuning | `python cli/siem_ops.py` |
+| `cspm-governance-agent` | Cloud posture (CIS/AWS Foundational), drift, and auto-remediate | `python cli/cspm_governance.py` |
+| `zero-trust-architect-agent` | Identity-aware proxy, mTLS, and device trust for zero trust | `python cli/zero_trust_architect.py` |
+| `perf-bottleneck-agent` | Latency budgets, flame graphs, and regression gates | `python cli/perf_bottleneck.py` |
+| `memory-leak-hunter-agent` | Heap dumps, ASAN/Valgrind, and leak triage | `python cli/memory_leak_hunter.py` |
+| `cpu-profiler-agent` | pprof, perf, and hot-spot refactors | `python cli/cpu_profiler.py` |
+| `io-tuner-agent` | iostat, io_uring, and queue-depth tuning | `python cli/io_tuner.py` |
+| `cdn-optimizer-global-agent` | Edge cache keys, tiered caching, and purge hygiene | `python cli/cdn_optimizer_global.py` |
+
+### Debugging / Code Reviewers (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `deep-debugger-agent` | Repro-first debugging with bisect, time-travel, and trace stitching | `python cli/deep_debugger.py` |
+| `log-trace-correlator-agent` | Correlates logs↔traces↔metrics via trace IDs and baggage | `python cli/log_trace_correlator.py` |
+| `flaky-test-hunter-agent` | Flake detection, quarantine, and determinism fixes | `python cli/flaky_test_hunter.py` |
+| `static-analysis-orchestrator-agent` | Lints, SAST, type-check orchestration with SARIF rollup | `python cli/static_analysis_orchestrator.py` |
+| `code-review-verdict-agent` | Risk-ranked findings, CWE mapping, and merge gate | `python cli/code_review_verdict.py` |
+| `pr-risk-scorer-agent` | PR blast radius, churn, and reviewer assignment | `python cli/pr_risk_scorer.py` |
+| `regression-bisector-agent` | git bisect, bisection forensics, and fix verification | `python cli/regression_bisector.py` |
+| `heap-dump-analyzer-agent` | Heap histogram, dominator tree, and leak suspects | `python cli/heap_dump_analyzer.py` |
+| `race-condition-hunter-agent` | Data-race detection, happens-before, and lock ordering | `python cli/race_condition_hunter.py` |
+| `api-contract-tester-agent` | Pact/OpenAPI contract tests and breaking-change detection | `python cli/api_contract_tester.py` |
+
+### Local LLM — Max Speed/Perf (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `llm-local-deployer-agent` | Ollama/vLLM/llama.cpp local deploy with model registry | `python cli/llm_local_deployer.py` |
+| `model-quantizer-agent` | AWQ/GPTQ/GGUF/EXL2 with size vs perplexity tradeoffs | `python cli/model_quantizer.py` |
+| `vllm-optimizer-agent` | PagedAttention, continuous batching, and tensor parallel tuning | `python cli/vllm_optimizer.py` |
+| `ollama-fleet-agent` | Ollama fleet, model pulls, and Modelfile governance | `python cli/ollama_fleet.py` |
+| `gpu-scheduler-agent` | CUDA/MPS, VRAM bin-packing, and preemption for LLM | `python cli/gpu_scheduler.py` |
+| `inference-benchmark-agent` | TTFT/TPS, p95, and cost-per-1k for local LLM | `python cli/inference_benchmark.py` |
+| `kv-cache-tuner-agent` | KV quantization, prefix cache, and eviction policy | `python cli/kv_cache_tuner.py` |
+| `model-router-perf-agent` | Small→large routing by latency/cost SLA and fallbacks | `python cli/model_router_perf.py` |
+| `gguf-converter-agent` | HF → GGUF, vocab, and Metal/CUDA kernel mapping | `python cli/gguf_converter.py` |
+| `llm-eval-perf-agent` | Helm/eval harness for quality vs speed Pareto | `python cli/llm_eval_perf.py` |
+
+### Web Design (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `figma-to-code-agent` | Figma autolayout → Tailwind/React with token fidelity | `python cli/figma_to_code.py` |
+| `ux-wireframer-agent` | IA, user flows, and low→high fidelity wireframes | `python cli/ux_wireframer.py` |
+| `design-token-manager-agent` | Tokens, theming, and Figma Variables sync | `python cli/design_token_manager.py` |
+| `accessibility-design-auditor-agent` | WCAG 2.2, contrast, and screen-reader order for design | `python cli/accessibility_design_auditor.py` |
+| `motion-design-agent` | Micro-interactions, Framer Motion specs, and reduced-motion guards | `python cli/motion_design.py` |
+| `brand-system-agent` | Brand tokens, typography, and component API harmony | `python cli/brand_system.py` |
+| `landing-page-designer-agent` | Hero, social proof, and CTA hierarchy for high conversion | `python cli/landing_page_designer.py` |
+| `design-handoff-agent` | Specs, redlines, and asset slice for dev handoff | `python cli/design_handoff.py` |
+| `visual-qa-agent` | Pixel diff, perceptual hash, and responsive breakpoints QA | `python cli/visual_qa.py` |
+| `design-performance-auditor-agent` | Bundle/image/font budgets from design decisions | `python cli/design_performance_auditor.py` |
+
+### Web Dev (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `frontend-scaffold-agent` | Vite/Next/Nuxt scaffold with TS, lint, and a11y baseline | `python cli/frontend_scaffold.py` |
+| `backend-api-builder-agent` | REST/GraphQL/gRPC API with auth, pagination, and idempotency | `python cli/backend_api_builder.py` |
+| `fullstack-integrator-agent` | Frontend↔API↔DB wiring, env parity, and deploy gates | `python cli/fullstack_integrator.py` |
+| `jamstack-deployer-agent` | Static + edge functions, ISR, and cache revalidation | `python cli/jamstack_deployer.py` |
+| `ssr-optimizer-agent` | SSR/SSG/CSR tradeoffs, hydration, and streaming | `python cli/ssr_optimizer.py` |
+| `web-perf-auditor-agent` | Lighthouse/Web Vitals, image/CDN, and critical path | `python cli/web_perf_auditor.py` |
+| `web-security-hardener-agent` | CSP/HSTS, XSS/CSRF, and SRI for web apps | `python cli/web_security_hardener.py` |
+| `cms-orchestrator-agent` | Headless CMS (Sanity/Contentful), preview, and webhook | `python cli/cms_orchestrator.py` |
+| `ecommerce-stack-agent` | Shopify/Medusa cart, checkout, and webhooks for commerce | `python cli/ecommerce_stack.py` |
+| `realtime-collab-agent` | WebSocket/Yjs/CRDT for realtime collaboration | `python cli/realtime_collab.py` |
+
+All 90: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines `analyze(text)` + `format_report`; `tests/test_sys90_agents.py` (6 tests).
 
 ## ⚡ CLI Hub Discovery
 
