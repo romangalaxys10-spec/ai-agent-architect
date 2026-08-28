@@ -1,5 +1,29 @@
 # Changelog
 
+## [2.3.0] - 2026-08-28 — 50 HR/HRBP/L&D Deep Series (365 Total)
+
+### Added — 50 HR/HRBP/L&D highest-wanted agents (global search & hiring demand 2025–2026)
+- **HRBP & Strategic Partnering (12):** hrbp-strategic-partner, org-effectiveness, change-champion, business-alignment, stakeholder-influence, workforce-shaping, hrbp-coaching, transformation-lead, people-analytics-storyteller, strategic-workforce-advisor, hr-risk-compliance, future-of-work-architect
+- **Talent & Hiring Excellence (6):** talent-intelligence, employer-value, candidate-experience, hiring-manager-enablement, assessment-validation, internal-mobility-marketplace
+- **Performance, Succession & Career (7):** performance-enablement, goal-alignment, feedback-culture, nine-box-talent, succession-risk, career-mobility, talent-calibration
+- **Learning Strategy & Skills (6):** learning-needs-diagnostician, skills-ontology, capability-planner, learning-strategy-architect, learning-ecosystem, future-skills-scout
+- **Learning Design & Delivery (8):** instructional-architect, blended-learning, cohort-learning, social-learning, microlearning-crafter, scenario-simulation, video-learning-producer, facilitation-master
+- **Learning Measurement & Ops (5):** learning-analytics, kirkpatrick-evaluator, learning-roi, lms-ops, learning-vendor
+- **Culture, Engagement & Wellbeing (6):** listening-strategy, recognition-rituals, inclusion-belonging, wellbeing-strategist, resilience-burnout, team-effectiveness
+- Each: SKILL.md + HR-grade core engine (PII/bias/compliance guardrails, hr_signal_hits, measurement checks) + CLI (--text/--file/--json, any cwd) — 365 total = 15 + 50 + 150 + 100 + 50
+- Tests: `tests/test_hr50_agents.py` (6 tests), EXPECTED_AGENTS 315→365
+- Example: `examples/hr_ld_demo.py`
+
+### Changed
+- README: badge 315→365, factory 315→365, added 50 HR/HRBP/L&D tables + try-commands, layout 315→365
+- agents/AGENTS.md: header 315→365, added 50 HR series tables
+- pyproject description 315→365
+
+### Quality Gates
+- All 365 CLIs pass --help from neutral cwd; all 365 engines pass analyze+format_report smoke
+
+---
+
 ## [2.2.0] - 2026-08-28 — 100 Computer Use Series (315 Total)
 
 ### Added — 100 computer/browser/terminal/server control agents
@@ -52,6 +76,30 @@
 
 All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [2.3.0] - 2026-08-28 — 50 HR/HRBP/L&D Deep Series (365 Total)
+
+### Added — 50 HR/HRBP/L&D highest-wanted agents (global search & hiring demand 2025–2026)
+- **HRBP & Strategic Partnering (12):** hrbp-strategic-partner, org-effectiveness, change-champion, business-alignment, stakeholder-influence, workforce-shaping, hrbp-coaching, transformation-lead, people-analytics-storyteller, strategic-workforce-advisor, hr-risk-compliance, future-of-work-architect
+- **Talent & Hiring Excellence (6):** talent-intelligence, employer-value, candidate-experience, hiring-manager-enablement, assessment-validation, internal-mobility-marketplace
+- **Performance, Succession & Career (7):** performance-enablement, goal-alignment, feedback-culture, nine-box-talent, succession-risk, career-mobility, talent-calibration
+- **Learning Strategy & Skills (6):** learning-needs-diagnostician, skills-ontology, capability-planner, learning-strategy-architect, learning-ecosystem, future-skills-scout
+- **Learning Design & Delivery (8):** instructional-architect, blended-learning, cohort-learning, social-learning, microlearning-crafter, scenario-simulation, video-learning-producer, facilitation-master
+- **Learning Measurement & Ops (5):** learning-analytics, kirkpatrick-evaluator, learning-roi, lms-ops, learning-vendor
+- **Culture, Engagement & Wellbeing (6):** listening-strategy, recognition-rituals, inclusion-belonging, wellbeing-strategist, resilience-burnout, team-effectiveness
+- Each: SKILL.md + HR-grade core engine (PII/bias/compliance guardrails, hr_signal_hits, measurement checks) + CLI (--text/--file/--json, any cwd) — 365 total = 15 + 50 + 150 + 100 + 50
+- Tests: `tests/test_hr50_agents.py` (6 tests), EXPECTED_AGENTS 315→365
+- Example: `examples/hr_ld_demo.py`
+
+### Changed
+- README: badge 315→365, factory 315→365, added 50 HR/HRBP/L&D tables + try-commands, layout 315→365
+- agents/AGENTS.md: header 315→365, added 50 HR series tables
+- pyproject description 315→365
+
+### Quality Gates
+- All 365 CLIs pass --help from neutral cwd; all 365 engines pass analyze+format_report smoke
+
+---
 
 ## [2.2.0] - 2026-08-28 — 100 Computer Use Series (315 Total)
 

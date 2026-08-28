@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Tests: 183 offline](https://img.shields.io/badge/tests-183%20offline-brightgreen.svg)]()
-[![Agents Hub: 315 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-315%20Complete%20Agents-brightgreen.svg)]()
+[![Agents Hub: 365 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-365%20Complete%20Agents-brightgreen.svg)]()
 [![Zero-Key Runtime](https://img.shields.io/badge/runtime-zero%20API%20keys-success.svg)]()
 [![MCP](https://img.shields.io/badge/protocol-MCP%20%2B%20A2A-blueviolet.svg)]()
 
@@ -154,9 +154,9 @@ Traditional models suffer from **Premature Closure** and **Pattern Gravity**. Th
 
 ---
 
-## 🏭 Agents Factory: 315 Complete Sub-Agents (15 Founding + 50 Demand Suite + 150 Power Expansion + 100 Computer Use)
+## 🏭 Agents Factory: 365 Complete Sub-Agents (15 Founding + 50 Demand + 150 Power + 100 Computer Use + 50 HR/HRBP/L&D)
 
-Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **315 total = 15 founding + 50 demand suite + 150 power expansion + 100 computer/browser/terminal/server.**
+Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **365 total = 15 founding + 50 demand suite + 150 power expansion + 100 computer use + 50 HR/HRBP/L&D.**
 
 | # | Agent | Domain |
 |---|-------|--------|
@@ -237,7 +237,7 @@ core/
 ├── orchestrator.py         # hierarchical / pipeline / mesh / blackboard
 ├── tool_registry.py        # schemas, validation pipeline, hooks, annotations
 ├── depth_cognitive_engine.py · steve_jobs_lens.py · engine.py · registry.py
-agents/                     # 315 complete sub-agents (SKILL.md + core + cli)
+agents/                     # 365 complete sub-agents (SKILL.md + core + cli)
 factory/                    # skill builder, prompt synthesizer
 evals/                      # versioned rubrics + golden datasets
 examples/                   # end-to-end walkthroughs
@@ -625,6 +625,98 @@ python agents/browser-pilot-agent/cli/browser_pilot.py --text "automate checkout
 python agents/shell-pilot-agent/cli/shell_pilot.py --text "debug bash zsh prompt on linux"
 python agents/linux-admin-agent/cli/linux_admin.py --text "systemd unit for ubuntu with journalctl" --os linux
 python agents/windows-admin-agent/cli/windows_admin.py --text "powershell remoting with registry on windows" --os windows
+```
+
+
+## 🧑‍💼 50 HR / HRBP / L&D Deep Series — Highest Wanted & Searched (2025–2026)
+
+*50 deeply-thought HR/HRBP/L&D agents — the top-searched, highest-hiring-volume capabilities: HRBP business partnering (#1 HR trend), skills ontology/taxonomy, people analytics storytelling, TNA & capability planning, instructional/ blended/ cohort/ microlearning, Kirkpatrick & ROI, performance enablement & 9-box/succession, DEI & wellbeing. Every agent: offline, HR-grade guardrails (PII/bias/compliance), CLI from any cwd.*
+
+Full catalog: [`agents/AGENTS.md`](agents/AGENTS.md). Discoverable via `AgentRegistry.discover_agents()`.
+
+### HRBP & Strategic Partnering (12)
+| Agent | What it does |
+|---|---|
+| `hrbp-strategic-partner-agent` | End-to-end HRBP business partnering: stakeholder alignment, diagnostic, and value-tracked action plans |
+| `org-effectiveness-agent` | Org health & effectiveness audit with spans/layers, decision rights, and friction heatmaps |
+| `change-champion-agent` | ADKAR-based change readiness, adoption curves, sponsor mapping, and comms cadence |
+| `business-alignment-agent` | HR→business OKR cascade, strategy translation, and quarterly business review narratives |
+| `stakeholder-influence-agent` | Power/interest mapping, influence paths, and coalition building for HR initiatives |
+| `workforce-shaping-agent` | Scenario-based workforce shaping: demand/supply gaps, build/buy/borrow/bot tradeoffs |
+| `hrbp-coaching-agent` | HRBP as coach: GROW-based leader coaching, contracting, and impact evidence |
+| `transformation-lead-agent` | HR operating model & digital transformation roadmaps with maturity staging |
+| `people-analytics-storyteller-agent` | People analytics → executive narrative: hypothesis, viz choice, and so-what |
+| `strategic-workforce-advisor-agent` | Strategic workforce planning (SWP): 3-horizon headcount and skills forecast |
+| `hr-risk-compliance-agent` | Employment law, policy compliance, audit readiness, and mitigation playbooks |
+| `future-of-work-architect-agent` | Hybrid/remote, skills-based org, and AI-augmented work design |
+
+### Talent & Hiring Excellence (6)
+| Agent | What it does |
+|---|---|
+| `talent-intelligence-agent` | Market talent mapping, competitor flow, and availability/cost heatmaps |
+| `employer-value-agent` | EVP articulation, employer brand audit, and career site narratives |
+| `candidate-experience-agent` | Candidate journey mapping, friction scoring, and NPS recovery |
+| `hiring-manager-enablement-agent` | Hiring manager intake, calibration, and inclusive interviewing capability |
+| `assessment-validation-agent` | Selection assessment design, adverse impact, reliability/validity, and fairness |
+| `internal-mobility-marketplace-agent` | Internal talent marketplace: skills inference, matching, and career nudges |
+
+### Performance, Succession & Career (7)
+| Agent | What it does |
+|---|---|
+| `performance-enablement-agent` | Continuous performance enablement vs annual review: check-ins, feed-forward, and calibration |
+| `goal-alignment-agent` | Goal cascade, OKR quality, measurability, and vertical/horizontal alignment |
+| `feedback-culture-agent` | Feedback cadence, psychological safety, and 360/peer feedback systems |
+| `nine-box-talent-agent` | 9-box facilitation, placement, bias flags, and development vs reward actions |
+| `succession-risk-agent` | Bench strength, flight risk, succession slate health, and mitigation |
+| `career-mobility-agent` | Career lattices, progression frameworks, and internal mobility pathways |
+| `talent-calibration-agent` | Cross-team talent calibration, distribution health, and bias-safe facilitation |
+
+### Learning Strategy & Skills (6)
+| Agent | What it does |
+|---|---|
+| `learning-needs-diagnostician-agent` | TNA done right: performance gap → learning vs non-learning root cause |
+| `skills-ontology-agent` | Skills taxonomy/ontology design, dedup, proficiency scales, and inference |
+| `capability-planner-agent` | Future capability planning: critical roles × skills × time horizon matrix |
+| `learning-strategy-architect-agent` | L&D strategy & operating model: build/buy, governance, and portfolio balance |
+| `learning-ecosystem-agent` | Ecosystem curation: LMS/LXP, content, cohorts, mentoring, and social |
+| `future-skills-scout-agent` | Horizon scanning for emerging skills with adjacency and decay rates |
+
+### Learning Design & Delivery (8)
+| Agent | What it does |
+|---|---|
+| `instructional-architect-agent` | ADDIE/SAM, learning objectives (Bloom), and assessment alignment |
+| `blended-learning-agent` | Blended journeys: pre-work → live → practice → reinforcement spacing |
+| `cohort-learning-agent` | Cohort-based courses: pacing, peer learning, accountability, and community |
+| `social-learning-agent` | Social learning: community of practice, UGC, and expert network activation |
+| `microlearning-crafter-agent` | Microlearning & nudges: spacing, retrieval practice, and in-flow performance support |
+| `scenario-simulation-agent` | Branching scenarios & simulations: consequence design and skill transfer |
+| `video-learning-producer-agent` | Learning video production: scripting, retention hooks, and chaptered delivery |
+| `facilitation-master-agent` | Elite facilitation: session design, energy arcs, and difficult-room handling |
+
+### Learning Measurement & Ops (5)
+| Agent | What it does |
+|---|---|
+| `learning-analytics-agent` | Learning analytics: completion → behavior → business KPI chain |
+| `kirkpatrick-evaluator-agent` | Levels 1-4 with leading indicators, control groups, and attribution guardrails |
+| `learning-roi-agent` | Phillips ROI: cost capture, monetized benefits, and ROI/story for CFO |
+| `lms-ops-agent` | LMS/LXP ops: catalog hygiene, assignments, compliance tracking, and integrations |
+| `learning-vendor-agent` | Vendor selection, SOW/quality gates, and build-vs-buy decisions |
+
+### Culture, Engagement & Wellbeing (6)
+| Agent | What it does |
+|---|---|
+| `listening-strategy-agent` | Listening architecture: census/pulse/lifecycle/moment plus closed-loop |
+| `recognition-rituals-agent` | Recognition systems: peer, milestone, and values-tied rituals |
+| `inclusion-belonging-agent` | Belonging diagnostics, moments that matter, and intervention sequencing |
+| `wellbeing-strategist-agent` | Wellbeing pillars, program portfolio, and manager enablement |
+| `resilience-burnout-agent` | Burnout signals, workload forensics, recovery sprints, and resilience skills |
+| `team-effectiveness-agent` | Team health: trust, clarity, dynamics, and Lencioni-style friction mapping |
+
+```bash
+# try any of the 50:
+python agents/hrbp-strategic-partner-agent/cli/hrbp_strategic_partner.py --text "HRBP diagnostic for finance org with business alignment" --json
+python agents/learning-needs-diagnostician-agent/cli/learning_needs_diagnostician.py --text "TNA: sales ramp performance gap vs skills" 
+python agents/kirkpatrick-evaluator-agent/cli/kirkpatrick_evaluator.py --text "Level 3-4 evaluation with control group for leadership program"
 ```
 
 ## 🧪 Testing & CI

@@ -5,7 +5,7 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 
 ---
 
-## 🌟 Complete Sub-Agent Catalog (315 Specialized Sub-Agents)
+## 🌟 Complete Sub-Agent Catalog (365 Specialized Sub-Agents)
 
 ### 🧠 Cognitive Architecture & Metacognition (Depth-Skills Powered)
 | Sub-Agent | Category | Description | Primary CLI | Location |
@@ -478,6 +478,93 @@ All 150: `python agents/<slug>/cli/<module>.py --help` from any cwd — same con
 | `migration-ops-agent` | Lift-and-shift vs replatform, data gravity, cutover windows, and rollback rehearsals | `python cli/migration_ops.py` |
 
 All 100: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines expose `analyze(text, os_hint)` + `format_report`; `tests/test_computer100_agents.py` (6 tests).
+
+
+---
+
+## 🧑‍💼 50 HR / HRBP / L&D Deep Series — Highest Wanted & Searched
+
+*50 HR-grade agents — top global demand: HRBP, skills-based org, TNA, instructional/blended/cohort, Kirkpatrick/ROI, 9-box/succession, people analytics, DEI/wellbeing. Same contract: SKILL.md + core engine + CLI + smoke tests, with PII/bias guardrails.*
+
+### HRBP & Strategic Partnering (12)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `hrbp-strategic-partner-agent` | End-to-end HRBP business partnering: stakeholder alignment, diagnostic, and value-tracked action plans | `python cli/hrbp_strategic_partner.py` |
+| `org-effectiveness-agent` | Org health & effectiveness audit with spans/layers, decision rights, and friction heatmaps | `python cli/org_effectiveness.py` |
+| `change-champion-agent` | ADKAR-based change readiness, adoption curves, sponsor mapping, and comms cadence | `python cli/change_champion.py` |
+| `business-alignment-agent` | HR→business OKR cascade, strategy translation, and quarterly business review narratives | `python cli/business_alignment.py` |
+| `stakeholder-influence-agent` | Power/interest mapping, influence paths, and coalition building for HR initiatives | `python cli/stakeholder_influence.py` |
+| `workforce-shaping-agent` | Scenario-based workforce shaping: demand/supply gaps, build/buy/borrow/bot tradeoffs | `python cli/workforce_shaping.py` |
+| `hrbp-coaching-agent` | HRBP as coach: GROW-based leader coaching, contracting, and impact evidence | `python cli/hrbp_coaching.py` |
+| `transformation-lead-agent` | HR operating model & digital transformation roadmaps with maturity staging | `python cli/transformation_lead.py` |
+| `people-analytics-storyteller-agent` | People analytics → executive narrative: hypothesis, viz choice, and so-what | `python cli/people_analytics_storyteller.py` |
+| `strategic-workforce-advisor-agent` | Strategic workforce planning (SWP): 3-horizon headcount and skills forecast | `python cli/strategic_workforce_advisor.py` |
+| `hr-risk-compliance-agent` | Employment law, policy compliance, audit readiness, and mitigation playbooks | `python cli/hr_risk_compliance.py` |
+| `future-of-work-architect-agent` | Hybrid/remote, skills-based org, and AI-augmented work design | `python cli/future_of_work_architect.py` |
+
+### Talent & Hiring Excellence (6)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `talent-intelligence-agent` | Market talent mapping, competitor flow, and availability/cost heatmaps | `python cli/talent_intelligence.py` |
+| `employer-value-agent` | EVP articulation, employer brand audit, and career site narratives | `python cli/employer_value.py` |
+| `candidate-experience-agent` | Candidate journey mapping, friction scoring, and NPS recovery | `python cli/candidate_experience.py` |
+| `hiring-manager-enablement-agent` | Hiring manager intake, calibration, and inclusive interviewing capability | `python cli/hiring_manager_enablement.py` |
+| `assessment-validation-agent` | Selection assessment design, adverse impact, reliability/validity, and fairness | `python cli/assessment_validation.py` |
+| `internal-mobility-marketplace-agent` | Internal talent marketplace: skills inference, matching, and career nudges | `python cli/internal_mobility_marketplace.py` |
+
+### Performance, Succession & Career (7)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `performance-enablement-agent` | Continuous performance enablement vs annual review: check-ins, feed-forward, and calibration | `python cli/performance_enablement.py` |
+| `goal-alignment-agent` | Goal cascade, OKR quality, measurability, and vertical/horizontal alignment | `python cli/goal_alignment.py` |
+| `feedback-culture-agent` | Feedback cadence, psychological safety, and 360/peer feedback systems | `python cli/feedback_culture.py` |
+| `nine-box-talent-agent` | 9-box facilitation, placement, bias flags, and development vs reward actions | `python cli/nine_box_talent.py` |
+| `succession-risk-agent` | Bench strength, flight risk, succession slate health, and mitigation | `python cli/succession_risk.py` |
+| `career-mobility-agent` | Career lattices, progression frameworks, and internal mobility pathways | `python cli/career_mobility.py` |
+| `talent-calibration-agent` | Cross-team talent calibration, distribution health, and bias-safe facilitation | `python cli/talent_calibration.py` |
+
+### Learning Strategy & Skills (6)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `learning-needs-diagnostician-agent` | TNA done right: performance gap → learning vs non-learning root cause | `python cli/learning_needs_diagnostician.py` |
+| `skills-ontology-agent` | Skills taxonomy/ontology design, dedup, proficiency scales, and inference | `python cli/skills_ontology.py` |
+| `capability-planner-agent` | Future capability planning: critical roles × skills × time horizon matrix | `python cli/capability_planner.py` |
+| `learning-strategy-architect-agent` | L&D strategy & operating model: build/buy, governance, and portfolio balance | `python cli/learning_strategy_architect.py` |
+| `learning-ecosystem-agent` | Ecosystem curation: LMS/LXP, content, cohorts, mentoring, and social | `python cli/learning_ecosystem.py` |
+| `future-skills-scout-agent` | Horizon scanning for emerging skills with adjacency and decay rates | `python cli/future_skills_scout.py` |
+
+### Learning Design & Delivery (8)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `instructional-architect-agent` | ADDIE/SAM, learning objectives (Bloom), and assessment alignment | `python cli/instructional_architect.py` |
+| `blended-learning-agent` | Blended journeys: pre-work → live → practice → reinforcement spacing | `python cli/blended_learning.py` |
+| `cohort-learning-agent` | Cohort-based courses: pacing, peer learning, accountability, and community | `python cli/cohort_learning.py` |
+| `social-learning-agent` | Social learning: community of practice, UGC, and expert network activation | `python cli/social_learning.py` |
+| `microlearning-crafter-agent` | Microlearning & nudges: spacing, retrieval practice, and in-flow performance support | `python cli/microlearning_crafter.py` |
+| `scenario-simulation-agent` | Branching scenarios & simulations: consequence design and skill transfer | `python cli/scenario_simulation.py` |
+| `video-learning-producer-agent` | Learning video production: scripting, retention hooks, and chaptered delivery | `python cli/video_learning_producer.py` |
+| `facilitation-master-agent` | Elite facilitation: session design, energy arcs, and difficult-room handling | `python cli/facilitation_master.py` |
+
+### Learning Measurement & Ops (5)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `learning-analytics-agent` | Learning analytics: completion → behavior → business KPI chain | `python cli/learning_analytics.py` |
+| `kirkpatrick-evaluator-agent` | Levels 1-4 with leading indicators, control groups, and attribution guardrails | `python cli/kirkpatrick_evaluator.py` |
+| `learning-roi-agent` | Phillips ROI: cost capture, monetized benefits, and ROI/story for CFO | `python cli/learning_roi.py` |
+| `lms-ops-agent` | LMS/LXP ops: catalog hygiene, assignments, compliance tracking, and integrations | `python cli/lms_ops.py` |
+| `learning-vendor-agent` | Vendor selection, SOW/quality gates, and build-vs-buy decisions | `python cli/learning_vendor.py` |
+
+### Culture, Engagement & Wellbeing (6)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `listening-strategy-agent` | Listening architecture: census/pulse/lifecycle/moment plus closed-loop | `python cli/listening_strategy.py` |
+| `recognition-rituals-agent` | Recognition systems: peer, milestone, and values-tied rituals | `python cli/recognition_rituals.py` |
+| `inclusion-belonging-agent` | Belonging diagnostics, moments that matter, and intervention sequencing | `python cli/inclusion_belonging.py` |
+| `wellbeing-strategist-agent` | Wellbeing pillars, program portfolio, and manager enablement | `python cli/wellbeing_strategist.py` |
+| `resilience-burnout-agent` | Burnout signals, workload forensics, recovery sprints, and resilience skills | `python cli/resilience_burnout.py` |
+| `team-effectiveness-agent` | Team health: trust, clarity, dynamics, and Lencioni-style friction mapping | `python cli/team_effectiveness.py` |
+
+All 50: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines `analyze(text)` + `format_report`; `tests/test_hr50_agents.py` (6 tests).
 
 ## ⚡ CLI Hub Discovery
 

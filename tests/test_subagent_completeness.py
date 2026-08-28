@@ -72,7 +72,17 @@ EXPECTED_AGENTS = [
     "winget-choco-agent", "windows-security-agent", "ad-identity-agent", "ci-cd-orchestrator-agent", "observability-stack-agent", 
     "infra-provisioner-agent", "ansible-pilot-agent", "tls-cert-agent", "db-ops-agent", "queue-ops-agent", 
     "cdn-edge-agent", "incident-ops-agent", "cost-ops-agent", "compliance-ops-agent", "secrets-ops-agent", 
-    "gitops-pilot-agent", "edge-iot-agent", "perf-lab-agent", "disaster-recovery-agent", "migration-ops-agent",
+    "gitops-pilot-agent", "edge-iot-agent", "perf-lab-agent", "disaster-recovery-agent", "migration-ops-agent", 
+    "hrbp-strategic-partner-agent", "org-effectiveness-agent", "change-champion-agent", "business-alignment-agent", "stakeholder-influence-agent", 
+    "workforce-shaping-agent", "hrbp-coaching-agent", "transformation-lead-agent", "people-analytics-storyteller-agent", "strategic-workforce-advisor-agent", 
+    "hr-risk-compliance-agent", "future-of-work-architect-agent", "talent-intelligence-agent", "employer-value-agent", "candidate-experience-agent", 
+    "hiring-manager-enablement-agent", "assessment-validation-agent", "internal-mobility-marketplace-agent", "performance-enablement-agent", "goal-alignment-agent", 
+    "feedback-culture-agent", "nine-box-talent-agent", "succession-risk-agent", "career-mobility-agent", "talent-calibration-agent", 
+    "learning-needs-diagnostician-agent", "skills-ontology-agent", "capability-planner-agent", "learning-strategy-architect-agent", "learning-ecosystem-agent", 
+    "future-skills-scout-agent", "instructional-architect-agent", "blended-learning-agent", "cohort-learning-agent", "social-learning-agent", 
+    "microlearning-crafter-agent", "scenario-simulation-agent", "video-learning-producer-agent", "facilitation-master-agent", "learning-analytics-agent", 
+    "kirkpatrick-evaluator-agent", "learning-roi-agent", "lms-ops-agent", "learning-vendor-agent", "listening-strategy-agent", 
+    "recognition-rituals-agent", "inclusion-belonging-agent", "wellbeing-strategist-agent", "resilience-burnout-agent", "team-effectiveness-agent",
 ]
 
 
