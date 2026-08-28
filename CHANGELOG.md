@@ -1,5 +1,34 @@
 # Changelog
 
+## [2.1.0] — 2026-08-28
+
+### Added — Top-50 Demand-Driven Agent Suite
+- 50 new end-to-end sub-agents covering the most-searched agent categories worldwide:
+  Coding & Dev (10), Customer Support (5), Sales & Marketing (7), Research & Analysis (5),
+  Personal Productivity (5), Finance (4), HR & Recruiting (4), Content & Creative (4),
+  Ops/IT/Security (3), Education/Legal/Life (3).
+- Demand basis: 2025–2026 global search & market research (research artifacts in repo history).
+- Each agent ships: SKILL.md contract, offline-deterministic core engine, argparse CLI
+  (runs from any cwd), and functional smoke tests.
+- New test file `tests/test_top50_agents.py` (55 tests: structure, frontmatter, registry
+  auto-discovery, CLI execution, per-engine functional assertions).
+- `tests/test_subagent_completeness.py` extended from 15 → 65 agents.
+- `agents/AGENTS.md` hub catalog extended with the full Top-50 directory.
+
+### Fixed
+- SAST Sentinel: SQL-injection rule backreference bug (f-string prefix capture).
+- Fact Check / Deep Research: NUM_RE group-extraction crash; corroboration switched to
+  overlap coefficient; numeric contradiction detection normalized.
+- Resume Screener: capturing-group bug that nulled required-skills extraction.
+- Commit Crafter: unterminated subpattern in the breaking-change detector.
+- Incident Commander: severity-rule lookup crash on 3-tuples.
+- Competitor Radar: plural-form misses on pricing verbs.
+- ~15 dataclass field-ordering fixes across new engines (non-default after default).
+
+### Tests
+- Suite: 183 → 239 tests, all offline (zero API keys).
+
+
 All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 

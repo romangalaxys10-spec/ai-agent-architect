@@ -15,11 +15,28 @@ EXPECTED_AGENTS = [
     "invoice-billing-sentinel", "linkedin-intent-sniper", "model-bridge-router",
     "product-launch-orchestrator", "senior-architect-agent", "skill-factory-agent",
     "solana-stream-sentinel", "steve-jobs-agent", "superdesign-agent",
+    # --- Top-50 demand-driven suite (2026) ---
+    "code-review-sentinel", "test-forge-agent", "bug-triage-agent", "ci-surgeon-agent",
+    "refactor-pilot-agent", "doc-scribe-agent", "sast-sentinel-agent", "dep-guardian-agent",
+    "migration-planner-agent", "commit-crafter-agent", "ticket-router-agent",
+    "kb-curator-agent", "escalation-shield-agent", "voice-of-customer-agent",
+    "sla-sentinel-agent", "lead-qualifier-agent", "outreach-personalizer-agent",
+    "meeting-brief-agent", "crm-hygiene-agent", "competitor-radar-agent",
+    "seo-content-strategist-agent", "ad-campaign-optimizer-agent", "deep-research-agent",
+    "data-analyst-agent", "fact-check-agent", "market-scout-agent", "literature-review-agent",
+    "email-triage-agent", "calendar-architect-agent", "meeting-scribe-agent",
+    "trip-compass-agent", "deal-hunter-agent", "invoice-intake-agent", "expense-auditor-agent",
+    "finstat-analyst-agent", "portfolio-scout-agent", "resume-screener-agent",
+    "interview-coach-agent", "onboarding-guide-agent", "culture-pulse-agent",
+    "content-calendar-agent", "script-writer-agent", "social-media-manager-agent",
+    "copy-editor-agent", "cloud-cost-optimizer-agent", "incident-commander-agent",
+    "access-review-agent", "socratic-tutor-agent", "language-coach-agent",
+    "contract-reviewer-agent",
 ]
 
 
 class TestSubAgentCompleteness(unittest.TestCase):
-    def test_all_fifteen_agents_present(self):
+    def test_all_sixtyfive_agents_present(self):
         present = sorted(d for d in os.listdir(AGENTS_DIR) if os.path.isdir(os.path.join(AGENTS_DIR, d)))
         for agent in EXPECTED_AGENTS:
             self.assertIn(agent, present, f"missing sub-agent directory: {agent}")

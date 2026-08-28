@@ -245,6 +245,41 @@ tests/                      # 183 tests — all offline
 docs/                       # compendium, patterns, product DNA, skill factory spec
 ```
 
+## 🌍 Top-50 Demand-Driven Agent Suite (2026)
+
+The 50 most-wanted, highest-searched agent capabilities — researched from global 2025–2026 demand data
+(coding agents #1 search class, support automation = largest enterprise spend, sales agents $3.25B @ 44.7% CAGR,
+deep research = fastest-growing term) — now shipped as first-class sub-agents:
+
+**Coding & Dev (10)** · code-review-sentinel, test-forge-agent, bug-triage-agent, ci-surgeon-agent, refactor-pilot-agent, doc-scribe-agent, sast-sentinel-agent, dep-guardian-agent, migration-planner-agent, commit-crafter-agent
+
+**Customer Support (5)** · ticket-router-agent, kb-curator-agent, escalation-shield-agent, voice-of-customer-agent, sla-sentinel-agent
+
+**Sales & Marketing (7)** · lead-qualifier-agent, outreach-personalizer-agent, meeting-brief-agent, crm-hygiene-agent, competitor-radar-agent, seo-content-strategist-agent, ad-campaign-optimizer-agent
+
+**Research & Analysis (5)** · deep-research-agent, data-analyst-agent, fact-check-agent, market-scout-agent, literature-review-agent
+
+**Personal Productivity (5)** · email-triage-agent, calendar-architect-agent, meeting-scribe-agent, trip-compass-agent, deal-hunter-agent
+
+**Finance (4)** · invoice-intake-agent, expense-auditor-agent, finstat-analyst-agent, portfolio-scout-agent
+
+**HR & Recruiting (4)** · resume-screener-agent, interview-coach-agent, onboarding-guide-agent, culture-pulse-agent
+
+**Content & Creative (4)** · content-calendar-agent, script-writer-agent, social-media-manager-agent, copy-editor-agent
+
+**Ops, IT & Security (3)** · cloud-cost-optimizer-agent, incident-commander-agent, access-review-agent
+
+**Education, Legal & Life (3)** · socratic-tutor-agent, language-coach-agent, contract-reviewer-agent
+
+Every agent: offline-deterministic engine, argparse CLI (runs from any cwd), SKILL.md contract, and
+functional smoke tests. Full catalog with per-agent tables: [`agents/AGENTS.md`](agents/AGENTS.md).
+Test suite: `python -m pytest tests/test_top50_agents.py` (56 tests).
+
+```bash
+# try one:
+python agents/sast-sentinel-agent/cli/sast_sentinel.py --code 'cursor.execute(f"SELECT * FROM t WHERE id={uid}")'
+```
+
 ## 🧪 Testing & CI
 
 ```bash
