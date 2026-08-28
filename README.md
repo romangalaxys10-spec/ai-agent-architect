@@ -4,7 +4,7 @@
 [![CI](https://github.com/romangalaxys10-spec/ai-agent-architect/actions/workflows/ci.yml/badge.svg)](https://github.com/romangalaxys10-spec/ai-agent-architect/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Agents Hub: 9 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-9%20Active%20Agents-brightgreen.svg)]()
+[![Agents Hub: 14 Active Sub-Agents](https://img.shields.io/badge/Agents%20Hub-14%20Active%20Agents-brightgreen.svg)]()
 [![Steve Jobs DNA](https://img.shields.io/badge/Design-Insanely%20Great-black.svg)]()
 
 > **"An AI Agent is not a chatbot with a system prompt. It is an autonomous cognitive engine built with uncompromising taste, radical focus, and resilient architecture."**
@@ -15,7 +15,7 @@
 
 **AI Agent Architect** is a comprehensive, production-grade framework, cognitive engine, and monorepo sub-agent factory designed to architect, scaffold, test, and deploy world-class autonomous agents.
 
-Born at the intersection of **Senior Systems Architecture**, **Skill Factory Engineering**, and the **Steve Jobs Product Philosophy**, this framework unites modular sub-agents under a central orchestrator.
+Born at the intersection of **Senior Systems Architecture**, **Skill Factory Engineering**, and the **Steve Jobs Product Philosophy**, this framework houses 14 specialized sub-agents under a unified orchestrator.
 
 ---
 
@@ -29,10 +29,10 @@ Born at the intersection of **Senior Systems Architecture**, **Skill Factory Eng
         ┌───────────────────┬──────────────────┼───────────────────┬───────────────────┐
         ▼                   ▼                  ▼                   ▼                   ▼
 ┌───────────────┐   ┌───────────────┐  ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
-│ SuperDesign   │   │ SolanaStream  │  │ CareerHunter  │   │ ModelBridge   │   │ BinaryReverse │
-│ Agent (v2.0)  │   │ Sentinel      │  │ Orchestrator  │   │ Router        │   │ Sentinel      │
+│ SuperDesign   │   │ SolanaStream  │  │ LinkedIn      │   │ Discord Radar │   │ ProductLaunch │
+│ Agent (v2.0)  │   │ Sentinel      │  │ Intent Sniper │   │ Community     │   │ Orchestrator  │
 └───────────────┘   └───────────────┘  └───────────────┘   └───────────────┘   └───────────────┘
- (Anti-AI-Slop)      (gRPC + Sniff)     (ATS + CRM)         (GLM / Claude)      (Mach-O / Sec)
+ (Anti-AI-Slop)      (gRPC + Sniff)     (B2B Outreach)      (Telemetry Lead)    (Show HN / PH)
 ```
 
 ---
@@ -41,36 +41,27 @@ Born at the intersection of **Senior Systems Architecture**, **Skill Factory Eng
 
 All specialized sub-agents are housed inside the [`agents/`](./agents) directory, each equipped with its own `SKILL.md`, CLI tools, core logic, and test suites.
 
-### 2. 🎨 `superdesign-agent` (Anti-AI-Slop Design & Keynote Engine)
-* **Location:** [`agents/superdesign-agent/`](./agents/superdesign-agent)
-* **What It Does:** 100% credit-free design engine producing responsive websites, 16:9 keynote decks, and Teenage Engineering telemetry HUDs.
-* **Anti-Slop Guarantee:** Built-in `AntiSlopAuditor` banishes purple gradient blobs, generic Inter fonts, and buzzwords.
-* **CLI Command:** `superdesign site --theme swiss_international` | `superdesign audit --file site.html`
+### 2. 🎨 Design, Product & Telemetry
+* **`superdesign-agent`**: 100% credit-free design engine producing responsive websites, 16:9 keynote decks, and Teenage Engineering telemetry HUDs with built-in `AntiSlopAuditor`. (`agents/superdesign-agent`)
+* **`steve-jobs-agent`**: Product taste and radical focus sub-agent. Evaluates designs, cuts 80% bloat, enforces *The Whole Widget*, and delivers binary quality verdicts. (`agents/steve-jobs-agent`)
 
-### 3. ⚡ `solana-stream-sentinel` (Real-Time On-Chain Stream & DEX Decoder)
-* **Location:** [`agents/solana-stream-sentinel/`](./agents/solana-stream-sentinel)
-* **What It Does:** Ingests Yellowstone Geyser gRPC streams, auto-decodes instruction discriminators (Meteora DLMM, Raydium CPMM/AMMv4, PumpSwap), and simulates MEV/sandwich attack preflight safety.
-* **CLI Command:** `python agents/solana-stream-sentinel/cli/sentinel.py sniff`
+### 3. ⚡ Web3, Streaming & Security
+* **`solana-stream-sentinel`**: Real-time Yellowstone Geyser gRPC stream parser, Meteora DLMM / Raydium pool decoder, and MEV preflight safety simulator. (`agents/solana-stream-sentinel`)
+* **`binary-reverse-sentinel`**: Mach-O binary & iOS IPA security analyzer, cloud credential leak hunter (AWS, Supabase, Firebase), and private API endpoint mapper. (`agents/binary-reverse-sentinel`)
 
-### 4. 🎯 `career-hunter-orchestrator` (Headless Job Scout, ATS Resume & Lead CRM)
-* **Location:** [`agents/career-hunter-orchestrator/`](./agents/career-hunter-orchestrator)
-* **What It Does:** Scouts high-ticket engineering opportunities, constructs zero-fluff ATS-compliant Markdown resumes with quantifiable metrics, and generates bespoke cover letter PDFs.
-* **CLI Command:** `python agents/career-hunter-orchestrator/cli/career.py scout --title "Senior AI Architect"`
+### 4. 📈 Marketing, Discord & Lead Generation
+* **`linkedin-intent-sniper`**: Analyzes LinkedIn profile signals, detects technical buying intent, and drafts value-first, anti-salesy outreach messages. (`agents/linkedin-intent-sniper`)
+* **`discord-community-radar`**: Real-time Discord server telemetry, paid gig/bounty signal detection, and authoritative technical reply generator. (`agents/discord-community-radar`)
+* **`anti-slop-content-engine`**: Converts raw Git commits and benchmark graphs into high-CTR viral X/Twitter threads and LinkedIn case studies. (`agents/anti-slop-content-engine`)
+* **`product-launch-orchestrator`**: Multi-platform launch campaign generator for GitHub repos, Show HN posts, Product Hunt launches, and Reddit developer subs. (`agents/product-launch-orchestrator`)
+* **`cold-outreach-dealflow`**: Constructs 3-step high-deliverability technical email sequences, spam-word linter, and formal Statement of Work (SOW) proposals. (`agents/cold-outreach-dealflow`)
 
-### 5. 🧠 `model-bridge-router` (Multi-LLM GLM / Claude Adaptive Gateway)
-* **Location:** [`agents/model-bridge-router/`](./agents/model-bridge-router)
-* **What It Does:** Classifies task reasoning depth, routes coding tasks to GLM-4.7/5.3 and architecture to Claude 3.7 Sonnet, and normalizes function calling schemas between OpenAI and Anthropic formats.
-* **CLI Command:** `python agents/model-bridge-router/cli/bridge.py route --prompt "Audit smart contract" --code`
-
-### 6. 🛡️ `binary-reverse-sentinel` (Mach-O / IPA Security Scanner & Secret Hunter)
-* **Location:** [`agents/binary-reverse-sentinel/`](./agents/binary-reverse-sentinel)
-* **What It Does:** Decompiles and inspects Mach-O binaries and iOS IPAs, scans for leaked cloud credentials (AWS, Supabase, Firebase, OpenAI) with false-positive filtering, and maps hidden endpoints.
-* **CLI Command:** `python agents/binary-reverse-sentinel/cli/reverser.py scan --file app.bin`
-
-### 7. 🧾 `invoice-billing-sentinel` (Deterministic Multi-Currency Invoicing)
-* **Location:** [`agents/invoice-billing-sentinel/`](./agents/invoice-billing-sentinel)
-* **What It Does:** Calculates billable hours, formats balances across USD, EUR, SOL, and USDT, and renders Swiss Bauhaus vector HTML/PDF invoices ready for client delivery.
-* **CLI Command:** `python agents/invoice-billing-sentinel/cli/billing.py create --client "Superteam" --hours 25`
+### 5. 🛠️ Architecture, Career & Financial Ops
+* **`career-hunter-orchestrator`**: Ingests job descriptions, constructs ATS-optimized Markdown resumes with quantifiable metrics, and generates bespoke cover letter PDFs. (`agents/career-hunter-orchestrator`)
+* **`model-bridge-router`**: Adaptive multi-model router (GLM-4.7/5.3, Claude 3.7 Sonnet, Local) with unified tool schema translation. (`agents/model-bridge-router`)
+* **`invoice-billing-sentinel`**: Calculates billable hours across USD, EUR, SOL, and USDT, and renders Swiss Bauhaus vector HTML/PDF invoices. (`agents/invoice-billing-sentinel`)
+* **`senior-architect-agent`**: Cognitive DAG state-machine design, modular decomposition, and zero-trust verification. (`agents/senior-architect-agent`)
+* **`skill-factory-agent`**: Automated scaffolding of universal `SKILL.md` packages with verification fixtures. (`agents/skill-factory-agent`)
 
 ---
 
@@ -90,14 +81,26 @@ pip install -e .
 agent-architect list-agents
 ```
 
-### 3. Run Cognitive Loop
+### 3. Run Any Specialized Agent CLI
 
-```python
-from core.engine import AgentEngine
+```bash
+# Generate Swiss Anti-Slop Site
+superdesign site --theme swiss_international --title "NexusFlow"
 
-agent = AgentEngine(name="LeadArchitect", system_prompt="You are a senior system architect.")
-result = agent.run_lifecycle("Design high-throughput distributed message bus")
-print(result)
+# Analyze LinkedIn Prospect Intent
+python agents/linkedin-intent-sniper/cli/sniper.py snipe --name "Alex Rivera" --headline "CTO at SolanaScale"
+
+# Scan Discord Feed for Gigs
+python agents/discord-community-radar/cli/radar.py scan --msg "Looking for an engineer to build a gRPC indexer, $5k budget"
+
+# Generate Viral Technical X Thread & LinkedIn Post
+python agents/anti-slop-content-engine/cli/content.py create --topic "Zero-Credit Anti-Slop Agent Engine"
+
+# Create Multi-Platform Launch Package
+python agents/product-launch-orchestrator/cli/launch.py create --name "SuperDesign Agent"
+
+# Generate 3-Step B2B Email Sequence
+python agents/cold-outreach-dealflow/cli/dealflow.py sequence --name "Sarah Jenkins" --company "MantleFinance"
 ```
 
 ---
