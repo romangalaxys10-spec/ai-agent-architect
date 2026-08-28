@@ -5,7 +5,7 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 
 ---
 
-## 🌟 Complete Sub-Agent Catalog (525 Specialized Sub-Agents)
+## 🌟 Complete Sub-Agent Catalog (526 Specialized Sub-Agents)
 
 ### 🧠 Cognitive Architecture & Metacognition (Depth-Skills Powered)
 | Sub-Agent | Category | Description | Primary CLI | Location |
@@ -803,6 +803,8 @@ All 70: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines `ana
 | `realtime-collab-agent` | WebSocket/Yjs/CRDT for realtime collaboration | `python cli/realtime_collab.py` |
 
 All 90: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines `analyze(text)` + `format_report`; `tests/test_sys90_agents.py` (6 tests).
+
+| `colab-t4-gpu-agent` | Google Colab T4 GPU plugin — detect, setup, benchmark and run on free NVIDIA T4 | `python cli/colab_t4.py` |
 
 ## ⚡ CLI Hub Discovery
 

@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.5.1] - 2026-08-28 — Colab T4 GPU Plugin (526 Total)
+
+### Added — Google Colab free T4 GPU agent
+- `colab-t4-gpu-agent`: detect (Colab vs local, T4 vs A100, VRAM 16GB), setup (torch cu121 + accelerate/bnb, xformers optional), benchmark (TTFT/TPS/VRAM), run prompt (4-bit on T4); offline deterministic locally (`PASS_WITH_NOTES` on Darwin no-GPU, `PASS` dry-run), live in Colab T4
+- `agents/colab-t4-gpu-agent/notebook/colab_t4_gpu.ipynb` (colab-badge, accelerator T4, 4 cells: nvidia-smi → pip → benchmark+Qwen 0.5B 4-bit → CLI), `plugin/colab_t4_plugin.py` (`setup_t4`/`benchmark_t4`/`run_prompt`)
+- Docs: README 525→526, AGENTS.md 525→526, pyproject 525→526
+
+### Fixed
+- Notebook previously untracked locally → 404 in Colab; now committed and pushed, badge loads via `blob/main/...colab_t4_gpu.ipynb`
+
+---
+
 ## [2.5.0] - 2026-08-28 — 90 SysAdmin Series (525 Total)
 
 ### Added — 90 sys-admin agents (Solana/blockchain/Linux/server/security & optimization/debugging & code reviewers/local LLM max perf/web design & web dev)
@@ -126,6 +138,18 @@
 
 All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [2.5.1] - 2026-08-28 — Colab T4 GPU Plugin (526 Total)
+
+### Added — Google Colab free T4 GPU agent
+- `colab-t4-gpu-agent`: detect (Colab vs local, T4 vs A100, VRAM 16GB), setup (torch cu121 + accelerate/bnb, xformers optional), benchmark (TTFT/TPS/VRAM), run prompt (4-bit on T4); offline deterministic locally (`PASS_WITH_NOTES` on Darwin no-GPU, `PASS` dry-run), live in Colab T4
+- `agents/colab-t4-gpu-agent/notebook/colab_t4_gpu.ipynb` (colab-badge, accelerator T4, 4 cells: nvidia-smi → pip → benchmark+Qwen 0.5B 4-bit → CLI), `plugin/colab_t4_plugin.py` (`setup_t4`/`benchmark_t4`/`run_prompt`)
+- Docs: README 525→526, AGENTS.md 525→526, pyproject 525→526
+
+### Fixed
+- Notebook previously untracked locally → 404 in Colab; now committed and pushed, badge loads via `blob/main/...colab_t4_gpu.ipynb`
+
+---
 
 ## [2.5.0] - 2026-08-28 — 90 SysAdmin Series (525 Total)
 
