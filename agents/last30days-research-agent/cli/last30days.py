@@ -1,6 +1,7 @@
 """CLI for Last 30 Days Research Agent"""
 import sys, os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 
 import argparse
 import json
@@ -13,17 +14,14 @@ def main():
     
     args = parser.parse_args()
     report = RecencyRadarEngine.curate_recent_intel(args.query)
-    print(f"🛰️ Recency Intelligence Report for '{args.query}' ({report.timeframe}):")
-    print("
---- TOP COMMUNITY CONSENSUS FINDINGS ---")
+    print(f"\U0001f6f0\ufe0f Recency Intelligence Report for '{args.query}' ({report.timeframe}):")
+    print("\n--- TOP COMMUNITY CONSENSUS FINDINGS ---")
     for f in report.top_consensus_findings:
-        print(f"• {f}")
-    print("
---- CONTRARIAN DEVELOPER VIEWS ---")
+        print(f"\u2022 {f}")
+    print("\n--- CONTRARIAN DEVELOPER VIEWS ---")
     for c in report.contrarian_community_views:
-        print(f"• {c}")
-    print("
---- RECENT COMMUNITY SIGNALS ---")
+        print(f"\u2022 {c}")
+    print("\n--- RECENT COMMUNITY SIGNALS ---")
     for s in report.signals:
         print(f"[{s.source}] {s.title} ({s.engagement_metric}, {s.timestamp_days_ago}d ago): {s.key_insight}")
 
