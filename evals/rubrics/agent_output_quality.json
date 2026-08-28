@@ -1,0 +1,31 @@
+{
+  "name": "agent_output_quality",
+  "version": "2.0",
+  "scale": 5,
+  "criteria": [
+    {
+      "name": "task_completion",
+      "description": "Does the output accomplish the stated goal?",
+      "weight": 1.5,
+      "indicators": ["goal addressed directly", "no critical sub-task dropped", "final answer present"]
+    },
+    {
+      "name": "groundedness",
+      "description": "Are claims supported by retrieved/executed evidence?",
+      "weight": 1.2,
+      "indicators": ["citations or tool outputs referenced", "no invented facts", "numbers traceable"]
+    },
+    {
+      "name": "tool_call_accuracy",
+      "description": "Were the right tools called with right arguments?",
+      "weight": 1.2,
+      "indicators": ["no hallucinated tools", "arguments match schemas", "no redundant calls"]
+    },
+    {
+      "name": "conciseness",
+      "description": "Is the output free of padding and slop?",
+      "weight": 1.0,
+      "indicators": ["no filler phrases", "appropriate length"]
+    }
+  ]
+}

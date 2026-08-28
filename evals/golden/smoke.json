@@ -1,0 +1,28 @@
+{
+  "name": "smoke",
+  "tier": "smoke",
+  "description": "Cheap gate on every deploy: catches broken imports, dead tools, silent regressions. Smoke != evals.",
+  "cases": [
+    {
+      "case_id": "smoke_001",
+      "task": "Compute 2 + 3 using the add tool and report the result.",
+      "expected_contains": ["5"],
+      "expected_tools": ["add"],
+      "max_latency_ms": 5000
+    },
+    {
+      "case_id": "smoke_002",
+      "task": "Search the knowledge base for 'solana geyser' and summarize findings with citations.",
+      "expected_contains": ["doc"],
+      "expected_tools": ["knowledge_search"],
+      "max_latency_ms": 5000
+    },
+    {
+      "case_id": "smoke_003",
+      "task": "Say hello to Ada using the greet tool.",
+      "expected_contains": ["hello ada"],
+      "expected_tools": ["greet"],
+      "max_latency_ms": 3000
+    }
+  ]
+}

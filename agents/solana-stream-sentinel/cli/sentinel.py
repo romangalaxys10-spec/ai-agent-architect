@@ -1,12 +1,30 @@
-"""
-CLI for Solana Stream Sentinel.
-"""
-import sys, os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+"""CLI for Solana Stream Sentinel (end-to-end hardened: runs from any cwd)."""
+import os
+import sys
+import importlib.util
+
+_AGENT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+_REPO_ROOT = os.path.abspath(os.path.join(_AGENT_DIR, ".."))
+for _p in (_REPO_ROOT, _AGENT_DIR):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
+
+def _load(name: str, relpath: str):
+    """Load engine module by explicit file path (hyphenated dirs are not importable)."""
+    path = os.path.join(_AGENT_DIR, relpath)
+    spec = importlib.util.spec_from_file_location(name, path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+_engine_mod = _load("core.stream_engine", "core/stream_engine.py")
+SolanaStreamSentinel = _engine_mod.SolanaStreamSentinel
+PoolEvent = _engine_mod.PoolEvent
 
 import argparse
 import json
-from agents.solana_stream_sentinel.core.stream_engine import SolanaStreamSentinel, PoolEvent
 
 
 def main():

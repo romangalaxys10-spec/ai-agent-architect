@@ -5,9 +5,56 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Syntax-compile every module (catches the broken-string class of bugs)
+      run: |
+        python -m compileall -q core factory cli agents tests
+    - name: Import smoke (zero API keys required — offline EchoProvider default)
+      run: |
+        python -c "
+        import sys; sys.path.insert(0, '.')
+        from core.llm import EchoProvider
+        from core.agent_loop import AgentLoop
+        from core.tool_registry import ToolRegistry
+        r = ToolRegistry(); r.register('ping', 'ping', lambda: 'pong')
+        result = AgentLoop(provider=EchoProvider(), registry=r).run('smoke')
+        assert result.success, result
+        print('offline agent-loop smoke: OK')"
+
   test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-cov
+    - name: Run test suite with coverage
+      run: |
+        pytest tests/ -v --cov=core --cov=factory --cov-report=term-missing
+    - name: Sub-agent CLI end-to-end check
+      run: |
+        pytest tests/test_subagent_completeness.py -v
+
+  mcp-protocol:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -16,9 +63,20 @@ jobs:
       with:
         python-version: '3.11'
     - name: Install dependencies
+      run: pip install -r requirements.txt
+    - name: MCP stdio protocol conformance
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Run test suite
-      run: |
-        pytest tests/ -v
+        echo '{"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {}}' | python - <<'EOF'
+        import json, subprocess, sys
+        # spin the MCP server over stdio and verify the JSON-RPC handshake
+        proc = subprocess.Popen(
+            [sys.executable, "-c", "import sys; sys.path.insert(0, '.'); from core.tool_registry import ToolRegistry; from core.mcp import MCPServer; r = ToolRegistry(); r.register('ping', 'ping', lambda: 'pong'); MCPServer(r).serve_stdio(sys.stdin, sys.stdout)"],
+            stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+        req = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {}}) + "\n" + \
+              json.dumps({"jsonrpc": "2.0", "id": 2, "method": "tools/list", "params": {}}) + "\n"
+        out, _ = proc.communicate(req, timeout=30)
+        lines = [json.loads(l) for l in out.strip().splitlines()]
+        assert lines[0]["result"]["protocolVersion"], "handshake failed"
+        assert any(t["name"] == "ping" for t in lines[1]["result"]["tools"]), "tools/list failed"
+        print("MCP stdio conformance: OK")
+        EOF

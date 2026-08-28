@@ -1,10 +1,29 @@
-"""CLI for Discord Community Radar"""
-import sys, os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+"""CLI for Discord Community Radar (end-to-end hardened: runs from any cwd)."""
+import os
+import sys
+import importlib.util
+
+_AGENT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+_REPO_ROOT = os.path.abspath(os.path.join(_AGENT_DIR, ".."))
+for _p in (_REPO_ROOT, _AGENT_DIR):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
+
+def _load(name: str, relpath: str):
+    """Load engine module by explicit file path (hyphenated dirs are not importable)."""
+    path = os.path.join(_AGENT_DIR, relpath)
+    spec = importlib.util.spec_from_file_location(name, path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+_engine_mod = _load("core.radar_engine", "core/radar_engine.py")
+DiscordCommunityRadar = _engine_mod.DiscordCommunityRadar
 
 import argparse
 import json
-from agents.discord_community_radar.core.radar_engine import DiscordCommunityRadar
 
 
 def main():
