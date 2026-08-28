@@ -1,18 +1,29 @@
+"""
+CLI Tool: `agy-architect` / `agent-architect`
+Scaffold skills, run Steve Jobs reviews, and manage the Sub-Agents Hub.
+"""
+
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-"""
-CLI Tool: `agy-architect` / `agent-architect`
-Interactive & automated scaffolding for cutting-edge agents and skills.
-"""
 
 import argparse
-import sys
-import os
-import json
 from factory.skill_builder import SkillBuilder, SkillManifest
 from factory.prompt_synthesizer import PromptSynthesizer
 from core.steve_jobs_lens import SteveJobsLens
+from core.registry import AgentRegistry
+
+
+def list_agents_cmd(args):
+    print("🤖 Sub-Agents Hub Catalog:")
+    agents = AgentRegistry.discover_agents()
+    print("=" * 60)
+    for aid, meta in agents.items():
+        print(f"• [{aid}] {meta.name} (v{meta.version})")
+        print(f"  Description: {meta.description}")
+        print(f"  Path: {meta.path}")
+        print(f"  Skill Spec: {meta.skill_file}")
+        print("-" * 60)
 
 
 def scaffold_skill_cmd(args):
@@ -54,12 +65,15 @@ def review_product_cmd(args):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="AI Agent Architect CLI - Build Powerful Agents from Scratch to Maximum.")
+    parser = argparse.ArgumentParser(description="AI Agent Architect CLI - Master Monorepo & Sub-Agents Hub.")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
 
-    # Command: skill
+    # Command: list-agents
+    subparsers.add_parser("list-agents", help="List all registered sub-agents in the agents/ hub")
+
+    # Command: scaffold-skill
     p_skill = subparsers.add_parser("scaffold-skill", help="Scaffold a new production-ready SKILL.md package")
-    p_skill.add_argument("--name", required=True, help="Skill name (e.g. solana-indexer, code-auditor)")
+    p_skill.add_argument("--name", required=True, help="Skill name")
     p_skill.add_argument("--description", default="", help="Skill description")
     p_skill.add_argument("--output-dir", default="./skills", help="Target output directory")
 
@@ -72,7 +86,9 @@ def main():
     p_review.add_argument("--loose-stack", action="store_true", help="Set if stack is not end-to-end controlled")
 
     args = parser.parse_args()
-    if args.command == "scaffold-skill":
+    if args.command == "list-agents":
+        list_agents_cmd(args)
+    elif args.command == "scaffold-skill":
         scaffold_skill_cmd(args)
     elif args.command == "review":
         review_product_cmd(args)
