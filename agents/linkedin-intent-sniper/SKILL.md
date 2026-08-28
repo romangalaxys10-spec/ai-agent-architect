@@ -20,3 +20,10 @@ author: AI Agent Architect
 2. **Intent Classification**: Identify specific technical pain points (Infrastructure, Hiring, Scale).
 3. **Bespoke Copycraft**: Write an organic, non-salesy icebreaker that references their exact context.
 4. **CRM Milestone Tracking**: Record prospect details and suggested followup cadence into the local database.
+
+
+## 🧠 Cognitive Depth Protocols (Depth-Skills Powered)
+- `ds-deep-think`: Block premature closure until 3 non-obvious framing angles are mapped.
+- `ds-adversary`: Stress-test outputs against fatal edge cases before final delivery.
+- `ds-excavate`: Unearth hidden assumptions and unverified dependencies.
+- `ds-temporal`: Evaluate implications across Day 1 (Instant), Day 30 (Ops), and Year 1 (Scale).

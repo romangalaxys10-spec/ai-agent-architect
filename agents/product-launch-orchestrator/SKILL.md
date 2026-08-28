@@ -19,3 +19,10 @@ author: AI Agent Architect
 1. **Repository & Architecture Ingestion**: Identify core technical value, benchmarks, and differentiators.
 2. **Multi-Channel Copycraft**: Draft tailored posts for Show HN, Product Hunt, Reddit developer subs, and X/Twitter.
 3. **Pacing Timeline Generation**: Schedule pre-launch teasers, launch day blitz, and 48-hour follow-up cadence.
+
+
+## 🧠 Cognitive Depth Protocols (Depth-Skills Powered)
+- `ds-deep-think`: Block premature closure until 3 non-obvious framing angles are mapped.
+- `ds-adversary`: Stress-test outputs against fatal edge cases before final delivery.
+- `ds-excavate`: Unearth hidden assumptions and unverified dependencies.
+- `ds-temporal`: Evaluate implications across Day 1 (Instant), Day 30 (Ops), and Year 1 (Scale).

@@ -20,3 +20,10 @@ author: AI Agent Architect
 2. **3-Touchpoint Drafting**: Formulate value-first, non-salesy sequence (Observation $	o$ Case Study $	o$ Soft Exit).
 3. **Spam & Deliverability Audit**: Check copy against spam-word dictionary and DKIM/SPF standards.
 4. **Contract Proposal Generation**: Generate formal Markdown SOW with milestone breakdowns.
+
+
+## 🧠 Cognitive Depth Protocols (Depth-Skills Powered)
+- `ds-deep-think`: Block premature closure until 3 non-obvious framing angles are mapped.
+- `ds-adversary`: Stress-test outputs against fatal edge cases before final delivery.
+- `ds-excavate`: Unearth hidden assumptions and unverified dependencies.
+- `ds-temporal`: Evaluate implications across Day 1 (Instant), Day 30 (Ops), and Year 1 (Scale).

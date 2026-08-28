@@ -22,3 +22,10 @@ author: AI Agent Architect
 3. **Assumption Archaeology (`ds-excavate`)**: Unearth implicit biases and unverified dependencies.
 4. **Adversarial Self-Opposition (`ds-adversary`)**: Identify fatal failure modes before execution.
 5. **Temporal Reasoning (`ds-temporal`)**: Map implications across Day 1, Day 30, and Year 1.
+
+
+## 🧠 Cognitive Depth Protocols (Depth-Skills Powered)
+- `ds-deep-think`: Block premature closure until 3 non-obvious framing angles are mapped.
+- `ds-adversary`: Stress-test outputs against fatal edge cases before final delivery.
+- `ds-excavate`: Unearth hidden assumptions and unverified dependencies.
+- `ds-temporal`: Evaluate implications across Day 1 (Instant), Day 30 (Ops), and Year 1 (Scale).

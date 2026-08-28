@@ -20,3 +20,10 @@ author: AI Agent Architect
 2. **Secret Detection**: High-entropy regex scanner for AWS, Supabase, Firebase, and OpenAI API keys.
 3. **Endpoint Mapping**: Extract hardcoded HTTP/WebSocket endpoints and ATS configurations.
 4. **Audit Report**: Compute security score and mitigation steps.
+
+
+## 🧠 Cognitive Depth Protocols (Depth-Skills Powered)
+- `ds-deep-think`: Block premature closure until 3 non-obvious framing angles are mapped.
+- `ds-adversary`: Stress-test outputs against fatal edge cases before final delivery.
+- `ds-excavate`: Unearth hidden assumptions and unverified dependencies.
+- `ds-temporal`: Evaluate implications across Day 1 (Instant), Day 30 (Ops), and Year 1 (Scale).

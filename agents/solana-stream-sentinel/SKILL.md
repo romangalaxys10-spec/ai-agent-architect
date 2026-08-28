@@ -21,3 +21,10 @@ author: AI Agent Architect
 2. **Instruction Decoding**: Decode Anchor vs Native instruction layout and unpack pool parameters.
 3. **Preflight Simulation**: Compute liquidity depth, slippage bounds, and sandwich attack risk.
 4. **Execution Dispatch**: Return clean JSON telemetry payload to the caller or orchestrator.
+
+
+## 🧠 Cognitive Depth Protocols (Depth-Skills Powered)
+- `ds-deep-think`: Block premature closure until 3 non-obvious framing angles are mapped.
+- `ds-adversary`: Stress-test outputs against fatal edge cases before final delivery.
+- `ds-excavate`: Unearth hidden assumptions and unverified dependencies.
+- `ds-temporal`: Evaluate implications across Day 1 (Instant), Day 30 (Ops), and Year 1 (Scale).

@@ -19,3 +19,10 @@ author: AI Agent Architect
 1. Ingest system requirements and latency/throughput bounds.
 2. Decompose into decoupled modules (Perception, Planning, Execution, Memory, Verification).
 3. Validate against anti-patterns (tight coupling, unbounded loops, unverified tool calls).
+
+
+## 🧠 Cognitive Depth Protocols (Depth-Skills Powered)
+- `ds-deep-think`: Block premature closure until 3 non-obvious framing angles are mapped.
+- `ds-adversary`: Stress-test outputs against fatal edge cases before final delivery.
+- `ds-excavate`: Unearth hidden assumptions and unverified dependencies.
+- `ds-temporal`: Evaluate implications across Day 1 (Instant), Day 30 (Ops), and Year 1 (Scale).
