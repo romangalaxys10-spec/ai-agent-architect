@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Tests: 183 offline](https://img.shields.io/badge/tests-183%20offline-brightgreen.svg)]()
-[![Agents Hub: 365 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-365%20Complete%20Agents-brightgreen.svg)]()
+[![Agents Hub: 435 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-435%20Complete%20Agents-brightgreen.svg)]()
 [![Zero-Key Runtime](https://img.shields.io/badge/runtime-zero%20API%20keys-success.svg)]()
 [![MCP](https://img.shields.io/badge/protocol-MCP%20%2B%20A2A-blueviolet.svg)]()
 
@@ -154,9 +154,9 @@ Traditional models suffer from **Premature Closure** and **Pattern Gravity**. Th
 
 ---
 
-## 🏭 Agents Factory: 365 Complete Sub-Agents (15 Founding + 50 Demand + 150 Power + 100 Computer Use + 50 HR/HRBP/L&D)
+## 🏭 Agents Factory: 435 Complete Sub-Agents (15 Founding + 50 Demand + 150 Power + 100 Computer Use + 50 HR/HRBP/L&D + 70 Social/Video)
 
-Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **365 total = 15 founding + 50 demand suite + 150 power expansion + 100 computer use + 50 HR/HRBP/L&D.**
+Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **435 total = 15 founding + 50 demand suite + 150 power expansion + 100 computer use + 50 HR/HRBP/L&D + 70 social/video (LinkedIn, Instagram, X, YouTube, TikTok, freebie+Gemini).**
 
 | # | Agent | Domain |
 |---|-------|--------|
@@ -237,7 +237,7 @@ core/
 ├── orchestrator.py         # hierarchical / pipeline / mesh / blackboard
 ├── tool_registry.py        # schemas, validation pipeline, hooks, annotations
 ├── depth_cognitive_engine.py · steve_jobs_lens.py · engine.py · registry.py
-agents/                     # 365 complete sub-agents (SKILL.md + core + cli)
+agents/                     # 435 complete sub-agents (SKILL.md + core + cli)
 factory/                    # skill builder, prompt synthesizer
 evals/                      # versioned rubrics + golden datasets
 examples/                   # end-to-end walkthroughs
@@ -717,6 +717,115 @@ Full catalog: [`agents/AGENTS.md`](agents/AGENTS.md). Discoverable via `AgentReg
 python agents/hrbp-strategic-partner-agent/cli/hrbp_strategic_partner.py --text "HRBP diagnostic for finance org with business alignment" --json
 python agents/learning-needs-diagnostician-agent/cli/learning_needs_diagnostician.py --text "TNA: sales ramp performance gap vs skills" 
 python agents/kirkpatrick-evaluator-agent/cli/kirkpatrick_evaluator.py --text "Level 3-4 evaluation with control group for leadership program"
+```
+
+
+## 📱🎬 70 Social & Video Generation Series — LinkedIn / Instagram / X / YouTube / TikTok + Freebie + Gemini
+
+*70 control, automation & growth agents for social + 12 video-generation agents built on freebie sources (Pexels, Pixabay, Mixkit, Coverr, Unsplash, Pixabay Music, YouTube Audio Library) + Gemini/VeO/Imagen. Every agent: offline deterministic, platform-aware hook/CTA, license/attribution hygiene, and ToS-safe throttling.*
+
+Full catalog: [`agents/AGENTS.md`](agents/AGENTS.md). `AgentRegistry.discover_agents()`.
+
+### LinkedIn — Control, Automation & Growth (12)
+| Agent | What it does |
+|---|---|
+| `linkedin-scheduler-agent` | Queue, calendar, timezone-aware publishing, and cross-post guards for LinkedIn |
+| `linkedin-dm-funnel-agent` | Connection → DM → meeting funnel with personalization and safety throttles |
+| `linkedin-analytics-radar-agent` | SSI, impressions→leads, dwell-time, and creator-mode telemetry |
+| `linkedin-lead-scraper-agent` | Compliant prospect discovery, Sales Navigator filters, and enrichment hygiene |
+| `linkedin-company-page-agent` | Page admin, showcase pages, employee advocacy, and analytics rollup |
+| `linkedin-newsletter-architect-agent` | Newsletter cadence, issue scaffolding, and subscriber growth loops |
+| `linkedin-live-producer-agent` | Live event run-of-show, speaker comms, and replay repurposing |
+| `linkedin-ads-optimizer-agent` | Campaign, audience, bid, and creative fatigue for LinkedIn Ads |
+| `linkedin-outreach-sequencer-agent` | Value-first sequenced outreach with reply detection and CRM sync |
+| `linkedin-personal-brand-agent` | POV mining from commits/work, voice calibration, and authority cadence |
+| `linkedin-event-networker-agent` | Event attendee mapping, warm-intro paths, and post-event follow-up |
+| `linkedin-poll-viral-agent` | Poll hooks, comment-velocity design, and algorithm-friendly timing |
+
+### Instagram — Control, Automation & Growth (12)
+| Agent | What it does |
+|---|---|
+| `insta-reels-virality-agent` | Hook-window, sound sync, loop-rate, and retention editing for Reels |
+| `insta-grid-planner-agent` | Grid aesthetics, color-story, alt-text, and carousel sequencing |
+| `insta-story-architect-agent` | Story arcs, stickers, polls, swipe-ups, and highlight hygiene |
+| `insta-hashtag-lab-agent` | Hashtag tiering, banned-tag audit, and reach vs niche balance |
+| `insta-dm-automation-agent` | Story-reply → DM, keyword triggers, and human-handoff |
+| `insta-influencer-match-agent` | Audience overlap, fake-follower audit, and brief→deliverable tracking |
+| `insta-shop-optimizer-agent` | Product tags, catalog hygiene, and DM→checkout drop analysis |
+| `insta-analytics-insights-agent` | Reach/saves/shares, follower activity windows, and content mix audit |
+| `insta-ads-launcher-agent` | Creative variants, audience, placements, and incrementality for IG Ads |
+| `insta-ugc-harvester-agent` | UGC discovery, rights requests, and repurpose queue |
+| `insta-comment-guardian-agent` | Toxicity, spam, and brand-safety moderation with allowlists |
+| `insta-live-commerce-agent` | Live shopping run-of-show, drops, and checkout telemetry |
+
+### X.com — Control, Automation & Growth (12)
+| Agent | What it does |
+|---|---|
+| `x-thread-architect-agent` | Hook + pacing + cliffhangers for long-form X threads |
+| `x-reply-bot-agent` | Reply-guy strategy, context-aware replies, and rate-limit safety |
+| `x-list-intel-agent` | List curation, signal vs noise, and DM-able prospect surfacing |
+| `x-spaces-producer-agent` | Spaces agenda, speaker queue, and clip harvesting |
+| `x-trend-jacker-agent` | Trend velocity, angle fit, and safe trend-jacking timing |
+| `x-dm-funnel-agent` | Public → DM permission, value ladders, and auto-qualify |
+| `x-analytics-pulse-agent` | Views, bookmarks, profile clicks, and follower quality |
+| `x-ads-booster-agent` | Creative fatigue, bid, audience, and brand-safety for X Ads |
+| `x-search-scraper-agent` | Advanced search operators, saved searches, and lead/theme mining |
+| `x-community-cultivator-agent` | Community notes, member roles, and UGC flywheel on X |
+| `x-toxicity-shield-agent` | Harassment, dogpiling, and shadow-ban risk detection |
+| `x-viral-hook-lab-agent` | Hook scoring, pattern-bending, and timing optimization |
+
+### YouTube — Control, Automation & Growth (12)
+| Agent | What it does |
+|---|---|
+| `youtube-channel-architect-agent` | Channel positioning, trailer, playlists, and subscribe triggers |
+| `youtube-shorts-virality-agent` | Hook-window, loop, and binge-path for Shorts |
+| `youtube-seo-optimizer-agent` | Title/tags/chapters, search vs suggested, and CTR from impressions |
+| `youtube-thumbnail-forge-agent` | Thumbnail contrast, face/eyes, text sparsity, and A/B planning |
+| `youtube-chapter-optimizer-agent` | Chaptering, key moments, and seek-intent mapping |
+| `youtube-live-ops-agent` | Live run-of-show, chat moderation, and super-chat funnel |
+| `youtube-membership-monetizer-agent` | Memberships, perks, and churn reduction for YT |
+| `youtube-analytics-sentinel-agent` | Retention curves, traffic sources, and returning vs new |
+| `youtube-comment-manager-agent` | Pinned comment, heart/reply strategy, and toxic filtering |
+| `youtube-collab-scout-agent` | Collab fit, audience overlap, and cross-promo planning |
+| `youtube-repurpose-engine-agent` | Long→Shorts→Threads atomization and platform reformat |
+| `youtube-ads-roi-agent` | TrueView, CPM/CPV, view-through, and creative fatigue for YT Ads |
+
+### TikTok — Virality & Commerce (10)
+| Agent | What it does |
+|---|---|
+| `tiktok-sound-trend-agent` | Sound velocity, dance/format fit, and early-jacking timing |
+| `tiktok-shop-affiliate-agent` | Shop product tags, affiliate match, and commission telemetry |
+| `tiktok-live-commerce-agent` | Live run-of-show, gifting, and shop conversion |
+| `tiktok-duet-stitch-agent` | Duet/stitch hooks, response framing, and collab etiquette |
+| `tiktok-analytics-radar-agent` | Completion rate, rewatch, and follower activity heatmaps |
+| `tiktok-ads-spark-agent` | Spark Ads, creator licensing, and whitelisting workflow |
+| `tiktok-creator-scout-agent` | Creator discovery, authenticity, and brief→post tracking |
+| `tiktok-script-lab-agent` | 3-sec hook, pattern interrupts, and CTA tailoring |
+| `tiktok-hashtag-virality-agent` | Hashtag tiering, challenge fit, and banned-tag hygiene |
+| `tiktok-comment-moderator-agent` | Spam, hate, and brand-safety moderation at TikTok scale |
+
+### Video Generation — Freebie Sources + Gemini/VeO (12)
+| Agent | What it does |
+|---|---|
+| `free-stock-scout-agent` | Discover free stock video/images across Pexels/Pixabay/Unsplash/Mixkit/Coverr with license filters |
+| `pexels-pipeline-agent` | Pexels API search, pagination, download, and attribution assembly |
+| `pixabay-curator-agent` | Pixabay curation, duration/orientation filters, and safe-search guards |
+| `mixkit-video-forge-agent` | Mixkit catalog, cut-downs, and no-attribution clip hygiene |
+| `gemini-video-producer-agent` | Gemini/VeO prompt → storyboard → clip plan with cost/latency awareness |
+| `gemini-script-to-video-agent` | Script → Gemini scene prompts → shot list + B-roll mapping from free stock |
+| `veo-storyboard-agent` | Veo 3 prompts, camera moves, and continuity guards |
+| `free-audio-scout-agent` | Free music/SFX (Pixabay Music, Mixkit, YouTube Audio Library) with license hygiene |
+| `subtitle-auto-agent` | Whisper-style timing, speaker diarization, and SRT/VTT export |
+| `video-remixer-free-agent` | Free-source remix: cuts, transitions, and Ken Burns with no-stock watermark |
+| `ai-avatar-free-agent` | Free avatar/voice (Gemini + open tools) with consent and disclosure guards |
+| `gemini-thumbnail-gen-agent` | Gemini/Imagen thumbnail prompts, text sparsity, and CTR hypothesis |
+
+```bash
+# try any of the 70:
+python agents/linkedin-scheduler-agent/cli/linkedin_scheduler.py --text "queue LinkedIn posts with timezone and cross-post guards" 
+python agents/insta-reels-virality-agent/cli/insta_reels_virality.py --text "Reels hook-window with sound sync and loop-rate" 
+python agents/gemini-video-producer-agent/cli/gemini_video_producer.py --text "Gemini Veo storyboard from Pexels free stock with hook and CTA: subscribe"
+python agents/free-stock-scout-agent/cli/free_stock_scout.py --text "free stock from Pexels Pixabay with license attribution"
 ```
 
 ## 🧪 Testing & CI

@@ -82,7 +82,21 @@ EXPECTED_AGENTS = [
     "future-skills-scout-agent", "instructional-architect-agent", "blended-learning-agent", "cohort-learning-agent", "social-learning-agent", 
     "microlearning-crafter-agent", "scenario-simulation-agent", "video-learning-producer-agent", "facilitation-master-agent", "learning-analytics-agent", 
     "kirkpatrick-evaluator-agent", "learning-roi-agent", "lms-ops-agent", "learning-vendor-agent", "listening-strategy-agent", 
-    "recognition-rituals-agent", "inclusion-belonging-agent", "wellbeing-strategist-agent", "resilience-burnout-agent", "team-effectiveness-agent",
+    "recognition-rituals-agent", "inclusion-belonging-agent", "wellbeing-strategist-agent", "resilience-burnout-agent", "team-effectiveness-agent", 
+    "linkedin-scheduler-agent", "linkedin-dm-funnel-agent", "linkedin-analytics-radar-agent", "linkedin-lead-scraper-agent", "linkedin-company-page-agent", 
+    "linkedin-newsletter-architect-agent", "linkedin-live-producer-agent", "linkedin-ads-optimizer-agent", "linkedin-outreach-sequencer-agent", "linkedin-personal-brand-agent", 
+    "linkedin-event-networker-agent", "linkedin-poll-viral-agent", "insta-reels-virality-agent", "insta-grid-planner-agent", "insta-story-architect-agent", 
+    "insta-hashtag-lab-agent", "insta-dm-automation-agent", "insta-influencer-match-agent", "insta-shop-optimizer-agent", "insta-analytics-insights-agent", 
+    "insta-ads-launcher-agent", "insta-ugc-harvester-agent", "insta-comment-guardian-agent", "insta-live-commerce-agent", "x-thread-architect-agent", 
+    "x-reply-bot-agent", "x-list-intel-agent", "x-spaces-producer-agent", "x-trend-jacker-agent", "x-dm-funnel-agent", 
+    "x-analytics-pulse-agent", "x-ads-booster-agent", "x-search-scraper-agent", "x-community-cultivator-agent", "x-toxicity-shield-agent", 
+    "x-viral-hook-lab-agent", "youtube-channel-architect-agent", "youtube-shorts-virality-agent", "youtube-seo-optimizer-agent", "youtube-thumbnail-forge-agent", 
+    "youtube-chapter-optimizer-agent", "youtube-live-ops-agent", "youtube-membership-monetizer-agent", "youtube-analytics-sentinel-agent", "youtube-comment-manager-agent", 
+    "youtube-collab-scout-agent", "youtube-repurpose-engine-agent", "youtube-ads-roi-agent", "tiktok-sound-trend-agent", "tiktok-shop-affiliate-agent", 
+    "tiktok-live-commerce-agent", "tiktok-duet-stitch-agent", "tiktok-analytics-radar-agent", "tiktok-ads-spark-agent", "tiktok-creator-scout-agent", 
+    "tiktok-script-lab-agent", "tiktok-hashtag-virality-agent", "tiktok-comment-moderator-agent", "free-stock-scout-agent", "pexels-pipeline-agent", 
+    "pixabay-curator-agent", "mixkit-video-forge-agent", "gemini-video-producer-agent", "gemini-script-to-video-agent", "veo-storyboard-agent", 
+    "free-audio-scout-agent", "subtitle-auto-agent", "video-remixer-free-agent", "ai-avatar-free-agent", "gemini-thumbnail-gen-agent",
 ]
 
 

@@ -1,5 +1,29 @@
 # Changelog
 
+## [2.4.0] - 2026-08-28 — 70 Social & Video Generation (435 Total)
+
+### Added — 70 social/video control, automation & growth agents (LinkedIn, Instagram, X, YouTube, TikTok + freebie+Gemini)
+- **LinkedIn (12):** linkedin-scheduler, linkedin-dm-funnel, linkedin-analytics-radar, linkedin-lead-scraper, linkedin-company-page, linkedin-newsletter-architect, linkedin-live-producer, linkedin-ads-optimizer, linkedin-outreach-sequencer, linkedin-personal-brand, linkedin-event-networker, linkedin-poll-viral
+- **Instagram (12):** insta-reels-virality, insta-grid-planner, insta-story-architect, insta-hashtag-lab, insta-dm-automation, insta-influencer-match, insta-shop-optimizer, insta-analytics-insights, insta-ads-launcher, insta-ugc-harvester, insta-comment-guardian, insta-live-commerce
+- **X.com (12):** x-thread-architect, x-reply-bot, x-list-intel, x-spaces-producer, x-trend-jacker, x-dm-funnel, x-analytics-pulse, x-ads-booster, x-search-scraper, x-community-cultivator, x-toxicity-shield, x-viral-hook-lab
+- **YouTube (12):** youtube-channel-architect, youtube-shorts-virality, youtube-seo-optimizer, youtube-thumbnail-forge, youtube-chapter-optimizer, youtube-live-ops, youtube-membership-monetizer, youtube-analytics-sentinel, youtube-comment-manager, youtube-collab-scout, youtube-repurpose-engine, youtube-ads-roi
+- **TikTok (10):** tiktok-sound-trend, tiktok-shop-affiliate, tiktok-live-commerce, tiktok-duet-stitch, tiktok-analytics-radar, tiktok-ads-spark, tiktok-creator-scout, tiktok-script-lab, tiktok-hashtag-virality, tiktok-comment-moderator
+- **Video Generation — Freebie + Gemini (12):** free-stock-scout, pexels-pipeline, pixabay-curator, mixkit-video-forge, gemini-video-producer, gemini-script-to-video, veo-storyboard, free-audio-scout, subtitle-auto, video-remixer-free, ai-avatar-free, gemini-thumbnail-gen
+- Each: SKILL.md + platform-aware core engine (platform detection, hook/CTA, license hygiene, ToS throttling) + CLI (--text/--file/--json, any cwd) — 435 total = 15 + 50 + 150 + 100 + 50 + 70
+- Freebie sources: Pexels/Pixabay/Unsplash/Mixkit/Coverr + Pixabay Music/Mixkit Audio/YouTube Audio Library; Gemini/VeO/Imagen prompt→storyboard→clip planning with no-key offline simulation
+- Tests: `tests/test_social70_agents.py` (6 tests), EXPECTED_AGENTS 365→435
+- Example: `examples/social_video_demo.py`
+
+### Changed
+- README: badge 365→435, factory 365→435, added 70 Social/Video tables + try-commands, layout 365→435
+- agents/AGENTS.md: header 365→435, added 70 Social/Video tables
+- pyproject description 365→435
+
+### Quality Gates
+- All 435 CLIs pass --help from neutral cwd; all 435 engines pass analyze+format_report smoke
+
+---
+
 ## [2.3.0] - 2026-08-28 — 50 HR/HRBP/L&D Deep Series (365 Total)
 
 ### Added — 50 HR/HRBP/L&D highest-wanted agents (global search & hiring demand 2025–2026)
@@ -76,6 +100,30 @@
 
 All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [2.4.0] - 2026-08-28 — 70 Social & Video Generation (435 Total)
+
+### Added — 70 social/video control, automation & growth agents (LinkedIn, Instagram, X, YouTube, TikTok + freebie+Gemini)
+- **LinkedIn (12):** linkedin-scheduler, linkedin-dm-funnel, linkedin-analytics-radar, linkedin-lead-scraper, linkedin-company-page, linkedin-newsletter-architect, linkedin-live-producer, linkedin-ads-optimizer, linkedin-outreach-sequencer, linkedin-personal-brand, linkedin-event-networker, linkedin-poll-viral
+- **Instagram (12):** insta-reels-virality, insta-grid-planner, insta-story-architect, insta-hashtag-lab, insta-dm-automation, insta-influencer-match, insta-shop-optimizer, insta-analytics-insights, insta-ads-launcher, insta-ugc-harvester, insta-comment-guardian, insta-live-commerce
+- **X.com (12):** x-thread-architect, x-reply-bot, x-list-intel, x-spaces-producer, x-trend-jacker, x-dm-funnel, x-analytics-pulse, x-ads-booster, x-search-scraper, x-community-cultivator, x-toxicity-shield, x-viral-hook-lab
+- **YouTube (12):** youtube-channel-architect, youtube-shorts-virality, youtube-seo-optimizer, youtube-thumbnail-forge, youtube-chapter-optimizer, youtube-live-ops, youtube-membership-monetizer, youtube-analytics-sentinel, youtube-comment-manager, youtube-collab-scout, youtube-repurpose-engine, youtube-ads-roi
+- **TikTok (10):** tiktok-sound-trend, tiktok-shop-affiliate, tiktok-live-commerce, tiktok-duet-stitch, tiktok-analytics-radar, tiktok-ads-spark, tiktok-creator-scout, tiktok-script-lab, tiktok-hashtag-virality, tiktok-comment-moderator
+- **Video Generation — Freebie + Gemini (12):** free-stock-scout, pexels-pipeline, pixabay-curator, mixkit-video-forge, gemini-video-producer, gemini-script-to-video, veo-storyboard, free-audio-scout, subtitle-auto, video-remixer-free, ai-avatar-free, gemini-thumbnail-gen
+- Each: SKILL.md + platform-aware core engine (platform detection, hook/CTA, license hygiene, ToS throttling) + CLI (--text/--file/--json, any cwd) — 435 total = 15 + 50 + 150 + 100 + 50 + 70
+- Freebie sources: Pexels/Pixabay/Unsplash/Mixkit/Coverr + Pixabay Music/Mixkit Audio/YouTube Audio Library; Gemini/VeO/Imagen prompt→storyboard→clip planning with no-key offline simulation
+- Tests: `tests/test_social70_agents.py` (6 tests), EXPECTED_AGENTS 365→435
+- Example: `examples/social_video_demo.py`
+
+### Changed
+- README: badge 365→435, factory 365→435, added 70 Social/Video tables + try-commands, layout 365→435
+- agents/AGENTS.md: header 365→435, added 70 Social/Video tables
+- pyproject description 365→435
+
+### Quality Gates
+- All 435 CLIs pass --help from neutral cwd; all 435 engines pass analyze+format_report smoke
+
+---
 
 ## [2.3.0] - 2026-08-28 — 50 HR/HRBP/L&D Deep Series (365 Total)
 

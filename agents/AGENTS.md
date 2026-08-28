@@ -5,7 +5,7 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 
 ---
 
-## 🌟 Complete Sub-Agent Catalog (365 Specialized Sub-Agents)
+## 🌟 Complete Sub-Agent Catalog (435 Specialized Sub-Agents)
 
 ### 🧠 Cognitive Architecture & Metacognition (Depth-Skills Powered)
 | Sub-Agent | Category | Description | Primary CLI | Location |
@@ -565,6 +565,109 @@ All 100: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines exp
 | `team-effectiveness-agent` | Team health: trust, clarity, dynamics, and Lencioni-style friction mapping | `python cli/team_effectiveness.py` |
 
 All 50: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines `analyze(text)` + `format_report`; `tests/test_hr50_agents.py` (6 tests).
+
+
+---
+
+## 📱🎬 70 Social & Video Generation Series — LinkedIn / Instagram / X / YouTube / TikTok + Freebie + Gemini
+
+*70 social/video agents — platform-aware, hook/CTA, license hygiene, ToS throttling. Same contract: SKILL.md + core engine + CLI + smoke tests.*
+
+### LinkedIn — Control, Automation & Growth (12)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `linkedin-scheduler-agent` | Queue, calendar, timezone-aware publishing, and cross-post guards for LinkedIn | `python cli/linkedin_scheduler.py` |
+| `linkedin-dm-funnel-agent` | Connection → DM → meeting funnel with personalization and safety throttles | `python cli/linkedin_dm_funnel.py` |
+| `linkedin-analytics-radar-agent` | SSI, impressions→leads, dwell-time, and creator-mode telemetry | `python cli/linkedin_analytics_radar.py` |
+| `linkedin-lead-scraper-agent` | Compliant prospect discovery, Sales Navigator filters, and enrichment hygiene | `python cli/linkedin_lead_scraper.py` |
+| `linkedin-company-page-agent` | Page admin, showcase pages, employee advocacy, and analytics rollup | `python cli/linkedin_company_page.py` |
+| `linkedin-newsletter-architect-agent` | Newsletter cadence, issue scaffolding, and subscriber growth loops | `python cli/linkedin_newsletter_architect.py` |
+| `linkedin-live-producer-agent` | Live event run-of-show, speaker comms, and replay repurposing | `python cli/linkedin_live_producer.py` |
+| `linkedin-ads-optimizer-agent` | Campaign, audience, bid, and creative fatigue for LinkedIn Ads | `python cli/linkedin_ads_optimizer.py` |
+| `linkedin-outreach-sequencer-agent` | Value-first sequenced outreach with reply detection and CRM sync | `python cli/linkedin_outreach_sequencer.py` |
+| `linkedin-personal-brand-agent` | POV mining from commits/work, voice calibration, and authority cadence | `python cli/linkedin_personal_brand.py` |
+| `linkedin-event-networker-agent` | Event attendee mapping, warm-intro paths, and post-event follow-up | `python cli/linkedin_event_networker.py` |
+| `linkedin-poll-viral-agent` | Poll hooks, comment-velocity design, and algorithm-friendly timing | `python cli/linkedin_poll_viral.py` |
+
+### Instagram — Control, Automation & Growth (12)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `insta-reels-virality-agent` | Hook-window, sound sync, loop-rate, and retention editing for Reels | `python cli/insta_reels_virality.py` |
+| `insta-grid-planner-agent` | Grid aesthetics, color-story, alt-text, and carousel sequencing | `python cli/insta_grid_planner.py` |
+| `insta-story-architect-agent` | Story arcs, stickers, polls, swipe-ups, and highlight hygiene | `python cli/insta_story_architect.py` |
+| `insta-hashtag-lab-agent` | Hashtag tiering, banned-tag audit, and reach vs niche balance | `python cli/insta_hashtag_lab.py` |
+| `insta-dm-automation-agent` | Story-reply → DM, keyword triggers, and human-handoff | `python cli/insta_dm_automation.py` |
+| `insta-influencer-match-agent` | Audience overlap, fake-follower audit, and brief→deliverable tracking | `python cli/insta_influencer_match.py` |
+| `insta-shop-optimizer-agent` | Product tags, catalog hygiene, and DM→checkout drop analysis | `python cli/insta_shop_optimizer.py` |
+| `insta-analytics-insights-agent` | Reach/saves/shares, follower activity windows, and content mix audit | `python cli/insta_analytics_insights.py` |
+| `insta-ads-launcher-agent` | Creative variants, audience, placements, and incrementality for IG Ads | `python cli/insta_ads_launcher.py` |
+| `insta-ugc-harvester-agent` | UGC discovery, rights requests, and repurpose queue | `python cli/insta_ugc_harvester.py` |
+| `insta-comment-guardian-agent` | Toxicity, spam, and brand-safety moderation with allowlists | `python cli/insta_comment_guardian.py` |
+| `insta-live-commerce-agent` | Live shopping run-of-show, drops, and checkout telemetry | `python cli/insta_live_commerce.py` |
+
+### X.com — Control, Automation & Growth (12)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `x-thread-architect-agent` | Hook + pacing + cliffhangers for long-form X threads | `python cli/x_thread_architect.py` |
+| `x-reply-bot-agent` | Reply-guy strategy, context-aware replies, and rate-limit safety | `python cli/x_reply_bot.py` |
+| `x-list-intel-agent` | List curation, signal vs noise, and DM-able prospect surfacing | `python cli/x_list_intel.py` |
+| `x-spaces-producer-agent` | Spaces agenda, speaker queue, and clip harvesting | `python cli/x_spaces_producer.py` |
+| `x-trend-jacker-agent` | Trend velocity, angle fit, and safe trend-jacking timing | `python cli/x_trend_jacker.py` |
+| `x-dm-funnel-agent` | Public → DM permission, value ladders, and auto-qualify | `python cli/x_dm_funnel.py` |
+| `x-analytics-pulse-agent` | Views, bookmarks, profile clicks, and follower quality | `python cli/x_analytics_pulse.py` |
+| `x-ads-booster-agent` | Creative fatigue, bid, audience, and brand-safety for X Ads | `python cli/x_ads_booster.py` |
+| `x-search-scraper-agent` | Advanced search operators, saved searches, and lead/theme mining | `python cli/x_search_scraper.py` |
+| `x-community-cultivator-agent` | Community notes, member roles, and UGC flywheel on X | `python cli/x_community_cultivator.py` |
+| `x-toxicity-shield-agent` | Harassment, dogpiling, and shadow-ban risk detection | `python cli/x_toxicity_shield.py` |
+| `x-viral-hook-lab-agent` | Hook scoring, pattern-bending, and timing optimization | `python cli/x_viral_hook_lab.py` |
+
+### YouTube — Control, Automation & Growth (12)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `youtube-channel-architect-agent` | Channel positioning, trailer, playlists, and subscribe triggers | `python cli/youtube_channel_architect.py` |
+| `youtube-shorts-virality-agent` | Hook-window, loop, and binge-path for Shorts | `python cli/youtube_shorts_virality.py` |
+| `youtube-seo-optimizer-agent` | Title/tags/chapters, search vs suggested, and CTR from impressions | `python cli/youtube_seo_optimizer.py` |
+| `youtube-thumbnail-forge-agent` | Thumbnail contrast, face/eyes, text sparsity, and A/B planning | `python cli/youtube_thumbnail_forge.py` |
+| `youtube-chapter-optimizer-agent` | Chaptering, key moments, and seek-intent mapping | `python cli/youtube_chapter_optimizer.py` |
+| `youtube-live-ops-agent` | Live run-of-show, chat moderation, and super-chat funnel | `python cli/youtube_live_ops.py` |
+| `youtube-membership-monetizer-agent` | Memberships, perks, and churn reduction for YT | `python cli/youtube_membership_monetizer.py` |
+| `youtube-analytics-sentinel-agent` | Retention curves, traffic sources, and returning vs new | `python cli/youtube_analytics_sentinel.py` |
+| `youtube-comment-manager-agent` | Pinned comment, heart/reply strategy, and toxic filtering | `python cli/youtube_comment_manager.py` |
+| `youtube-collab-scout-agent` | Collab fit, audience overlap, and cross-promo planning | `python cli/youtube_collab_scout.py` |
+| `youtube-repurpose-engine-agent` | Long→Shorts→Threads atomization and platform reformat | `python cli/youtube_repurpose_engine.py` |
+| `youtube-ads-roi-agent` | TrueView, CPM/CPV, view-through, and creative fatigue for YT Ads | `python cli/youtube_ads_roi.py` |
+
+### TikTok — Virality & Commerce (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `tiktok-sound-trend-agent` | Sound velocity, dance/format fit, and early-jacking timing | `python cli/tiktok_sound_trend.py` |
+| `tiktok-shop-affiliate-agent` | Shop product tags, affiliate match, and commission telemetry | `python cli/tiktok_shop_affiliate.py` |
+| `tiktok-live-commerce-agent` | Live run-of-show, gifting, and shop conversion | `python cli/tiktok_live_commerce.py` |
+| `tiktok-duet-stitch-agent` | Duet/stitch hooks, response framing, and collab etiquette | `python cli/tiktok_duet_stitch.py` |
+| `tiktok-analytics-radar-agent` | Completion rate, rewatch, and follower activity heatmaps | `python cli/tiktok_analytics_radar.py` |
+| `tiktok-ads-spark-agent` | Spark Ads, creator licensing, and whitelisting workflow | `python cli/tiktok_ads_spark.py` |
+| `tiktok-creator-scout-agent` | Creator discovery, authenticity, and brief→post tracking | `python cli/tiktok_creator_scout.py` |
+| `tiktok-script-lab-agent` | 3-sec hook, pattern interrupts, and CTA tailoring | `python cli/tiktok_script_lab.py` |
+| `tiktok-hashtag-virality-agent` | Hashtag tiering, challenge fit, and banned-tag hygiene | `python cli/tiktok_hashtag_virality.py` |
+| `tiktok-comment-moderator-agent` | Spam, hate, and brand-safety moderation at TikTok scale | `python cli/tiktok_comment_moderator.py` |
+
+### Video Generation — Freebie Sources + Gemini/VeO (12)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `free-stock-scout-agent` | Discover free stock video/images across Pexels/Pixabay/Unsplash/Mixkit/Coverr with license filters | `python cli/free_stock_scout.py` |
+| `pexels-pipeline-agent` | Pexels API search, pagination, download, and attribution assembly | `python cli/pexels_pipeline.py` |
+| `pixabay-curator-agent` | Pixabay curation, duration/orientation filters, and safe-search guards | `python cli/pixabay_curator.py` |
+| `mixkit-video-forge-agent` | Mixkit catalog, cut-downs, and no-attribution clip hygiene | `python cli/mixkit_video_forge.py` |
+| `gemini-video-producer-agent` | Gemini/VeO prompt → storyboard → clip plan with cost/latency awareness | `python cli/gemini_video_producer.py` |
+| `gemini-script-to-video-agent` | Script → Gemini scene prompts → shot list + B-roll mapping from free stock | `python cli/gemini_script_to_video.py` |
+| `veo-storyboard-agent` | Veo 3 prompts, camera moves, and continuity guards | `python cli/veo_storyboard.py` |
+| `free-audio-scout-agent` | Free music/SFX (Pixabay Music, Mixkit, YouTube Audio Library) with license hygiene | `python cli/free_audio_scout.py` |
+| `subtitle-auto-agent` | Whisper-style timing, speaker diarization, and SRT/VTT export | `python cli/subtitle_auto.py` |
+| `video-remixer-free-agent` | Free-source remix: cuts, transitions, and Ken Burns with no-stock watermark | `python cli/video_remixer_free.py` |
+| `ai-avatar-free-agent` | Free avatar/voice (Gemini + open tools) with consent and disclosure guards | `python cli/ai_avatar_free.py` |
+| `gemini-thumbnail-gen-agent` | Gemini/Imagen thumbnail prompts, text sparsity, and CTR hypothesis | `python cli/gemini_thumbnail_gen.py` |
+
+All 70: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines `analyze(text)` + `format_report`; `tests/test_social70_agents.py` (6 tests).
 
 ## ⚡ CLI Hub Discovery
 
