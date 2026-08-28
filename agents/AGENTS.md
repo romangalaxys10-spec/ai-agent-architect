@@ -5,13 +5,20 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 
 ---
 
-## 🌟 Complete Sub-Agent Catalog (14 Specialized Sub-Agents)
+## 🌟 Complete Sub-Agent Catalog (15 Specialized Sub-Agents)
+
+### 🧠 Cognitive Architecture & Metacognition (Depth-Skills Powered)
+| Sub-Agent | Category | Description | Primary CLI | Location |
+|---|---|---|---|---|
+| 🧠 **`depth-conductor-agent`** | Cognitive Depth | Powered by `depth-skills`. Prevents premature closure, excavates hidden assumptions, generates contrarian paths, and stress-tests architectures. | `python cli/conductor.py` | [`agents/depth-conductor-agent/`](./depth-conductor-agent) |
+| 🏛️ **`senior-architect-agent`** | Systems Architecture | Cognitive DAG state-machine design, modular decomposition, and zero-trust verification. | `agent-architect` | [`agents/senior-architect-agent/`](./senior-architect-agent) |
+| 🍏 **`steve-jobs-agent`** | Product Taste | Enforces *Focus (Saying NO to 1,000 things)*, *The Whole Widget*, and binary quality verdicts (`INSANELY_GREAT` vs `TOTAL_BULLSHIT`). | `agent-architect review` | [`agents/steve-jobs-agent/`](./steve-jobs-agent) |
+| 🏭 **`skill-factory-agent`** | Skill Scaffolding | Automated builder for universal `SKILL.md` packages with verification fixtures. | `agent-architect scaffold-skill` | [`agents/skill-factory-agent/`](./skill-factory-agent) |
 
 ### 🎨 Design & Product UI
 | Sub-Agent | Category | Description | Primary CLI | Location |
 |---|---|---|---|---|
 | 🎨 **`superdesign-agent`** | Design & UI/UX | 100% Credit-Free Anti-AI-Slop design engine for responsive websites, 16:9 keynote decks, and Teenage Engineering telemetry HUDs. | `superdesign` | [`agents/superdesign-agent/`](./superdesign-agent) |
-| 🍏 **`steve-jobs-agent`** | Product Taste | Enforces *Focus (Saying NO to 1,000 things)*, *The Whole Widget*, and binary quality verdicts (`INSANELY_GREAT` vs `TOTAL_BULLSHIT`). | `agent-architect review` | [`agents/steve-jobs-agent/`](./steve-jobs-agent) |
 
 ### ⚡ Web3 & Security Operations
 | Sub-Agent | Category | Description | Primary CLI | Location |
@@ -28,14 +35,12 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 | 🚀 **`product-launch-orchestrator`** | Launch Campaigns | Multi-platform product launch campaigns for GitHub repos, Show HN posts, Product Hunt, and Reddit developer subs. | `python cli/launch.py` | [`agents/product-launch-orchestrator/`](./product-launch-orchestrator) |
 | 📬 **`cold-outreach-dealflow`** | B2B Sales & Contracts | High-deliverability technical email sequences, spam-word linter, and Statement of Work (SOW) contract generator. | `python cli/dealflow.py` | [`agents/cold-outreach-dealflow/`](./cold-outreach-dealflow) |
 
-### 🛠️ Architecture, Career & Core Operations
+### 🛠️ Core Operations & Infrastructure
 | Sub-Agent | Category | Description | Primary CLI | Location |
 |---|---|---|---|---|
 | 🎯 **`career-hunter-orchestrator`** | Career & Leads | Headless job scout, ATS-optimized resume generator, bespoke cover letter engine, and lead CRM. | `python cli/career.py` | [`agents/career-hunter-orchestrator/`](./career-hunter-orchestrator) |
 | 🧠 **`model-bridge-router`** | LLM Gateway | Adaptive multi-model router (GLM-4.7/5.3, Claude 3.7, Local) with unified tool schema translation and cost optimizer. | `python cli/bridge.py` | [`agents/model-bridge-router/`](./model-bridge-router) |
 | 🧾 **`invoice-billing-sentinel`** | Finance & Ops | Deterministic multi-currency invoice generator, timesheet tracker, and vector financial reports. | `python cli/billing.py` | [`agents/invoice-billing-sentinel/`](./invoice-billing-sentinel) |
-| 🏛️ **`senior-architect-agent`** | Systems Architecture | Cognitive DAG state-machine design, modular decomposition, and zero-trust verification. | `agent-architect` | [`agents/senior-architect-agent/`](./senior-architect-agent) |
-| 🏭 **`skill-factory-agent`** | Skill Scaffolding | Automated builder for universal `SKILL.md` packages with verification fixtures. | `agent-architect scaffold-skill` | [`agents/skill-factory-agent/`](./skill-factory-agent) |
 
 ---
 
