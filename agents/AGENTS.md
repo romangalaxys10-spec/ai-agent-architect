@@ -5,7 +5,7 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 
 ---
 
-## 🌟 Complete Sub-Agent Catalog (65 Specialized Sub-Agents)
+## 🌟 Complete Sub-Agent Catalog (215 Specialized Sub-Agents)
 
 ### 🧠 Cognitive Architecture & Metacognition (Depth-Skills Powered)
 | Sub-Agent | Category | Description | Primary CLI | Location |
@@ -143,6 +143,216 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 | ⚖️ **`contract-reviewer-agent`** | Clause detection, risk grading, redlines with fallbacks | `python cli/contract_reviewer.py` |
 
 ---
+
+---
+
+## 🚀 150 Power Expansion Suite (Global Research: GitHub + X + LinkedIn + SMM)
+
+*150 additional agents built on the same offline-deterministic contract (SKILL.md + core engine + CLI + smoke tests). Demand basis: GitHub trending (awesome-ai-agents, 300+ resources), X/LinkedIn hiring velocity, SMM growth ops, plus coverage of all 6 canonical courses end-to-end.*
+
+### Coding & DevOps (20)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `api-architect-agent` | Designs REST/GraphQL/gRPC APIs with OpenAPI specs, versioning, and contract tests | `python cli/api_architect.py` |
+| `perf-surgeon-agent` | Bottleneck detection, flame-graph interpretation, latency budgets, and perf regression gates | `python cli/perf_surgeon.py` |
+| `log-detective-agent` | Structured log aggregation, anomaly detection, distributed trace stitching, alert synthesis | `python cli/log_detective.py` |
+| `infra-as-code-agent` | Terraform/Pulumi generation, drift detection, env parity checks, plan review | `python cli/infra_as_code.py` |
+| `db-migration-agent` | Schema diff, zero-downtime migration plans, rollback scripts, data backfill verification | `python cli/db_migration.py` |
+| `qa-oracle-agent` | Test plan matrices, edge-case enumeration, risk-based test prioritization, flaky test triage | `python cli/qa_oracle.py` |
+| `release-train-agent` | Cut branches, changelog collation, semver enforcement, rollout & feature-flag coordination | `python cli/release_train.py` |
+| `feature-flag-agent` | Flag lifecycle, targeting rules, kill-switch runbooks, experiment exposure auditing | `python cli/feature_flag.py` |
+| `chaos-lab-agent` | Fault injection plans, blast-radius scoping, steady-state hypotheses, game-day runbooks | `python cli/chaos_lab.py` |
+| `oncall-buddy-agent` | Runbook retrieval, escalation routing, post-page context assembly, handoff summaries | `python cli/oncall_buddy.py` |
+| `sdk-forge-agent` | Multi-language SDK scaffolding from OpenAPI/Proto, versioned changelogs, breaking-change detection | `python cli/sdk_forge.py` |
+| `git-historian-agent` | Blame forensics, bisect automation, contributor graphs, tech-debt timeline mapping | `python cli/git_historian.py` |
+| `code-migration-agent` | Language/framework translation plans with semantic equivalence checks and test scaffolding | `python cli/code_migration.py` |
+| `env-doctor-agent` | Repro pass/fail for .env, Docker, Node/Python version mismatches, setup script generation | `python cli/env_doctor.py` |
+| `secrets-vault-agent` | Hardcoded secret scan beyond SAST, rotation schedules, least-privilege env config mapping | `python cli/secrets_vault.py` |
+| `build-optimizer-agent` | Bundle-size audit, tree-shake analysis, cache-hit maximization, CI minute reduction | `python cli/build_optimizer.py` |
+| `api-mock-agent` | Deterministic mocks from OpenAPI, Pact contracts, stub servers, fake-data factories | `python cli/api_mock.py` |
+| `licensing-guardian-agent` | OSS license compatibility, copyleft risk, SBOM generation, attribution assembly | `python cli/licensing_guardian.py` |
+| `prompt-ops-agent` | Prompt versioning, regression evals, few-shot curation, token-cost vs quality tradeoffs | `python cli/prompt_ops.py` |
+| `agent-eval-harness-agent` | Trajectory scoring, tool-use accuracy, golden-set curation, pass@k gating | `python cli/agent_eval_harness.py` |
+
+### Data & AI/ML (15)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `ml-pipeline-agent` | Feature store wiring, training DAG authoring, eval gates, model registry lifecycle | `python cli/ml_pipeline.py` |
+| `feature-store-agent` | Feature drift detection, leakage checks, importance ranking, store backfill plans | `python cli/feature_store.py` |
+| `model-risk-agent` | Bias/fairness audits, SHAP-style attribution summaries, challenger-model comparison, MRM reports | `python cli/model_risk.py` |
+| `vector-db-architect-agent` | Index selection (HNSW/IVF), chunking strategy, ANN recall benchmarking, hybrid search tuning | `python cli/vector_db_architect.py` |
+| `etl-surgeon-agent` | Pipeline lineage mapping, idempotency checks, late-arriving data handling, cost-per-GB optimization | `python cli/etl_surgeon.py` |
+| `dashboard-crafter-agent` | KPI tree design, chart selection logic, SQL generation, stakeholder-ready narrative framing | `python cli/dashboard_crafter.py` |
+| `anomaly-hunter-agent` | Time-series outlier detection, seasonal decomposition, root-cause ranking, alert suppression tuning | `python cli/anomaly_hunter.py` |
+| `forecast-oracle-agent` | Horizon selection, Prophet/ARIMA-style heuristics, confidence intervals, scenario modeling | `python cli/forecast_oracle.py` |
+| `nlp-pipeline-agent` | Tokenization choices, NER/CLS routing, eval on imbalanced sets, multilingual tradeoffs | `python cli/nlp_pipeline.py` |
+| `label-ops-agent` | Label schema design, IAA measurement, active-learning queue prioritization, QA sampling plans | `python cli/label_ops.py` |
+| `synthetic-data-agent` | Privacy-preserving synthetic generation, fidelity metrics, bias preservation checks | `python cli/synthetic_data.py` |
+| `data-governance-agent` | PII discovery, retention policy mapping, lineage cataloging, access-tier enforcement | `python cli/data_governance.py` |
+| `experiment-tracker-agent` | Run comparison matrices, hyperparam importance, early-stopping verdicts, reproducibility checklists | `python cli/experiment_tracker.py` |
+| `rag-architect-agent` | Chunking/embedding model selection, retrieval grading, citation grounding, hallucination rate measurement | `python cli/rag_architect.py` |
+| `agent-memory-architect-agent` | Working/episodic/semantic tier design, compaction triggers, retrieval policy tuning | `python cli/agent_memory_architect.py` |
+
+### Security & Compliance (12)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `threat-model-agent` | STRIDE mapping, attack-tree enumeration, mitigations ranked by risk-to-cost | `python cli/threat_model.py` |
+| `pen-test-scribe-agent` | Finding deduplication, CVSS scoring, evidence packets, remediation roadmaps | `python cli/pen_test_scribe.py` |
+| `soc-triage-agent` | Alert correlation, false-positive suppression, playbook dispatch, MTTR estimation | `python cli/soc_triage.py` |
+| `privacy-shield-agent` | GDPR/CCPA gap analysis, DPA clause mapping, consent-flow audits, retention enforcement | `python cli/privacy_shield.py` |
+| `compliance-mapper-agent` | SOC2/ISO27001/HIPAA control mapping, evidence collection checklists, gap heatmaps | `python cli/compliance_mapper.py` |
+| `red-team-agent` | Jailbreak prompt generation, guardrail bypass attempts, safety eval reporting | `python cli/red_team.py` |
+| `forensics-timeline-agent` | Artifact correlation, chain-of-custody logging, timeline reconstruction | `python cli/forensics_timeline.py` |
+| `identity-governance-agent` | SoD conflict detection, certification campaign planning, orphaned account hunting | `python cli/identity_governance.py` |
+| `supply-chain-guard-agent` | Dependency provenance, sigstore verification, typosquat detection, SBOM diffing | `python cli/supply_chain_guard.py` |
+| `crypto-audit-agent` | Primitive misuse detection, key-length enforcement, rotation hygiene scoring | `python cli/crypto_audit.py` |
+| `bug-bounty-triage-agent` | Report deduplication, reproducibility checks, severity re-grading, payout band mapping | `python cli/bug_bounty_triage.py` |
+| `incident-legal-bridge-agent` | Breach classification, notification timeline, regulator mapping, disclosure draft generation | `python cli/incident_legal_bridge.py` |
+
+### Sales & Revenue Ops (12)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `pricing-strategist-agent` | Willingness-to-pay modeling, packaging tiers, discount guardrails, expansion triggers | `python cli/pricing_strategist.py` |
+| `sales-coach-agent` | MEDDICC gap analysis, talk-time metrics, objection handling plays, next-step enforcement | `python cli/sales_coach.py` |
+| `proposal-forge-agent` | RFP shredding, win-theme mapping, compliance matrix, proposal narrative assembly | `python cli/proposal_forge.py` |
+| `revenue-ops-agent` | Funnel stage conversion, forecast hygiene, territory balancing, comp-plan alignment | `python cli/revenue_ops.py` |
+| `churn-prophet-agent` | Health scoring, leading-indicator ranking, save-play matching, expansion risk flagging | `python cli/churn_prophet.py` |
+| `partner-ecosystem-agent` | Partner-fit scoring, co-sell motion design, referral tracking, enablement gap analysis | `python cli/partner_ecosystem.py` |
+| `sales-enablement-agent` | Battlecard freshness, asset-to-stage mapping, rep ramp checklists, content gap closure | `python cli/sales_enablement.py` |
+| `gong-clone-agent` | Call transcript themes, competitor mention tracking, coaching moment extraction | `python cli/gong_clone.py` |
+| `account-plan-agent` | Org chart mapping, whitespace analysis, multi-threading plan, executive briefing pack | `python cli/account_plan.py` |
+| `forecast-radar-agent` | Pipeline coverage math, stage-weighted forecast, risk-adjusted commit calls | `python cli/forecast_radar.py` |
+| `win-loss-analyst-agent` | Interview synthesis, loss-reason taxonomy, competitive loss attribution, fix-backlog routing | `python cli/win_loss_analyst.py` |
+| `event-roi-agent` | Event cost capture, lead-to-opportunity math, follow-up SLA enforcement, repeat/skip verdict | `python cli/event_roi.py` |
+
+### Marketing & Growth (13)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `growth-loops-agent` | Loop mapping (acquisition/retention/monetization), unit economics, experiment backlog | `python cli/growth_loops.py` |
+| `influencer-scout-agent` | Audience overlap scoring, authenticity checks, brief generation, performance attribution | `python cli/influencer_scout.py` |
+| `brand-voice-agent` | Tone taxonomy enforcement, off-brand flagging, rewrite suggestions with voice preservation | `python cli/brand_voice.py` |
+| `lifecycle-marketer-agent` | Journey mapping, trigger logic, send-time optimization, deliverability linting | `python cli/lifecycle_marketer.py` |
+| `community-builder-agent` | Channel health scoring, contributor ladder design, moderation playbooks, activation campaigns | `python cli/community_builder.py` |
+| `web-analytics-agent` | Funnel drop analysis, cohort retention curves, attribution model comparison | `python cli/web_analytics.py` |
+| `paid-social-surgeon-agent` | Creative fatigue detection, audience saturation scoring, bid strategy tuning | `python cli/paid_social_surgeon.py` |
+| `affiliate-ops-agent` | Payout integrity, fraud heuristics, creative freshness scoring, partner tiering | `python cli/affiliate_ops.py` |
+| `pr-pitch-agent` | Angle generation, journalist-fit scoring, embargo timing, follow-up sequencing | `python cli/pr_pitch.py` |
+| `launch-telemetry-agent` | Pre/post metric deltas, sentiment shift, source attribution, repeat-launch playbook | `python cli/launch_telemetry.py` |
+| `referral-architect-agent` | Incentive design, viral coefficient math, fraud controls, share-copy generation | `python cli/referral_architect.py` |
+| `local-seo-agent` | NAP consistency audit, review velocity tracking, GMB optimization checklist | `python cli/local_seo.py` |
+| `video-growth-agent` | Hook scoring, retention-curve analysis, thumbnail/title A/B planning, platform cutdowns | `python cli/video_growth.py` |
+
+### Product & Research (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `ux-research-agent` | Interview coding, affinity mapping, insight prioritization, JTBD extraction | `python cli/ux_research.py` |
+| `roadmap-architect-agent` | RICE/WSJF scoring, dependency mapping, theme balancing, stakeholder narrative | `python cli/roadmap_architect.py` |
+| `spec-writer-agent` | Requirement decomposition, acceptance criteria authoring, edge-case enumeration, open-question tracking | `python cli/spec_writer.py` |
+| `design-system-agent` | Token hygiene, component API consistency, Figma drift detection, adoption metrics | `python cli/design_system.py` |
+| `user-journey-agent` | Touchpoint mapping, emotion curves, pain-point severity ranking, opportunity sizing | `python cli/user_journey.py` |
+| `ab-test-architect-agent` | Hypothesis framing, sample-size math, guardrail metrics, ship/hold/iterate verdicts | `python cli/ab_test_architect.py` |
+| `accessibility-auditor-agent` | WCAG 2.2 checks, screen-reader flow testing, color contrast math, remediation priority | `python cli/accessibility_auditor.py` |
+| `localization-pilot-agent` | String externalization, pseudo-locale testing, cultural adaptation flags, TM leverage scoring | `python cli/localization_pilot.py` |
+| `feedback-miner-agent` | Support/survey/app-review clustering, theme-to-roadmap linking, fix prioritization | `python cli/feedback_miner.py` |
+| `jobs-to-be-done-agent` | Job statement extraction, switch-moment mapping, competing-solution analysis | `python cli/jobs_to_be_done.py` |
+
+### Ops, Finance & Legal (12)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `procurement-scout-agent` | Vendor comparison matrices, TCO modeling, negotiation leverage mapping, renewal risk flags | `python cli/procurement_scout.py` |
+| `contract-lifecycle-agent` | Obligation extraction, renewal/deadline tracking, clause deviation flagging | `python cli/contract_lifecycle.py` |
+| `tax-navigator-agent` | Jurisdiction mapping, nexus flagging, filing deadline calendar, risk-ranked action list (not advice) | `python cli/tax_navigator.py` |
+| `treasury-ops-agent` | Cash positioning, bank fee audit, FX exposure flagging, liquidity runway math | `python cli/treasury_ops.py` |
+| `audit-trail-agent` | Evidence packet assembly, control-to-artifact mapping, auditor-ready narratives | `python cli/audit_trail.py` |
+| `vendor-risk-agent` | Risk tiering, questionnaire gap analysis, mitigation plan generation | `python cli/vendor_risk.py` |
+| `kpi-ledger-agent` | North-star decomposition, metric ownership, anomaly alerts, board-ready rollups | `python cli/kpi_ledger.py` |
+| `okr-coach-agent` | Objective quality scoring, key-result measurability checks, alignment mapping, retrospective synthesis | `python cli/okr_coach.py` |
+| `meeting-ops-agent` | Meeting load analysis, purpose/attendee pruning, async-shift recommendations | `python cli/meeting_ops.py` |
+| `policy-drafter-agent` | Policy structure generation, control mapping, exception workflow, review cadence design | `python cli/policy_drafter.py` |
+| `real-estate-scout-agent` | Location scoring, comps analysis, cap-rate math, due-diligence checklist | `python cli/real_estate_scout.py` |
+| `insurance-advisor-agent` | Gap analysis, limit adequacy, exclusion flagging, renewal negotiation prep (not advice) | `python cli/insurance_advisor.py` |
+
+### HR & Talent (8)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `talent-sourcer-agent` | Boolean search construction, profile-fit scoring, outreach personalization, pipeline health tracking | `python cli/talent_sourcer.py` |
+| `performance-review-agent` | Feedback theme synthesis, calibration support, growth-plan drafting, bias flagging | `python cli/performance_review.py` |
+| `compensation-benchmark-agent` | Band mapping, market percentile analysis, pay-equity flags, offer construction (not advice) | `python cli/compensation_benchmark.py` |
+| `learning-path-agent` | Skill-gap mapping, curriculum sequencing, adaptive checkpoint design, certification prep | `python cli/learning_path.py` |
+| `workforce-planner-agent` | Capacity modeling, hiring plan phasing, attrition risk flags, org design options | `python cli/workforce_planner.py` |
+| `exit-insight-agent` | Departure theme extraction, regretted vs non-regretted loss, retention lever mapping | `python cli/exit_insight.py` |
+| `dei-auditor-agent` | Pipeline diversity metrics, language inclusivity audit, intervention effectiveness scoring | `python cli/dei_auditor.py` |
+| `manager-coach-agent` | 1:1 agenda generation, coaching prompt synthesis, team health diagnostics | `python cli/manager_coach.py` |
+
+### Support & Success (7)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `csat-surgeon-agent` | Driver analysis, recovery playbooks, closed-loop tracking, segment trending | `python cli/csat_surgeon.py` |
+| `knowledge-ops-agent` | Article performance vs ticket deflection, freshness SLA, AI-assist readiness scoring | `python cli/knowledge_ops.py` |
+| `support-qa-agent` | Interaction scoring against rubric, coaching themes, calibration packet assembly | `python cli/support_qa.py` |
+| `renewal-orchestrator-agent` | Health-triggered playbooks, commercial term tracking, risk-adjusted renewal forecast | `python cli/renewal_orchestrator.py` |
+| `community-support-agent` | Forum post classification, crowdsourced answer scoring, escalation to KB creation | `python cli/community_support.py` |
+| `nps-driver-agent` | Promoter/passive/detractor drivers, closed-loop prioritization, exec narrative | `python cli/nps_driver.py` |
+| `self-serve-architect-agent` | Deflection opportunity scoring, flow design, containment rate tracking | `python cli/self_serve_architect.py` |
+
+### Creator & Media (8)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `podcast-producer-agent` | Episode arcs, show-note generation, guest research packs, distribution checklist | `python cli/podcast_producer.py` |
+| `newsletter-architect-agent` | Section planning, curation scoring, subject-A/B generation, send-time optimization | `python cli/newsletter_architect.py` |
+| `ugc-curator-agent` | Submission triage, rights management, creator attribution, repurposing queue | `python cli/ugc_curator.py` |
+| `meme-ops-agent` | Trend velocity scoring, format-body fit, timing windows, brand-safety gates | `python cli/meme_ops.py` |
+| `press-kit-agent` | Boilerplate synthesis, asset inventory, embargo packet, media Q&A prep | `python cli/press_kit.py` |
+| `course-builder-agent` | Learning objective mapping, module sequencing, assessment design, completion analytics | `python cli/course_builder.py` |
+| `event-producer-agent` | Run-of-show authoring, speaker/venue logistics, contingency branches, post-event retro | `python cli/event_producer.py` |
+| `creator-monetization-agent` | Revenue stream mapping, tier pricing, sponsor-fit scoring, payout optimization | `python cli/creator_monetization.py` |
+
+### Vertical Specialists (13)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `healthcare-scribe-agent` | SOAP note structuring, code suggestion, compliance flagging (not medical advice) | `python cli/healthcare_scribe.py` |
+| `legal-ops-agent` | Matter intake, outside-counsel spend tracking, playbook compliance, ebilling audit | `python cli/legal_ops.py` |
+| `proptech-analyst-agent` | Rent-roll parsing, valuation sensitivity, zoning flag checks, investment memo drafting | `python cli/proptech_analyst.py` |
+| `edtech-coach-agent` | Curriculum alignment, Bloom-level tagging, assignment feedback scaffolding | `python cli/edtech_coach.py` |
+| `fintech-compliance-agent` | KYC/AML flow checks, transaction monitoring flag review, regulatory mapping | `python cli/fintech_compliance.py` |
+| `climate-risk-agent` | Physical/transition risk scoring, disclosure mapping (TCFD/ISSB), mitigation ranking | `python cli/climate_risk.py` |
+| `supply-chain-optimizer-agent` | Demand forecast reconciliation, inventory policy, route optimization, disruption playbooks | `python cli/supply_chain_optimizer.py` |
+| `retail-merchandiser-agent` | Assortment planning, markdown optimization, planogram compliance, sell-through analysis | `python cli/retail_merchandiser.py` |
+| `hospitality-ops-agent` | Occupancy pacing, upsell triggers, staffing-to-demand matching, guest recovery workflows | `python cli/hospitality_ops.py` |
+| `manufacturing-qa-agent` | SPC chart interpretation, defect Pareto, CAPA tracking, traceability mapping | `python cli/manufacturing_qa.py` |
+| `energy-ops-agent` | Load forecasting, tariff optimization, curtailment planning, carbon accounting | `python cli/energy_ops.py` |
+| `gov-procurement-agent` | RFP eligibility checks, compliance matrix, proposal choreography for public sector | `python cli/gov_procurement.py` |
+| `nonprofit-impact-agent` | Theory-of-change mapping, outcome metric design, grant reporting packet assembly | `python cli/nonprofit_impact.py` |
+
+### Emerging & Agent-Native (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `autonomous-researcher-agent` | Hypothesis generation, experiment planning, lit-review synthesis, preprint monitoring | `python cli/autonomous_researcher.py` |
+| `eval-judge-agent` | Rubric authoring, LLM-as-judge calibration, inter-rater agreement scoring, golden-set expansion | `python cli/eval_judge.py` |
+| `tool-smith-agent` | Tool schema design, validation harness, mock-server generation, version migration planning | `python cli/tool_smith.py` |
+| `orchestration-designer-agent` | Topology selection (hierarchical/mesh/blackboard), handoff choreography, failure-mode mapping | `python cli/orchestration_designer.py` |
+| `memory-ops-agent` | Memory tier health, compaction trigger tuning, recall precision measurement, curation backlog | `python cli/memory_ops.py` |
+| `adversarial-tester-agent` | Red-team prompt banks, bypass attempt logging, safety regression tracking | `python cli/adversarial_tester.py` |
+| `cost-optimizer-agent` | Token/latency Pareto frontier, model routing policy, cache-hit maximization | `python cli/cost_optimizer.py` |
+| `skills-librarian-agent` | Skill discovery indexing, reuse scoring, deprecation planning, marketplace curation | `python cli/skills_librarian.py` |
+| `workflow-miner-agent` | Process mining from logs, variant analysis, automation opportunity ranking | `python cli/workflow_miner.py` |
+| `digital-twin-agent` | State-sync design, simulation scenario authoring, drift detection, what-if analysis | `python cli/digital_twin.py` |
+
+### GTM & SMM Power Suite (10)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `x-growth-hacker-agent` | Viral hook engineering, thread pacing, reply-guy strategy, algorithmic timing optimization | `python cli/x_growth_hacker.py` |
+| `linkedin-authority-agent` | POV extraction from commits, carousel outlining, comment-to-DM funnel, SSI scoring | `python cli/linkedin_authority.py` |
+| `youtube-growth-agent` | Title/thumbnail scoring, retention editing, chapter optimization, cross-platform repurposing | `python cli/youtube_growth.py` |
+| `tiktok-virality-agent` | Hook-window optimization, trend-jacking timing, sound selection, loop-rate engineering | `python cli/tiktok_virality.py` |
+| `smm-command-center-agent` | Cross-platform calendar, asset variant generation, performance rollup, crisis monitoring | `python cli/smm_command_center.py` |
+| `influencer-ops-agent` | Brief generation, deliverable tracking, usage-rights ledger, payout reconciliation | `python cli/influencer_ops.py` |
+| `social-listening-agent` | Mention clustering, sentiment velocity, crisis early-warning, competitor share-of-voice | `python cli/social_listening.py` |
+| `content-repurposer-agent` | Long-form -> thread/carousel/shorts atomization, platform-native rewriting, CTA tailoring | `python cli/content_repurposer.py` |
+| `community-growth-agent` | Activation funnel, referral loop design, moderation at scale, UGC flywheel | `python cli/community_growth.py` |
+| `paid-growth-ops-agent` | Channel mix modeling, CAC payback math, creative fatigue rotation, incrementality testing | `python cli/paid_growth_ops.py` |
+
+All 150: `python agents/<slug>/cli/<module>.py --help` from any cwd — same contract as the Top-50 (`tests/test_top50_agents.py` pattern), plus `tests/test_power150_agents.py` for this suite.
 
 ## ⚡ CLI Hub Discovery
 

@@ -32,6 +32,38 @@
 All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2.1.0] - 2026-08-28 — 150 Power Expansion (215 Total)
+
+### Added — 150 new deterministic sub-agents
+- **Coding & DevOps (20):** api-architect, perf-surgeon, log-detective, infra-as-code, db-migration, qa-oracle, release-train, feature-flag, chaos-lab, oncall-buddy, sdk-forge, git-historian, code-migration, env-doctor, secrets-vault, build-optimizer, api-mock, licensing-guardian, prompt-ops, agent-eval-harness
+- **Data & AI/ML (15):** ml-pipeline, feature-store, model-risk, vector-db-architect, etl-surgeon, dashboard-crafter, anomaly-hunter, forecast-oracle, nlp-pipeline, label-ops, synthetic-data, data-governance, experiment-tracker, rag-architect, agent-memory-architect
+- **Security & Compliance (12):** threat-model, pen-test-scribe, soc-triage, privacy-shield, compliance-mapper, red-team, forensics-timeline, identity-governance, supply-chain-guard, crypto-audit, bug-bounty-triage, incident-legal-bridge
+- **Sales & Revenue Ops (12):** pricing-strategist, sales-coach, proposal-forge, revenue-ops, churn-prophet, partner-ecosystem, sales-enablement, gong-clone, account-plan, forecast-radar, win-loss-analyst, event-roi
+- **Marketing & Growth (13):** growth-loops, influencer-scout, brand-voice, lifecycle-marketer, community-builder, web-analytics, paid-social-surgeon, affiliate-ops, pr-pitch, launch-telemetry, referral-architect, local-seo, video-growth
+- **Product & Research (10):** ux-research, roadmap-architect, spec-writer, design-system, user-journey, ab-test-architect, accessibility-auditor, localization-pilot, feedback-miner, jobs-to-be-done
+- **Ops/Finance/Legal (12):** procurement-scout, contract-lifecycle, tax-navigator, treasury-ops, audit-trail, vendor-risk, kpi-ledger, okr-coach, meeting-ops, policy-drafter, real-estate-scout, insurance-advisor
+- **HR & Talent (8):** talent-sourcer, performance-review, compensation-benchmark, learning-path, workforce-planner, exit-insight, dei-auditor, manager-coach
+- **Support & Success (7):** csat-surgeon, knowledge-ops, support-qa, renewal-orchestrator, community-support, nps-driver, self-serve-architect
+- **Creator & Media (8):** podcast-producer, newsletter-architect, ugc-curator, meme-ops, press-kit, course-builder, event-producer, creator-monetization
+- **Vertical Specialists (13):** healthcare-scribe, legal-ops, proptech-analyst, edtech-coach, fintech-compliance, climate-risk, supply-chain-optimizer, retail-merchandiser, hospitality-ops, manufacturing-qa, energy-ops, gov-procurement, nonprofit-impact
+- **Emerging & Agent-Native (10):** autonomous-researcher, eval-judge, tool-smith, orchestration-designer, memory-ops, adversarial-tester, cost-optimizer, skills-librarian, workflow-miner, digital-twin
+- **GTM & SMM Power Suite (10):** x-growth-hacker, linkedin-authority, youtube-growth, tiktok-virality, smm-command-center, influencer-ops, social-listening, content-repurposer, community-growth, paid-growth-ops
+- Demand basis: synthesis of GitHub trending (awesome-ai-agents 300+), X/LinkedIn/SMM hiring signals, and full course cross-check (proflead/how-to-build-ai-agent, ed-donner/agents, microsoft/Zero-To-Production, bryanyzhu/agentic-ai-system-course, microsoft/ai-agents-for-beginners, GeneArnold/AI-Agent-Engineering-Course)
+- Every new agent: **SKILL.md + core engine + CLI + tests** on the same contract (offline, deterministic, stdlib-only), `AgentRegistry.discover_agents()` auto-discovers all 215.
+
+### Changed
+- README: Agents Hub badge 15 → 215; new section “150 Power Expansion Suite” with grouped tables and try-commands; project layout count updated; docs cross-linked.
+- agents/AGENTS.md: catalog header 65 → 215; added full 150 power suite grouped tables.
+- tests/test_subagent_completeness.py: EXPECTED_AGENTS 65 → 215.
+- tests/test_power150_agents.py: new contract + functional test suite (6 tests) for the 150.
+
+### Quality Gates
+- All 215 CLIs pass `python agents/<slug>/cli/<module>.py --help` from neutral cwd (`/tmp`).
+- All 215 engines pass `Engine.analyze(text)` + `format_report` smoke test.
+- All SKILL.md frontmatter (name/description/version) parse as valid YAML.
+
+---
+
 ## [2.0.0] — 2026-08-28 — "End-to-End Completion"
 
 The framework previously *described* an agent architecture; it now *is* one. This

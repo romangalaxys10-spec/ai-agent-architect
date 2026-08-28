@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Tests: 183 offline](https://img.shields.io/badge/tests-183%20offline-brightgreen.svg)]()
-[![Agents Hub: 15 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-15%20Complete%20Agents-brightgreen.svg)]()
+[![Agents Hub: 215 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-215%20Complete%20Agents-brightgreen.svg)]()
 [![Zero-Key Runtime](https://img.shields.io/badge/runtime-zero%20API%20keys-success.svg)]()
 [![MCP](https://img.shields.io/badge/protocol-MCP%20%2B%20A2A-blueviolet.svg)]()
 
@@ -154,9 +154,9 @@ Traditional models suffer from **Premature Closure** and **Pattern Gravity**. Th
 
 ---
 
-## 🏭 Agents Factory: 15 Complete Sub-Agents
+## 🏭 Agents Factory: 215 Complete Sub-Agents (15 Founding + 50 Demand Suite + 150 Power Expansion)
 
-Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract):
+Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **215 total = 15 founding + 50 demand suite + 150 power expansion.**
 
 | # | Agent | Domain |
 |---|-------|--------|
@@ -237,7 +237,7 @@ core/
 ├── orchestrator.py         # hierarchical / pipeline / mesh / blackboard
 ├── tool_registry.py        # schemas, validation pipeline, hooks, annotations
 ├── depth_cognitive_engine.py · steve_jobs_lens.py · engine.py · registry.py
-agents/                     # 15 complete sub-agents (SKILL.md + core + cli)
+agents/                     # 215 complete sub-agents (SKILL.md + core + cli)
 factory/                    # skill builder, prompt synthesizer
 evals/                      # versioned rubrics + golden datasets
 examples/                   # end-to-end walkthroughs
@@ -278,6 +278,222 @@ Test suite: `python -m pytest tests/test_top50_agents.py` (56 tests).
 ```bash
 # try one:
 python agents/sast-sentinel-agent/cli/sast_sentinel.py --code 'cursor.execute(f"SELECT * FROM t WHERE id={uid}")'
+```
+
+
+## 🚀 150 Power Expansion Suite (Global Demand + X / LinkedIn / SMM Research)
+
+*Beyond the founding 15 + Top-50, this expansion adds 150 high-demand agents synthesized from worldwide 2025–2026 research: GitHub trending (awesome-ai-agents 300+ resources), X/LinkedIn hiring signals, SMM growth playbooks, and full cross-check against 6 canonical courses (Google ADK / ed-donner / Microsoft Zero-to-Production / bryanyzhu Agentic Systems / Microsoft AI Agents for Beginners / GeneArnold Agent Engineering). Every agent: offline deterministic engine, CLI from any cwd, SKILL.md contract.*
+
+Full catalog with per-agent tables: [`agents/AGENTS.md`](agents/AGENTS.md). Every agent is discoverable via `AgentRegistry.discover_agents()` and the CLI hub.
+
+### Coding & DevOps (20)
+| Agent | What it does |
+|---|---|
+| `api-architect-agent` | Designs REST/GraphQL/gRPC APIs with OpenAPI specs, versioning, and contract tests |
+| `perf-surgeon-agent` | Bottleneck detection, flame-graph interpretation, latency budgets, and perf regression gates |
+| `log-detective-agent` | Structured log aggregation, anomaly detection, distributed trace stitching, alert synthesis |
+| `infra-as-code-agent` | Terraform/Pulumi generation, drift detection, env parity checks, plan review |
+| `db-migration-agent` | Schema diff, zero-downtime migration plans, rollback scripts, data backfill verification |
+| `qa-oracle-agent` | Test plan matrices, edge-case enumeration, risk-based test prioritization, flaky test triage |
+| `release-train-agent` | Cut branches, changelog collation, semver enforcement, rollout & feature-flag coordination |
+| `feature-flag-agent` | Flag lifecycle, targeting rules, kill-switch runbooks, experiment exposure auditing |
+| `chaos-lab-agent` | Fault injection plans, blast-radius scoping, steady-state hypotheses, game-day runbooks |
+| `oncall-buddy-agent` | Runbook retrieval, escalation routing, post-page context assembly, handoff summaries |
+| `sdk-forge-agent` | Multi-language SDK scaffolding from OpenAPI/Proto, versioned changelogs, breaking-change detection |
+| `git-historian-agent` | Blame forensics, bisect automation, contributor graphs, tech-debt timeline mapping |
+| `code-migration-agent` | Language/framework translation plans with semantic equivalence checks and test scaffolding |
+| `env-doctor-agent` | Repro pass/fail for .env, Docker, Node/Python version mismatches, setup script generation |
+| `secrets-vault-agent` | Hardcoded secret scan beyond SAST, rotation schedules, least-privilege env config mapping |
+| `build-optimizer-agent` | Bundle-size audit, tree-shake analysis, cache-hit maximization, CI minute reduction |
+| `api-mock-agent` | Deterministic mocks from OpenAPI, Pact contracts, stub servers, fake-data factories |
+| `licensing-guardian-agent` | OSS license compatibility, copyleft risk, SBOM generation, attribution assembly |
+| `prompt-ops-agent` | Prompt versioning, regression evals, few-shot curation, token-cost vs quality tradeoffs |
+| `agent-eval-harness-agent` | Trajectory scoring, tool-use accuracy, golden-set curation, pass@k gating |
+
+### Data & AI/ML (15)
+| Agent | What it does |
+|---|---|
+| `ml-pipeline-agent` | Feature store wiring, training DAG authoring, eval gates, model registry lifecycle |
+| `feature-store-agent` | Feature drift detection, leakage checks, importance ranking, store backfill plans |
+| `model-risk-agent` | Bias/fairness audits, SHAP-style attribution summaries, challenger-model comparison, MRM reports |
+| `vector-db-architect-agent` | Index selection (HNSW/IVF), chunking strategy, ANN recall benchmarking, hybrid search tuning |
+| `etl-surgeon-agent` | Pipeline lineage mapping, idempotency checks, late-arriving data handling, cost-per-GB optimization |
+| `dashboard-crafter-agent` | KPI tree design, chart selection logic, SQL generation, stakeholder-ready narrative framing |
+| `anomaly-hunter-agent` | Time-series outlier detection, seasonal decomposition, root-cause ranking, alert suppression tuning |
+| `forecast-oracle-agent` | Horizon selection, Prophet/ARIMA-style heuristics, confidence intervals, scenario modeling |
+| `nlp-pipeline-agent` | Tokenization choices, NER/CLS routing, eval on imbalanced sets, multilingual tradeoffs |
+| `label-ops-agent` | Label schema design, IAA measurement, active-learning queue prioritization, QA sampling plans |
+| `synthetic-data-agent` | Privacy-preserving synthetic generation, fidelity metrics, bias preservation checks |
+| `data-governance-agent` | PII discovery, retention policy mapping, lineage cataloging, access-tier enforcement |
+| `experiment-tracker-agent` | Run comparison matrices, hyperparam importance, early-stopping verdicts, reproducibility checklists |
+| `rag-architect-agent` | Chunking/embedding model selection, retrieval grading, citation grounding, hallucination rate measurement |
+| `agent-memory-architect-agent` | Working/episodic/semantic tier design, compaction triggers, retrieval policy tuning |
+
+### Security & Compliance (12)
+| Agent | What it does |
+|---|---|
+| `threat-model-agent` | STRIDE mapping, attack-tree enumeration, mitigations ranked by risk-to-cost |
+| `pen-test-scribe-agent` | Finding deduplication, CVSS scoring, evidence packets, remediation roadmaps |
+| `soc-triage-agent` | Alert correlation, false-positive suppression, playbook dispatch, MTTR estimation |
+| `privacy-shield-agent` | GDPR/CCPA gap analysis, DPA clause mapping, consent-flow audits, retention enforcement |
+| `compliance-mapper-agent` | SOC2/ISO27001/HIPAA control mapping, evidence collection checklists, gap heatmaps |
+| `red-team-agent` | Jailbreak prompt generation, guardrail bypass attempts, safety eval reporting |
+| `forensics-timeline-agent` | Artifact correlation, chain-of-custody logging, timeline reconstruction |
+| `identity-governance-agent` | SoD conflict detection, certification campaign planning, orphaned account hunting |
+| `supply-chain-guard-agent` | Dependency provenance, sigstore verification, typosquat detection, SBOM diffing |
+| `crypto-audit-agent` | Primitive misuse detection, key-length enforcement, rotation hygiene scoring |
+| `bug-bounty-triage-agent` | Report deduplication, reproducibility checks, severity re-grading, payout band mapping |
+| `incident-legal-bridge-agent` | Breach classification, notification timeline, regulator mapping, disclosure draft generation |
+
+### Sales & Revenue Ops (12)
+| Agent | What it does |
+|---|---|
+| `pricing-strategist-agent` | Willingness-to-pay modeling, packaging tiers, discount guardrails, expansion triggers |
+| `sales-coach-agent` | MEDDICC gap analysis, talk-time metrics, objection handling plays, next-step enforcement |
+| `proposal-forge-agent` | RFP shredding, win-theme mapping, compliance matrix, proposal narrative assembly |
+| `revenue-ops-agent` | Funnel stage conversion, forecast hygiene, territory balancing, comp-plan alignment |
+| `churn-prophet-agent` | Health scoring, leading-indicator ranking, save-play matching, expansion risk flagging |
+| `partner-ecosystem-agent` | Partner-fit scoring, co-sell motion design, referral tracking, enablement gap analysis |
+| `sales-enablement-agent` | Battlecard freshness, asset-to-stage mapping, rep ramp checklists, content gap closure |
+| `gong-clone-agent` | Call transcript themes, competitor mention tracking, coaching moment extraction |
+| `account-plan-agent` | Org chart mapping, whitespace analysis, multi-threading plan, executive briefing pack |
+| `forecast-radar-agent` | Pipeline coverage math, stage-weighted forecast, risk-adjusted commit calls |
+| `win-loss-analyst-agent` | Interview synthesis, loss-reason taxonomy, competitive loss attribution, fix-backlog routing |
+| `event-roi-agent` | Event cost capture, lead-to-opportunity math, follow-up SLA enforcement, repeat/skip verdict |
+
+### Marketing & Growth (13)
+| Agent | What it does |
+|---|---|
+| `growth-loops-agent` | Loop mapping (acquisition/retention/monetization), unit economics, experiment backlog |
+| `influencer-scout-agent` | Audience overlap scoring, authenticity checks, brief generation, performance attribution |
+| `brand-voice-agent` | Tone taxonomy enforcement, off-brand flagging, rewrite suggestions with voice preservation |
+| `lifecycle-marketer-agent` | Journey mapping, trigger logic, send-time optimization, deliverability linting |
+| `community-builder-agent` | Channel health scoring, contributor ladder design, moderation playbooks, activation campaigns |
+| `web-analytics-agent` | Funnel drop analysis, cohort retention curves, attribution model comparison |
+| `paid-social-surgeon-agent` | Creative fatigue detection, audience saturation scoring, bid strategy tuning |
+| `affiliate-ops-agent` | Payout integrity, fraud heuristics, creative freshness scoring, partner tiering |
+| `pr-pitch-agent` | Angle generation, journalist-fit scoring, embargo timing, follow-up sequencing |
+| `launch-telemetry-agent` | Pre/post metric deltas, sentiment shift, source attribution, repeat-launch playbook |
+| `referral-architect-agent` | Incentive design, viral coefficient math, fraud controls, share-copy generation |
+| `local-seo-agent` | NAP consistency audit, review velocity tracking, GMB optimization checklist |
+| `video-growth-agent` | Hook scoring, retention-curve analysis, thumbnail/title A/B planning, platform cutdowns |
+
+### Product & Research (10)
+| Agent | What it does |
+|---|---|
+| `ux-research-agent` | Interview coding, affinity mapping, insight prioritization, JTBD extraction |
+| `roadmap-architect-agent` | RICE/WSJF scoring, dependency mapping, theme balancing, stakeholder narrative |
+| `spec-writer-agent` | Requirement decomposition, acceptance criteria authoring, edge-case enumeration, open-question tracking |
+| `design-system-agent` | Token hygiene, component API consistency, Figma drift detection, adoption metrics |
+| `user-journey-agent` | Touchpoint mapping, emotion curves, pain-point severity ranking, opportunity sizing |
+| `ab-test-architect-agent` | Hypothesis framing, sample-size math, guardrail metrics, ship/hold/iterate verdicts |
+| `accessibility-auditor-agent` | WCAG 2.2 checks, screen-reader flow testing, color contrast math, remediation priority |
+| `localization-pilot-agent` | String externalization, pseudo-locale testing, cultural adaptation flags, TM leverage scoring |
+| `feedback-miner-agent` | Support/survey/app-review clustering, theme-to-roadmap linking, fix prioritization |
+| `jobs-to-be-done-agent` | Job statement extraction, switch-moment mapping, competing-solution analysis |
+
+### Ops, Finance & Legal (12)
+| Agent | What it does |
+|---|---|
+| `procurement-scout-agent` | Vendor comparison matrices, TCO modeling, negotiation leverage mapping, renewal risk flags |
+| `contract-lifecycle-agent` | Obligation extraction, renewal/deadline tracking, clause deviation flagging |
+| `tax-navigator-agent` | Jurisdiction mapping, nexus flagging, filing deadline calendar, risk-ranked action list (not advice) |
+| `treasury-ops-agent` | Cash positioning, bank fee audit, FX exposure flagging, liquidity runway math |
+| `audit-trail-agent` | Evidence packet assembly, control-to-artifact mapping, auditor-ready narratives |
+| `vendor-risk-agent` | Risk tiering, questionnaire gap analysis, mitigation plan generation |
+| `kpi-ledger-agent` | North-star decomposition, metric ownership, anomaly alerts, board-ready rollups |
+| `okr-coach-agent` | Objective quality scoring, key-result measurability checks, alignment mapping, retrospective synthesis |
+| `meeting-ops-agent` | Meeting load analysis, purpose/attendee pruning, async-shift recommendations |
+| `policy-drafter-agent` | Policy structure generation, control mapping, exception workflow, review cadence design |
+| `real-estate-scout-agent` | Location scoring, comps analysis, cap-rate math, due-diligence checklist |
+| `insurance-advisor-agent` | Gap analysis, limit adequacy, exclusion flagging, renewal negotiation prep (not advice) |
+
+### HR & Talent (8)
+| Agent | What it does |
+|---|---|
+| `talent-sourcer-agent` | Boolean search construction, profile-fit scoring, outreach personalization, pipeline health tracking |
+| `performance-review-agent` | Feedback theme synthesis, calibration support, growth-plan drafting, bias flagging |
+| `compensation-benchmark-agent` | Band mapping, market percentile analysis, pay-equity flags, offer construction (not advice) |
+| `learning-path-agent` | Skill-gap mapping, curriculum sequencing, adaptive checkpoint design, certification prep |
+| `workforce-planner-agent` | Capacity modeling, hiring plan phasing, attrition risk flags, org design options |
+| `exit-insight-agent` | Departure theme extraction, regretted vs non-regretted loss, retention lever mapping |
+| `dei-auditor-agent` | Pipeline diversity metrics, language inclusivity audit, intervention effectiveness scoring |
+| `manager-coach-agent` | 1:1 agenda generation, coaching prompt synthesis, team health diagnostics |
+
+### Support & Success (7)
+| Agent | What it does |
+|---|---|
+| `csat-surgeon-agent` | Driver analysis, recovery playbooks, closed-loop tracking, segment trending |
+| `knowledge-ops-agent` | Article performance vs ticket deflection, freshness SLA, AI-assist readiness scoring |
+| `support-qa-agent` | Interaction scoring against rubric, coaching themes, calibration packet assembly |
+| `renewal-orchestrator-agent` | Health-triggered playbooks, commercial term tracking, risk-adjusted renewal forecast |
+| `community-support-agent` | Forum post classification, crowdsourced answer scoring, escalation to KB creation |
+| `nps-driver-agent` | Promoter/passive/detractor drivers, closed-loop prioritization, exec narrative |
+| `self-serve-architect-agent` | Deflection opportunity scoring, flow design, containment rate tracking |
+
+### Creator & Media (8)
+| Agent | What it does |
+|---|---|
+| `podcast-producer-agent` | Episode arcs, show-note generation, guest research packs, distribution checklist |
+| `newsletter-architect-agent` | Section planning, curation scoring, subject-A/B generation, send-time optimization |
+| `ugc-curator-agent` | Submission triage, rights management, creator attribution, repurposing queue |
+| `meme-ops-agent` | Trend velocity scoring, format-body fit, timing windows, brand-safety gates |
+| `press-kit-agent` | Boilerplate synthesis, asset inventory, embargo packet, media Q&A prep |
+| `course-builder-agent` | Learning objective mapping, module sequencing, assessment design, completion analytics |
+| `event-producer-agent` | Run-of-show authoring, speaker/venue logistics, contingency branches, post-event retro |
+| `creator-monetization-agent` | Revenue stream mapping, tier pricing, sponsor-fit scoring, payout optimization |
+
+### Vertical Specialists (13)
+| Agent | What it does |
+|---|---|
+| `healthcare-scribe-agent` | SOAP note structuring, code suggestion, compliance flagging (not medical advice) |
+| `legal-ops-agent` | Matter intake, outside-counsel spend tracking, playbook compliance, ebilling audit |
+| `proptech-analyst-agent` | Rent-roll parsing, valuation sensitivity, zoning flag checks, investment memo drafting |
+| `edtech-coach-agent` | Curriculum alignment, Bloom-level tagging, assignment feedback scaffolding |
+| `fintech-compliance-agent` | KYC/AML flow checks, transaction monitoring flag review, regulatory mapping |
+| `climate-risk-agent` | Physical/transition risk scoring, disclosure mapping (TCFD/ISSB), mitigation ranking |
+| `supply-chain-optimizer-agent` | Demand forecast reconciliation, inventory policy, route optimization, disruption playbooks |
+| `retail-merchandiser-agent` | Assortment planning, markdown optimization, planogram compliance, sell-through analysis |
+| `hospitality-ops-agent` | Occupancy pacing, upsell triggers, staffing-to-demand matching, guest recovery workflows |
+| `manufacturing-qa-agent` | SPC chart interpretation, defect Pareto, CAPA tracking, traceability mapping |
+| `energy-ops-agent` | Load forecasting, tariff optimization, curtailment planning, carbon accounting |
+| `gov-procurement-agent` | RFP eligibility checks, compliance matrix, proposal choreography for public sector |
+| `nonprofit-impact-agent` | Theory-of-change mapping, outcome metric design, grant reporting packet assembly |
+
+### Emerging & Agent-Native (10)
+| Agent | What it does |
+|---|---|
+| `autonomous-researcher-agent` | Hypothesis generation, experiment planning, lit-review synthesis, preprint monitoring |
+| `eval-judge-agent` | Rubric authoring, LLM-as-judge calibration, inter-rater agreement scoring, golden-set expansion |
+| `tool-smith-agent` | Tool schema design, validation harness, mock-server generation, version migration planning |
+| `orchestration-designer-agent` | Topology selection (hierarchical/mesh/blackboard), handoff choreography, failure-mode mapping |
+| `memory-ops-agent` | Memory tier health, compaction trigger tuning, recall precision measurement, curation backlog |
+| `adversarial-tester-agent` | Red-team prompt banks, bypass attempt logging, safety regression tracking |
+| `cost-optimizer-agent` | Token/latency Pareto frontier, model routing policy, cache-hit maximization |
+| `skills-librarian-agent` | Skill discovery indexing, reuse scoring, deprecation planning, marketplace curation |
+| `workflow-miner-agent` | Process mining from logs, variant analysis, automation opportunity ranking |
+| `digital-twin-agent` | State-sync design, simulation scenario authoring, drift detection, what-if analysis |
+
+### GTM & SMM Power Suite (10)
+| Agent | What it does |
+|---|---|
+| `x-growth-hacker-agent` | Viral hook engineering, thread pacing, reply-guy strategy, algorithmic timing optimization |
+| `linkedin-authority-agent` | POV extraction from commits, carousel outlining, comment-to-DM funnel, SSI scoring |
+| `youtube-growth-agent` | Title/thumbnail scoring, retention editing, chapter optimization, cross-platform repurposing |
+| `tiktok-virality-agent` | Hook-window optimization, trend-jacking timing, sound selection, loop-rate engineering |
+| `smm-command-center-agent` | Cross-platform calendar, asset variant generation, performance rollup, crisis monitoring |
+| `influencer-ops-agent` | Brief generation, deliverable tracking, usage-rights ledger, payout reconciliation |
+| `social-listening-agent` | Mention clustering, sentiment velocity, crisis early-warning, competitor share-of-voice |
+| `content-repurposer-agent` | Long-form -> thread/carousel/shorts atomization, platform-native rewriting, CTA tailoring |
+| `community-growth-agent` | Activation funnel, referral loop design, moderation at scale, UGC flywheel |
+| `paid-growth-ops-agent` | Channel mix modeling, CAC payback math, creative fatigue rotation, incrementality testing |
+
+```bash
+# try any of the 150:
+python agents/api-architect-agent/cli/api_architect.py --text "Design a rate-limited REST API for billing"
+python agents/x-growth-hacker-agent/cli/x_growth_hacker.py --text "Draft a viral thread about our launch"
+python agents/threat-model-agent/cli/threat_model.py --text "STRIDE for a multi-tenant agent gateway"
 ```
 
 ## 🧪 Testing & CI
