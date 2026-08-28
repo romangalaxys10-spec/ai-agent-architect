@@ -5,7 +5,7 @@ All specialized sub-agents are organized in this dedicated `agents/` directory. 
 
 ---
 
-## 🌟 Complete Sub-Agent Catalog (527 Specialized Sub-Agents)
+## 🌟 Complete Sub-Agent Catalog (547 Specialized Sub-Agents)
 
 ### 🧠 Cognitive Architecture, Depth & Real-Time Recency
 | Sub-Agent | Category | Description | Primary CLI | Location |
@@ -806,6 +806,59 @@ All 70: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines `ana
 All 90: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines `analyze(text)` + `format_report`; `tests/test_sys90_agents.py` (6 tests).
 
 | `colab-t4-gpu-agent` | Google Colab T4 GPU plugin — detect, setup, benchmark and run on free NVIDIA T4 | `python cli/colab_t4.py` |
+
+
+---
+
+## 🎬 20 Creative Studio Series — Video Editing, 3D Creation, 3D Design/Modeling, Music Editing/Creation, YouTube Curation/Editing/Remixing/Publishing
+
+*20 creative studio agents — video, 3D Studio software, 3D design/modeling, music, YouTube. Same contract: SKILL.md + core engine + CLI + smoke tests.*
+
+### Video Editing (5)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `video-editor-pro-agent` | Professional timeline editing: cuts, transitions, color grading, and proxy workflows | `python cli/video_editor_pro.py` |
+| `premiere-workflow-agent` | Premiere Pro project, bins, proxies, and Media Encoder pipelines | `python cli/premiere_workflow.py` |
+| `davinci-resolve-agent` | Resolve Cut/Edit/Color/Fairlight pipelines with node grading and delivery | `python cli/davinci_resolve.py` |
+| `capcut-template-agent` | CapCut/Reels/Shorts templates, auto-captions, and beat-synced edits | `python cli/capcut_template.py` |
+| `subtitle-transcription-agent` | Whisper-grade transcription, translation, and burned-in subtitle styling | `python cli/subtitle_transcription.py` |
+
+### 3D Creation — 3D Studio Software (4)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `blender-studio-agent` | Blender modeling/sculpting/rigging/rendering with Geometry Nodes and Cycles | `python cli/blender_studio.py` |
+| `three-studio-max-agent` | 3ds Max modeling, modifiers, and Arnold/V-Ray scene assembly | `python cli/three_studio_max.py` |
+| `cinema4d-motion-agent` | Cinema 4D motion graphics with MoGraph, Redshift, and fields | `python cli/cinema4d_motion.py` |
+| `houdini-fx-agent` | Houdini procedural FX with VEX, Karma, and USD pipelines | `python cli/houdini_fx.py` |
+
+### 3D Design / Modeling (3)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `3d-modeling-architect-agent` | Hard-surface & organic modeling with topology, retopo, and LOD | `python cli/m_3d_modeling_architect.py` |
+| `3d-texturing-agent` | UV unwrapping, PBR texturing with Substance, and bake hygiene | `python cli/m_3d_texturing.py` |
+| `3d-render-optimizer-agent` | Render farm orchestration, Cycles/Octane/Arnold sampling, and denoise | `python cli/m_3d_render_optimizer.py` |
+
+### Music Editing (3)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `music-editor-pro-agent` | DAW editing with comping, elastic audio, and mix prep | `python cli/music_editor_pro.py` |
+| `audio-cleanup-agent` | Denoise, de-reverb, de-click, and spectral restoration | `python cli/audio_cleanup.py` |
+| `sample-curator-agent` | Sample pack curation, key/BPM tagging, and crate-dig hygiene | `python cli/sample_curator.py` |
+
+### Music Creation (2)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `music-composer-agent` | Composition with MIDI, arrangement, theory, and score export | `python cli/music_composer.py` |
+| `beat-maker-agent` | Beat construction with 808s, drum machines, and swing/groove | `python cli/beat_maker.py` |
+
+### YouTube Curation / Editing / Remixing / Publishing (3)
+| Sub-Agent | What it does | CLI |
+|---|---|---|
+| `youtube-curation-agent` | Channel curation, playlists, community posts, and catalog hygiene | `python cli/youtube_curation.py` |
+| `youtube-remix-engine-agent` | Remix/repurpose: long→Shorts, compilations, and multi-angle cuts | `python cli/youtube_remix_engine.py` |
+| `youtube-publisher-agent` | Publish ops: scheduling, premieres, end screens, cards, and rollout | `python cli/youtube_publisher.py` |
+
+All 20: `python agents/<slug>/cli/<module>.py --help` from any cwd; engines `analyze(text)` + `format_report`; `tests/test_creative20_agents.py` (6 tests).
 
 ## ⚡ CLI Hub Discovery
 

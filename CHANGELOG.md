@@ -1,5 +1,28 @@
 # Changelog
 
+## [2.6.0] - 2026-08-28 — 20 Creative Studio Series (547 Total)
+
+### Added — 20 creative studio agents (video editing, 3D creation via 3D Studio, 3D design/modeling, music editing/creation, YouTube curation/editing/remixing/publishing)
+- **Video Editing (5):** video-editor-pro, premiere-workflow, davinci-resolve, capcut-template, subtitle-transcription
+- **3D Creation — 3D Studio Software (4):** blender-studio, three-studio-max, cinema4d-motion, houdini-fx
+- **3D Design/Modeling (3):** 3d-modeling-architect, 3d-texturing, 3d-render-optimizer
+- **Music Editing (3):** music-editor-pro, audio-cleanup, sample-curator
+- **Music Creation (2):** music-composer, beat-maker
+- **YouTube Curation/Editing/Remixing/Publishing (3):** youtube-curation, youtube-remix-engine, youtube-publisher
+- Each: SKILL.md + studio-grade core engine (creative_signals detection, render/license & publish CTA hygiene) + CLI (--text/--file/--json, any cwd) — 547 total = 15 + 50 + 150 + 100 + 50 + 70 + 90 + 1 + 1 + 20
+- Tests: `tests/test_creative20_agents.py` (6 tests), EXPECTED_AGENTS 527→547
+- Example: `examples/creative_studio_demo.py`
+
+### Changed
+- README: badge 527→547, factory 527→547, added 20 Creative Studio tables + try-commands, layout 527→547
+- agents/AGENTS.md: header 527→547, added 20 Creative Studio tables
+- pyproject description 527→547
+
+### Quality Gates
+- All 547 CLIs pass --help from neutral cwd; all 547 engines pass analyze+format_report smoke
+
+---
+
 ## [2.5.1] - 2026-08-28 — Colab T4 GPU Plugin (526 Total)
 
 ### Added — Google Colab free T4 GPU agent
@@ -138,6 +161,29 @@
 
 All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [2.6.0] - 2026-08-28 — 20 Creative Studio Series (547 Total)
+
+### Added — 20 creative studio agents (video editing, 3D creation via 3D Studio, 3D design/modeling, music editing/creation, YouTube curation/editing/remixing/publishing)
+- **Video Editing (5):** video-editor-pro, premiere-workflow, davinci-resolve, capcut-template, subtitle-transcription
+- **3D Creation — 3D Studio Software (4):** blender-studio, three-studio-max, cinema4d-motion, houdini-fx
+- **3D Design/Modeling (3):** 3d-modeling-architect, 3d-texturing, 3d-render-optimizer
+- **Music Editing (3):** music-editor-pro, audio-cleanup, sample-curator
+- **Music Creation (2):** music-composer, beat-maker
+- **YouTube Curation/Editing/Remixing/Publishing (3):** youtube-curation, youtube-remix-engine, youtube-publisher
+- Each: SKILL.md + studio-grade core engine (creative_signals detection, render/license & publish CTA hygiene) + CLI (--text/--file/--json, any cwd) — 547 total = 15 + 50 + 150 + 100 + 50 + 70 + 90 + 1 + 1 + 20
+- Tests: `tests/test_creative20_agents.py` (6 tests), EXPECTED_AGENTS 527→547
+- Example: `examples/creative_studio_demo.py`
+
+### Changed
+- README: badge 527→547, factory 527→547, added 20 Creative Studio tables + try-commands, layout 527→547
+- agents/AGENTS.md: header 527→547, added 20 Creative Studio tables
+- pyproject description 527→547
+
+### Quality Gates
+- All 547 CLIs pass --help from neutral cwd; all 547 engines pass analyze+format_report smoke
+
+---
 
 ## [2.5.1] - 2026-08-28 — Colab T4 GPU Plugin (526 Total)
 

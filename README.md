@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Tests: 183 offline](https://img.shields.io/badge/tests-183%20offline-brightgreen.svg)]()
-[![Agents Hub: 527 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-527%20Complete%20Agents-brightgreen.svg)]()
+[![Agents Hub: 547 Sub-Agents](https://img.shields.io/badge/Agents%20Hub-547%20Complete%20Agents-brightgreen.svg)]()
 [![Zero-Key Runtime](https://img.shields.io/badge/runtime-zero%20API%20keys-success.svg)]()
 [![MCP](https://img.shields.io/badge/protocol-MCP%20%2B%20A2A-blueviolet.svg)]()
 
@@ -154,9 +154,9 @@ Traditional models suffer from **Premature Closure** and **Pattern Gravity**. Th
 
 ---
 
-## 🏭 Agents Factory: 527 Complete Sub-Agents (15 Founding + 50 Demand + 150 Power + 100 Computer Use + 50 HR/HRBP/L&D + 70 Social/Video + 90 SysAdmin + 1 Colab T4)
+## 🏭 Agents Factory: 547 Complete Sub-Agents (15 Founding + 50 Demand + 150 Power + 100 Computer Use + 50 HR/HRBP/L&D + 70 Social/Video + 90 SysAdmin + 1 Colab T4 + 20 Creative Studio)
 
-Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **527 total = 15 founding + 50 demand suite + 150 power expansion + 100 computer use + 50 HR/HRBP/L&D + 70 social/video + 90 sys-admin + 1 Colab T4 + 1 last30days (Solana/blockchain/Linux/server/security/debug/local LLM/web design/web dev).**
+Every agent ships **SKILL.md + core engine + CLI + tests** (enforced by `tests/test_subagent_completeness.py`, including a run-from-any-cwd contract). **547 total = 15 founding + 50 demand suite + 150 power expansion + 100 computer use + 50 HR/HRBP/L&D + 70 social/video + 90 sys-admin + 1 Colab T4 + 1 last30days + 20 creative studio (video/3D/music/YouTube) (Solana/blockchain/Linux/server/security/debug/local LLM/web design/web dev).**
 
 | # | Agent | Domain |
 |---|-------|--------|
@@ -237,7 +237,7 @@ core/
 ├── orchestrator.py         # hierarchical / pipeline / mesh / blackboard
 ├── tool_registry.py        # schemas, validation pipeline, hooks, annotations
 ├── depth_cognitive_engine.py · steve_jobs_lens.py · engine.py · registry.py
-agents/                     # 527 complete sub-agents (SKILL.md + core + cli)
+agents/                     # 547 complete sub-agents (SKILL.md + core + cli)
 factory/                    # skill builder, prompt synthesizer
 evals/                      # versioned rubrics + golden datasets
 examples/                   # end-to-end walkthroughs
@@ -967,6 +967,65 @@ python agents/solana-validator-ops-agent/cli/solana_validator_ops.py --text "sol
 python agents/linux-boot-rescue-agent/cli/linux_boot_rescue.py --text "linux boot grub initramfs rescue" 
 python agents/llm-local-deployer-agent/cli/llm_local_deployer.py --text "deploy Ollama vLLM with GGUF and KV cache tuner for max TPS"
 python agents/figma-to-code-agent/cli/figma_to_code.py --text "Figma autolayout to Tailwind with design tokens"
+```
+
+
+## 🎬 20 Creative Studio Series — Video Editing, 3D Creation (3D Studio), 3D Design/Modeling, Music Editing/Creation, YouTube Curation/Editing/Remixing/Publishing
+
+*20 studio-grade creative agents: timeline/cuts/color/Resolve/Premiere/CapCut, Blender/3ds Max/Cinema 4D/Houdini procedural, hard-surface/organic/PBR/render-farm, DAW/mix/cleanup/samples, composition/beats, and YouTube curation/remix/publish (playlists, long→Shorts, scheduling/premieres). Every agent: offline deterministic, render/license/publish hygiene.*
+
+Full catalog: [`agents/AGENTS.md`](agents/AGENTS.md). `AgentRegistry.discover_agents()`.
+
+### Video Editing (5)
+| Agent | What it does |
+|---|---|
+| `video-editor-pro-agent` | Professional timeline editing: cuts, transitions, color grading, and proxy workflows |
+| `premiere-workflow-agent` | Premiere Pro project, bins, proxies, and Media Encoder pipelines |
+| `davinci-resolve-agent` | Resolve Cut/Edit/Color/Fairlight pipelines with node grading and delivery |
+| `capcut-template-agent` | CapCut/Reels/Shorts templates, auto-captions, and beat-synced edits |
+| `subtitle-transcription-agent` | Whisper-grade transcription, translation, and burned-in subtitle styling |
+
+### 3D Creation — 3D Studio Software (4)
+| Agent | What it does |
+|---|---|
+| `blender-studio-agent` | Blender modeling/sculpting/rigging/rendering with Geometry Nodes and Cycles |
+| `three-studio-max-agent` | 3ds Max modeling, modifiers, and Arnold/V-Ray scene assembly |
+| `cinema4d-motion-agent` | Cinema 4D motion graphics with MoGraph, Redshift, and fields |
+| `houdini-fx-agent` | Houdini procedural FX with VEX, Karma, and USD pipelines |
+
+### 3D Design / Modeling (3)
+| Agent | What it does |
+|---|---|
+| `3d-modeling-architect-agent` | Hard-surface & organic modeling with topology, retopo, and LOD |
+| `3d-texturing-agent` | UV unwrapping, PBR texturing with Substance, and bake hygiene |
+| `3d-render-optimizer-agent` | Render farm orchestration, Cycles/Octane/Arnold sampling, and denoise |
+
+### Music Editing (3)
+| Agent | What it does |
+|---|---|
+| `music-editor-pro-agent` | DAW editing with comping, elastic audio, and mix prep |
+| `audio-cleanup-agent` | Denoise, de-reverb, de-click, and spectral restoration |
+| `sample-curator-agent` | Sample pack curation, key/BPM tagging, and crate-dig hygiene |
+
+### Music Creation (2)
+| Agent | What it does |
+|---|---|
+| `music-composer-agent` | Composition with MIDI, arrangement, theory, and score export |
+| `beat-maker-agent` | Beat construction with 808s, drum machines, and swing/groove |
+
+### YouTube Curation / Editing / Remixing / Publishing (3)
+| Agent | What it does |
+|---|---|
+| `youtube-curation-agent` | Channel curation, playlists, community posts, and catalog hygiene |
+| `youtube-remix-engine-agent` | Remix/repurpose: long→Shorts, compilations, and multi-angle cuts |
+| `youtube-publisher-agent` | Publish ops: scheduling, premieres, end screens, cards, and rollout |
+
+```bash
+# try any of the 20:
+python agents/video-editor-pro-agent/cli/video_editor_pro.py --text "cut timeline with color grading and proxy workflow"
+python agents/blender-studio-agent/cli/blender_studio.py --text "Blender Geometry Nodes Cycles rigging"
+python agents/music-composer-agent/cli/music_composer.py --text "compose MIDI arrangement with score export"
+python agents/youtube-remix-engine-agent/cli/youtube_remix_engine.py --text "remix long to Shorts with multi-angle cuts"
 ```
 
 ## 🧪 Testing & CI

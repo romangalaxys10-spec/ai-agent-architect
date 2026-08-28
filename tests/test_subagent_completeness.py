@@ -115,7 +115,11 @@ EXPECTED_AGENTS = [
     "brand-system-agent", "landing-page-designer-agent", "design-handoff-agent", "visual-qa-agent", "design-performance-auditor-agent", 
     "frontend-scaffold-agent", "backend-api-builder-agent", "fullstack-integrator-agent", "jamstack-deployer-agent", "ssr-optimizer-agent", 
     "web-perf-auditor-agent", "web-security-hardener-agent", "cms-orchestrator-agent", "ecommerce-stack-agent", "realtime-collab-agent", 
-    "colab-t4-gpu-agent", "last30days-research-agent",
+    "colab-t4-gpu-agent", "last30days-research-agent", "video-editor-pro-agent", "premiere-workflow-agent", "davinci-resolve-agent", 
+    "capcut-template-agent", "subtitle-transcription-agent", "blender-studio-agent", "three-studio-max-agent", "cinema4d-motion-agent", 
+    "houdini-fx-agent", "3d-modeling-architect-agent", "3d-texturing-agent", "3d-render-optimizer-agent", "music-editor-pro-agent", 
+    "audio-cleanup-agent", "sample-curator-agent", "music-composer-agent", "beat-maker-agent", "youtube-curation-agent", 
+    "youtube-remix-engine-agent", "youtube-publisher-agent",
 ]
 
 
