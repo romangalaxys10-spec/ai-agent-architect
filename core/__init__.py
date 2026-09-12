@@ -4,6 +4,7 @@ AI Agent Architect - Core Architecture Engine
 
 from .engine import AgentEngine, AgentState, ExecutionStep, StepResult
 from .depth_cognitive_engine import DepthCognitiveEngine, CognitiveDepthProfile
+from .brain_enhancer import BrainEnhancerEngine, ProblemSpec, LedgerState
 from .steve_jobs_lens import SteveJobsLens, ProductReview, QualityVerdict
 from .orchestrator import MultiAgentOrchestrator, OrchestrationTopology, AgentNode
 from .a2a_protocol import A2AMessage, A2AMessageBus
@@ -21,6 +22,9 @@ __all__ = [
     "StepResult",
     "DepthCognitiveEngine",
     "CognitiveDepthProfile",
+    "BrainEnhancerEngine",
+    "ProblemSpec",
+    "LedgerState",
     "SteveJobsLens",
     "ProductReview",
     "QualityVerdict",
